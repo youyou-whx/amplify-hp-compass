@@ -1,0 +1,1316 @@
+{
+  "nodes": [
+    {
+      "id": "theme_fb:临床场景定义",
+      "label": "临床场景定义 · 西安动物医院调研 | 家畜生物学重点实验室调研 HP小循环 | 罗自卫老师湿实验访谈 HP小循环",
+      "kind": "Feedback",
+      "level": 2,
+      "ref_count": 5,
+      "score": 0.819,
+      "themes": [
+        "临床场景定义",
+        "抗生素与耐药性",
+        "实施与落地路径"
+      ]
+    },
+    {
+      "id": "theme_act:临床场景定义_act",
+      "label": "临床场景定义 · 西安动物医院调研 | 家畜生物学重点实验室调研 HP小循环 | 西安市浮生闲猫咪驿站工作人员调研 HP小循环",
+      "kind": "Action",
+      "level": 2,
+      "ref_count": 8,
+      "score": 0.823,
+      "themes": [
+        "临床场景定义",
+        "抗生素与耐药性",
+        "环境与OneHealth"
+      ]
+    },
+    {
+      "id": "hp:HP_20260124_西安动物医院调研_HP小循环_JU_Krakow风格_中文版",
+      "label": "西安动物医院调研 HP小循环",
+      "kind": "HP",
+      "level": 1,
+      "ref_count": 1,
+      "score": 0.775,
+      "status": "L3_Evidenced"
+    },
+    {
+      "id": "stakeholder:西北农林科技大学西安动物医院的临床医生与院长",
+      "label": "西北农林科技大学西安动物医院的临床医生与院长",
+      "kind": "Stakeholder",
+      "level": 1,
+      "ref_count": 1,
+      "stakeholder_type": "兽医临床 stakeholder"
+    },
+    {
+      "id": "module:Problem Definition",
+      "label": "Problem Definition",
+      "kind": "Module",
+      "level": 3,
+      "ref_count": 10
+    },
+    {
+      "id": "module:Implementation",
+      "label": "Implementation",
+      "kind": "Module",
+      "level": 3,
+      "ref_count": 6
+    },
+    {
+      "id": "module:Safety",
+      "label": "Safety",
+      "kind": "Module",
+      "level": 3,
+      "ref_count": 9
+    },
+    {
+      "id": "module:Model",
+      "label": "Model",
+      "kind": "Module",
+      "level": 3,
+      "ref_count": 5
+    },
+    {
+      "id": "module:Software",
+      "label": "Software",
+      "kind": "Module",
+      "level": 3,
+      "ref_count": 3
+    },
+    {
+      "id": "evidence:报告",
+      "label": "报告",
+      "kind": "Evidence",
+      "level": 3,
+      "ref_count": 6
+    },
+    {
+      "id": "evidence:访谈记录",
+      "label": "访谈记录",
+      "kind": "Evidence",
+      "level": 3,
+      "ref_count": 11
+    },
+    {
+      "id": "next:HP_20260124_西安动物医院调研_HP小循环_JU_Krakow风格_中文版",
+      "label": "将修改后的材料返回给 西北农林科技大学西安动物医院的临床医生与院长，完成二轮反馈。",
+      "kind": "NextStep",
+      "level": 3,
+      "ref_count": 1
+    },
+    {
+      "id": "hp:HP_20260309_家畜生物学重点实验室调研_HP小循环_JU_Krakow风格_中",
+      "label": "家畜生物学重点实验室调研 HP小循环",
+      "kind": "HP",
+      "level": 1,
+      "ref_count": 1,
+      "score": 0.819,
+      "status": "L3_Evidenced"
+    },
+    {
+      "id": "stakeholder:西北农林科技大学家畜生物学重点实验室刘军教授",
+      "label": "西北农林科技大学家畜生物学重点实验室刘军教授",
+      "kind": "Stakeholder",
+      "level": 1,
+      "ref_count": 1,
+      "stakeholder_type": "动物健康 / 家畜专家"
+    },
+    {
+      "id": "module:Material",
+      "label": "Material",
+      "kind": "Module",
+      "level": 3,
+      "ref_count": 5
+    },
+    {
+      "id": "evidence:MIC",
+      "label": "MIC",
+      "kind": "Evidence",
+      "level": 3,
+      "ref_count": 5
+    },
+    {
+      "id": "evidence:溶血",
+      "label": "溶血",
+      "kind": "Evidence",
+      "level": 3,
+      "ref_count": 5
+    },
+    {
+      "id": "evidence:CCK-8",
+      "label": "CCK-8",
+      "kind": "Evidence",
+      "level": 3,
+      "ref_count": 5
+    },
+    {
+      "id": "evidence:TEM",
+      "label": "TEM",
+      "kind": "Evidence",
+      "level": 3,
+      "ref_count": 5
+    },
+    {
+      "id": "evidence:细胞毒性",
+      "label": "细胞毒性",
+      "kind": "Evidence",
+      "level": 3,
+      "ref_count": 4
+    },
+    {
+      "id": "evidence:MD",
+      "label": "MD",
+      "kind": "Evidence",
+      "level": 3,
+      "ref_count": 3
+    },
+    {
+      "id": "evidence:理化性质",
+      "label": "理化性质",
+      "kind": "Evidence",
+      "level": 3,
+      "ref_count": 4
+    },
+    {
+      "id": "evidence:Field Score",
+      "label": "Field Score",
+      "kind": "Evidence",
+      "level": 3,
+      "ref_count": 2
+    },
+    {
+      "id": "evidence:TAM-Flow",
+      "label": "TAM-Flow",
+      "kind": "Evidence",
+      "level": 3,
+      "ref_count": 3
+    },
+    {
+      "id": "evidence:Risk Boundary Panel",
+      "label": "Risk Boundary Panel",
+      "kind": "Evidence",
+      "level": 3,
+      "ref_count": 1
+    },
+    {
+      "id": "evidence:Oracle",
+      "label": "Oracle",
+      "kind": "Evidence",
+      "level": 3,
+      "ref_count": 3
+    },
+    {
+      "id": "next:HP_20260309_家畜生物学重点实验室调研_HP小循环_JU_Krakow风格_中",
+      "label": "将修改后的材料返回给 西北农林科技大学家畜生物学重点实验室刘军教授，完成二轮反馈。",
+      "kind": "NextStep",
+      "level": 3,
+      "ref_count": 1
+    },
+    {
+      "id": "theme_fb:AI模型与算法",
+      "label": "AI模型与算法 · 赵天意老师访谈",
+      "kind": "Feedback",
+      "level": 2,
+      "ref_count": 1,
+      "score": 0.767,
+      "themes": [
+        "AI模型与算法",
+        "实验验证体系",
+        "安全与毒性边界"
+      ]
+    },
+    {
+      "id": "theme_act:AI模型与算法_act",
+      "label": "AI模型与算法 · 赵天意老师访谈 | 罗自卫老师湿实验访谈 HP小循环",
+      "kind": "Action",
+      "level": 2,
+      "ref_count": 2,
+      "score": 0.817,
+      "themes": [
+        "AI模型与算法",
+        "实验验证体系"
+      ]
+    },
+    {
+      "id": "hp:HP_20260315_赵天意老师访谈_HP技术小循环_主线优化版_JU_Krakow风",
+      "label": "赵天意老师访谈 HP小循环",
+      "kind": "HP",
+      "level": 1,
+      "ref_count": 1,
+      "score": 0.767,
+      "status": "L3_Evidenced"
+    },
+    {
+      "id": "stakeholder:赵天意老师",
+      "label": "赵天意老师",
+      "kind": "Stakeholder",
+      "level": 1,
+      "ref_count": 1,
+      "stakeholder_type": "AI / 生物大数据专家"
+    },
+    {
+      "id": "module:Social Media",
+      "label": "Social Media",
+      "kind": "Module",
+      "level": 3,
+      "ref_count": 3
+    },
+    {
+      "id": "evidence:质谱",
+      "label": "质谱",
+      "kind": "Evidence",
+      "level": 3,
+      "ref_count": 2
+    },
+    {
+      "id": "evidence:分子动力学",
+      "label": "分子动力学",
+      "kind": "Evidence",
+      "level": 3,
+      "ref_count": 2
+    },
+    {
+      "id": "evidence:RMSD",
+      "label": "RMSD",
+      "kind": "Evidence",
+      "level": 3,
+      "ref_count": 1
+    },
+    {
+      "id": "evidence:RMSF",
+      "label": "RMSF",
+      "kind": "Evidence",
+      "level": 3,
+      "ref_count": 1
+    },
+    {
+      "id": "evidence:RAFT",
+      "label": "RAFT",
+      "kind": "Evidence",
+      "level": 3,
+      "ref_count": 1
+    },
+    {
+      "id": "next:HP_20260315_赵天意老师访谈_HP技术小循环_主线优化版_JU_Krakow风",
+      "label": "将修改后的材料返回给 赵天意老师，完成二轮反馈。",
+      "kind": "NextStep",
+      "level": 3,
+      "ref_count": 1
+    },
+    {
+      "id": "hp:HP_20260320_罗自卫老师湿实验访谈_HP小循环_JU_Krakow风格_中文版",
+      "label": "罗自卫老师湿实验访谈 HP小循环",
+      "kind": "HP",
+      "level": 1,
+      "ref_count": 1,
+      "score": 0.817,
+      "status": "L3_Evidenced"
+    },
+    {
+      "id": "stakeholder:西北农林科技大学罗自卫老师",
+      "label": "西北农林科技大学罗自卫老师",
+      "kind": "Stakeholder",
+      "level": 1,
+      "ref_count": 1,
+      "stakeholder_type": "湿实验 / 合成生物学专家"
+    },
+    {
+      "id": "evidence:文献",
+      "label": "文献",
+      "kind": "Evidence",
+      "level": 3,
+      "ref_count": 1
+    },
+    {
+      "id": "evidence:Evidence Matrix",
+      "label": "Evidence Matrix",
+      "kind": "Evidence",
+      "level": 3,
+      "ref_count": 1
+    },
+    {
+      "id": "next:HP_20260320_罗自卫老师湿实验访谈_HP小循环_JU_Krakow风格_中文版",
+      "label": "将修改后的材料返回给 西北农林科技大学罗自卫老师，完成二轮反馈。",
+      "kind": "NextStep",
+      "level": 3,
+      "ref_count": 1
+    },
+    {
+      "id": "theme_fb:实验验证体系",
+      "label": "实验验证体系 · 哈工大生命学院院长调研",
+      "kind": "Feedback",
+      "level": 2,
+      "ref_count": 1,
+      "score": 0.733,
+      "themes": [
+        "实验验证体系",
+        "Wiki与叙事建设",
+        "工程化与软件"
+      ]
+    },
+    {
+      "id": "theme_act:安全与毒性边界_act",
+      "label": "安全与毒性边界 · 哈工大生命学院院长调研",
+      "kind": "Action",
+      "level": 2,
+      "ref_count": 1,
+      "score": 0.733,
+      "themes": [
+        "安全与毒性边界",
+        "Wiki与叙事建设"
+      ]
+    },
+    {
+      "id": "hp:HP_20260418_哈工大生命学院院长调研_HP简版_JU_Krakow风格_中文版",
+      "label": "哈工大生命学院院长调研 HP小循环",
+      "kind": "HP",
+      "level": 1,
+      "ref_count": 1,
+      "score": 0.733,
+      "status": "L3_Evidenced"
+    },
+    {
+      "id": "stakeholder:哈尔滨工业大学生命科学与医学学部聂桓老师",
+      "label": "哈尔滨工业大学生命科学与医学学部聂桓老师",
+      "kind": "Stakeholder",
+      "level": 1,
+      "ref_count": 1,
+      "stakeholder_type": "iGEM / Wiki 交流 stakeholder"
+    },
+    {
+      "id": "next:HP_20260418_哈工大生命学院院长调研_HP简版_JU_Krakow风格_中文版",
+      "label": "将修改后的材料返回给 哈尔滨工业大学生命科学与医学学部聂桓老师，完成二轮反馈。",
+      "kind": "NextStep",
+      "level": 3,
+      "ref_count": 1
+    },
+    {
+      "id": "hp:HP_20260419_西安市浮生闲猫咪驿站工作人员调研_HP利益相关者主线_JU_Kr",
+      "label": "西安市浮生闲猫咪驿站工作人员调研 HP小循环",
+      "kind": "HP",
+      "level": 1,
+      "ref_count": 1,
+      "score": 0.473,
+      "status": "L3_Evidenced"
+    },
+    {
+      "id": "stakeholder:西安市浮生闲猫咪驿站工作人员",
+      "label": "西安市浮生闲猫咪驿站工作人员",
+      "kind": "Stakeholder",
+      "level": 1,
+      "ref_count": 1,
+      "stakeholder_type": "公众教育 stakeholder"
+    },
+    {
+      "id": "module:Education",
+      "label": "Education",
+      "kind": "Module",
+      "level": 3,
+      "ref_count": 3
+    },
+    {
+      "id": "next:HP_20260419_西安市浮生闲猫咪驿站工作人员调研_HP利益相关者主线_JU_Kr",
+      "label": "将修改后的材料返回给 西安市浮生闲猫咪驿站工作人员，完成二轮反馈。",
+      "kind": "NextStep",
+      "level": 3,
+      "ref_count": 1
+    },
+    {
+      "id": "theme_fb:安全与毒性边界",
+      "label": "安全与毒性边界 · 杨陵除张村羊场人员张…",
+      "kind": "Feedback",
+      "level": 2,
+      "ref_count": 1,
+      "score": 0.619,
+      "themes": [
+        "安全与毒性边界",
+        "养殖场景定义",
+        "实施与落地路径"
+      ]
+    },
+    {
+      "id": "hp:HP_20260420_杨陵除张村羊场人员张伟调研_HP利益相关者主线_JU_Krako",
+      "label": "杨陵除张村羊场人员张伟调研 HP小循环",
+      "kind": "HP",
+      "level": 1,
+      "ref_count": 1,
+      "score": 0.619,
+      "status": "L3_Evidenced"
+    },
+    {
+      "id": "stakeholder:杨陵揉谷镇除张村羊场人员张伟",
+      "label": "杨陵揉谷镇除张村羊场人员张伟",
+      "kind": "Stakeholder",
+      "level": 1,
+      "ref_count": 1,
+      "stakeholder_type": "养殖端 stakeholder"
+    },
+    {
+      "id": "next:HP_20260420_杨陵除张村羊场人员张伟调研_HP利益相关者主线_JU_Krako",
+      "label": "将修改后的材料返回给 杨陵揉谷镇除张村羊场人员张伟，完成二轮反馈。",
+      "kind": "NextStep",
+      "level": 3,
+      "ref_count": 1
+    },
+    {
+      "id": "hp:HP_20260422_武功县诚威奶山羊羊场负责人杜欣愿羊乳房炎调研_HP利益相关者主线",
+      "label": "武功县诚威奶山羊羊场负责人杜欣愿羊乳房炎调研 HP小循环",
+      "kind": "HP",
+      "level": 1,
+      "ref_count": 1,
+      "score": 0.565,
+      "status": "L3_Evidenced"
+    },
+    {
+      "id": "stakeholder:武功县诚威奶山羊羊场负责人杜欣愿",
+      "label": "武功县诚威奶山羊羊场负责人杜欣愿",
+      "kind": "Stakeholder",
+      "level": 1,
+      "ref_count": 1,
+      "stakeholder_type": "养殖端 stakeholder"
+    },
+    {
+      "id": "next:HP_20260422_武功县诚威奶山羊羊场负责人杜欣愿羊乳房炎调研_HP利益相关者主线",
+      "label": "将修改后的材料返回给 武功县诚威奶山羊羊场负责人杜欣愿，完成二轮反馈。",
+      "kind": "NextStep",
+      "level": 3,
+      "ref_count": 1
+    },
+    {
+      "id": "theme_fb:养殖场景定义",
+      "label": "养殖场景定义 · 下乡采访散养羊村民",
+      "kind": "Feedback",
+      "level": 2,
+      "ref_count": 1,
+      "score": 0.609,
+      "themes": [
+        "养殖场景定义"
+      ]
+    },
+    {
+      "id": "hp:HP_20260501_下乡采访散养羊村民_HP利益相关者主线_JU_Krakow风格_",
+      "label": "下乡采访散养羊村民 HP小循环",
+      "kind": "HP",
+      "level": 1,
+      "ref_count": 1,
+      "score": 0.609,
+      "status": "L3_Evidenced"
+    },
+    {
+      "id": "stakeholder:基层执业兽医与散养户",
+      "label": "基层执业兽医与散养户",
+      "kind": "Stakeholder",
+      "level": 1,
+      "ref_count": 1,
+      "stakeholder_type": "养殖端 stakeholder"
+    },
+    {
+      "id": "next:HP_20260501_下乡采访散养羊村民_HP利益相关者主线_JU_Krakow风格_",
+      "label": "将修改后的材料返回给 基层执业兽医与散养户，完成二轮反馈。",
+      "kind": "NextStep",
+      "level": 3,
+      "ref_count": 1
+    },
+    {
+      "id": "theme_fb:Wiki与叙事建设",
+      "label": "Wiki与叙事建设 · iGEM东北地区交流会",
+      "kind": "Feedback",
+      "level": 2,
+      "ref_count": 1,
+      "score": 0.55,
+      "themes": [
+        "Wiki与叙事建设"
+      ]
+    },
+    {
+      "id": "hp:HP_20260502_iGEM东北地区交流会_HP主线校准_JU_Krakow风格_中",
+      "label": "iGEM东北地区交流会 HP小循环",
+      "kind": "HP",
+      "level": 1,
+      "ref_count": 1,
+      "score": 0.55,
+      "status": "L3_Evidenced"
+    },
+    {
+      "id": "stakeholder:iGEM 东北地区交流会参会队伍与经验分享者",
+      "label": "iGEM 东北地区交流会参会队伍与经验分享者",
+      "kind": "Stakeholder",
+      "level": 1,
+      "ref_count": 1,
+      "stakeholder_type": "iGEM / Wiki 交流 stakeholder"
+    },
+    {
+      "id": "next:HP_20260502_iGEM东北地区交流会_HP主线校准_JU_Krakow风格_中",
+      "label": "将修改后的材料返回给 iGEM 东北地区交流会参会队伍与经验分享者，完成二轮反馈。",
+      "kind": "NextStep",
+      "level": 3,
+      "ref_count": 1
+    },
+    {
+      "id": "theme_fb:抗生素与耐药性",
+      "label": "抗生素与耐药性 · 钱勋教授访谈",
+      "kind": "Feedback",
+      "level": 2,
+      "ref_count": 1,
+      "score": 0.823,
+      "themes": [
+        "抗生素与耐药性",
+        "环境与OneHealth"
+      ]
+    },
+    {
+      "id": "hp:HP_20260527_钱勋教授访谈_HP小循环_主线优化版_JU_Krakow风格_中",
+      "label": "钱勋教授访谈 HP小循环",
+      "kind": "HP",
+      "level": 1,
+      "ref_count": 1,
+      "score": 0.823,
+      "status": "L3_Evidenced"
+    },
+    {
+      "id": "stakeholder:西北农林科技大学资环学院钱勋教授",
+      "label": "西北农林科技大学资环学院钱勋教授",
+      "kind": "Stakeholder",
+      "level": 1,
+      "ref_count": 1,
+      "stakeholder_type": "环境微生物 / ARG 专家"
+    },
+    {
+      "id": "module:Environment",
+      "label": "Environment",
+      "kind": "Module",
+      "level": 3,
+      "ref_count": 1
+    },
+    {
+      "id": "evidence:软件面板",
+      "label": "软件面板",
+      "kind": "Evidence",
+      "level": 3,
+      "ref_count": 1
+    },
+    {
+      "id": "evidence:面板",
+      "label": "面板",
+      "kind": "Evidence",
+      "level": 3,
+      "ref_count": 1
+    },
+    {
+      "id": "evidence:草图",
+      "label": "草图",
+      "kind": "Evidence",
+      "level": 3,
+      "ref_count": 1
+    },
+    {
+      "id": "evidence:PDES",
+      "label": "PDES",
+      "kind": "Evidence",
+      "level": 3,
+      "ref_count": 1
+    },
+    {
+      "id": "evidence:Environmental Degradation Panel",
+      "label": "Environmental Degradation Panel",
+      "kind": "Evidence",
+      "level": 3,
+      "ref_count": 1
+    },
+    {
+      "id": "next:HP_20260527_钱勋教授访谈_HP小循环_主线优化版_JU_Krakow风格_中",
+      "label": "将修改后的材料返回给 西北农林科技大学资环学院钱勋教授，完成二轮反馈。",
+      "kind": "NextStep",
+      "level": 3,
+      "ref_count": 1
+    }
+  ],
+  "edges": [
+    {
+      "source": "stakeholder:西北农林科技大学西安动物医院的临床医生与院长",
+      "target": "theme_fb:临床场景定义",
+      "relation": "raised"
+    },
+    {
+      "source": "theme_fb:临床场景定义",
+      "target": "hp:HP_20260124_西安动物医院调研_HP小循环_JU_Krakow风格_中文版",
+      "relation": "recorded_in"
+    },
+    {
+      "source": "theme_fb:临床场景定义",
+      "target": "theme_act:临床场景定义_act",
+      "relation": "led_to"
+    },
+    {
+      "source": "theme_fb:临床场景定义",
+      "target": "module:Problem Definition",
+      "relation": "affects"
+    },
+    {
+      "source": "theme_fb:临床场景定义",
+      "target": "module:Implementation",
+      "relation": "affects"
+    },
+    {
+      "source": "theme_fb:临床场景定义",
+      "target": "module:Safety",
+      "relation": "affects"
+    },
+    {
+      "source": "theme_fb:临床场景定义",
+      "target": "module:Model",
+      "relation": "affects"
+    },
+    {
+      "source": "theme_fb:临床场景定义",
+      "target": "module:Software",
+      "relation": "affects"
+    },
+    {
+      "source": "theme_act:临床场景定义_act",
+      "target": "evidence:报告",
+      "relation": "supported_by"
+    },
+    {
+      "source": "theme_act:临床场景定义_act",
+      "target": "evidence:访谈记录",
+      "relation": "supported_by"
+    },
+    {
+      "source": "theme_act:临床场景定义_act",
+      "target": "next:HP_20260124_西安动物医院调研_HP小循环_JU_Krakow风格_中文版",
+      "relation": "requires"
+    },
+    {
+      "source": "stakeholder:西北农林科技大学家畜生物学重点实验室刘军教授",
+      "target": "theme_fb:临床场景定义",
+      "relation": "raised"
+    },
+    {
+      "source": "theme_fb:临床场景定义",
+      "target": "hp:HP_20260309_家畜生物学重点实验室调研_HP小循环_JU_Krakow风格_中",
+      "relation": "recorded_in"
+    },
+    {
+      "source": "theme_fb:临床场景定义",
+      "target": "module:Material",
+      "relation": "affects"
+    },
+    {
+      "source": "theme_act:临床场景定义_act",
+      "target": "evidence:MIC",
+      "relation": "supported_by"
+    },
+    {
+      "source": "theme_act:临床场景定义_act",
+      "target": "evidence:溶血",
+      "relation": "supported_by"
+    },
+    {
+      "source": "theme_act:临床场景定义_act",
+      "target": "evidence:CCK-8",
+      "relation": "supported_by"
+    },
+    {
+      "source": "theme_act:临床场景定义_act",
+      "target": "evidence:TEM",
+      "relation": "supported_by"
+    },
+    {
+      "source": "theme_act:临床场景定义_act",
+      "target": "evidence:细胞毒性",
+      "relation": "supported_by"
+    },
+    {
+      "source": "theme_act:临床场景定义_act",
+      "target": "evidence:MD",
+      "relation": "supported_by"
+    },
+    {
+      "source": "theme_act:临床场景定义_act",
+      "target": "evidence:理化性质",
+      "relation": "supported_by"
+    },
+    {
+      "source": "theme_act:临床场景定义_act",
+      "target": "evidence:Field Score",
+      "relation": "supported_by"
+    },
+    {
+      "source": "theme_act:临床场景定义_act",
+      "target": "evidence:TAM-Flow",
+      "relation": "supported_by"
+    },
+    {
+      "source": "theme_act:临床场景定义_act",
+      "target": "evidence:Risk Boundary Panel",
+      "relation": "supported_by"
+    },
+    {
+      "source": "theme_act:临床场景定义_act",
+      "target": "evidence:Oracle",
+      "relation": "supported_by"
+    },
+    {
+      "source": "theme_act:临床场景定义_act",
+      "target": "next:HP_20260309_家畜生物学重点实验室调研_HP小循环_JU_Krakow风格_中",
+      "relation": "requires"
+    },
+    {
+      "source": "stakeholder:赵天意老师",
+      "target": "theme_fb:AI模型与算法",
+      "relation": "raised"
+    },
+    {
+      "source": "theme_fb:AI模型与算法",
+      "target": "hp:HP_20260315_赵天意老师访谈_HP技术小循环_主线优化版_JU_Krakow风",
+      "relation": "recorded_in"
+    },
+    {
+      "source": "theme_fb:AI模型与算法",
+      "target": "theme_act:AI模型与算法_act",
+      "relation": "led_to"
+    },
+    {
+      "source": "theme_fb:AI模型与算法",
+      "target": "module:Safety",
+      "relation": "affects"
+    },
+    {
+      "source": "theme_fb:AI模型与算法",
+      "target": "module:Model",
+      "relation": "affects"
+    },
+    {
+      "source": "theme_fb:AI模型与算法",
+      "target": "module:Material",
+      "relation": "affects"
+    },
+    {
+      "source": "theme_fb:AI模型与算法",
+      "target": "module:Social Media",
+      "relation": "affects"
+    },
+    {
+      "source": "theme_fb:AI模型与算法",
+      "target": "module:Problem Definition",
+      "relation": "affects"
+    },
+    {
+      "source": "theme_act:AI模型与算法_act",
+      "target": "evidence:MIC",
+      "relation": "supported_by"
+    },
+    {
+      "source": "theme_act:AI模型与算法_act",
+      "target": "evidence:溶血",
+      "relation": "supported_by"
+    },
+    {
+      "source": "theme_act:AI模型与算法_act",
+      "target": "evidence:CCK-8",
+      "relation": "supported_by"
+    },
+    {
+      "source": "theme_act:AI模型与算法_act",
+      "target": "evidence:TEM",
+      "relation": "supported_by"
+    },
+    {
+      "source": "theme_act:AI模型与算法_act",
+      "target": "evidence:质谱",
+      "relation": "supported_by"
+    },
+    {
+      "source": "theme_act:AI模型与算法_act",
+      "target": "evidence:细胞毒性",
+      "relation": "supported_by"
+    },
+    {
+      "source": "theme_act:AI模型与算法_act",
+      "target": "evidence:分子动力学",
+      "relation": "supported_by"
+    },
+    {
+      "source": "theme_act:AI模型与算法_act",
+      "target": "evidence:RMSD",
+      "relation": "supported_by"
+    },
+    {
+      "source": "theme_act:AI模型与算法_act",
+      "target": "evidence:RMSF",
+      "relation": "supported_by"
+    },
+    {
+      "source": "theme_act:AI模型与算法_act",
+      "target": "evidence:理化性质",
+      "relation": "supported_by"
+    },
+    {
+      "source": "theme_act:AI模型与算法_act",
+      "target": "evidence:报告",
+      "relation": "supported_by"
+    },
+    {
+      "source": "theme_act:AI模型与算法_act",
+      "target": "evidence:TAM-Flow",
+      "relation": "supported_by"
+    },
+    {
+      "source": "theme_act:AI模型与算法_act",
+      "target": "evidence:Oracle",
+      "relation": "supported_by"
+    },
+    {
+      "source": "theme_act:AI模型与算法_act",
+      "target": "evidence:RAFT",
+      "relation": "supported_by"
+    },
+    {
+      "source": "theme_act:AI模型与算法_act",
+      "target": "evidence:访谈记录",
+      "relation": "supported_by"
+    },
+    {
+      "source": "theme_act:AI模型与算法_act",
+      "target": "next:HP_20260315_赵天意老师访谈_HP技术小循环_主线优化版_JU_Krakow风",
+      "relation": "requires"
+    },
+    {
+      "source": "stakeholder:西北农林科技大学罗自卫老师",
+      "target": "theme_fb:临床场景定义",
+      "relation": "raised"
+    },
+    {
+      "source": "theme_fb:临床场景定义",
+      "target": "hp:HP_20260320_罗自卫老师湿实验访谈_HP小循环_JU_Krakow风格_中文版",
+      "relation": "recorded_in"
+    },
+    {
+      "source": "theme_fb:临床场景定义",
+      "target": "theme_act:AI模型与算法_act",
+      "relation": "led_to"
+    },
+    {
+      "source": "theme_act:AI模型与算法_act",
+      "target": "evidence:MD",
+      "relation": "supported_by"
+    },
+    {
+      "source": "theme_act:AI模型与算法_act",
+      "target": "evidence:文献",
+      "relation": "supported_by"
+    },
+    {
+      "source": "theme_act:AI模型与算法_act",
+      "target": "evidence:Field Score",
+      "relation": "supported_by"
+    },
+    {
+      "source": "theme_act:AI模型与算法_act",
+      "target": "evidence:Evidence Matrix",
+      "relation": "supported_by"
+    },
+    {
+      "source": "theme_act:AI模型与算法_act",
+      "target": "next:HP_20260320_罗自卫老师湿实验访谈_HP小循环_JU_Krakow风格_中文版",
+      "relation": "requires"
+    },
+    {
+      "source": "stakeholder:哈尔滨工业大学生命科学与医学学部聂桓老师",
+      "target": "theme_fb:实验验证体系",
+      "relation": "raised"
+    },
+    {
+      "source": "theme_fb:实验验证体系",
+      "target": "hp:HP_20260418_哈工大生命学院院长调研_HP简版_JU_Krakow风格_中文版",
+      "relation": "recorded_in"
+    },
+    {
+      "source": "theme_fb:实验验证体系",
+      "target": "theme_act:安全与毒性边界_act",
+      "relation": "led_to"
+    },
+    {
+      "source": "theme_fb:实验验证体系",
+      "target": "module:Material",
+      "relation": "affects"
+    },
+    {
+      "source": "theme_fb:实验验证体系",
+      "target": "module:Social Media",
+      "relation": "affects"
+    },
+    {
+      "source": "theme_fb:实验验证体系",
+      "target": "module:Safety",
+      "relation": "affects"
+    },
+    {
+      "source": "theme_fb:实验验证体系",
+      "target": "module:Problem Definition",
+      "relation": "affects"
+    },
+    {
+      "source": "theme_act:安全与毒性边界_act",
+      "target": "evidence:MIC",
+      "relation": "supported_by"
+    },
+    {
+      "source": "theme_act:安全与毒性边界_act",
+      "target": "evidence:溶血",
+      "relation": "supported_by"
+    },
+    {
+      "source": "theme_act:安全与毒性边界_act",
+      "target": "evidence:CCK-8",
+      "relation": "supported_by"
+    },
+    {
+      "source": "theme_act:安全与毒性边界_act",
+      "target": "evidence:TEM",
+      "relation": "supported_by"
+    },
+    {
+      "source": "theme_act:安全与毒性边界_act",
+      "target": "evidence:MD",
+      "relation": "supported_by"
+    },
+    {
+      "source": "theme_act:安全与毒性边界_act",
+      "target": "evidence:报告",
+      "relation": "supported_by"
+    },
+    {
+      "source": "theme_act:安全与毒性边界_act",
+      "target": "evidence:访谈记录",
+      "relation": "supported_by"
+    },
+    {
+      "source": "theme_act:安全与毒性边界_act",
+      "target": "next:HP_20260418_哈工大生命学院院长调研_HP简版_JU_Krakow风格_中文版",
+      "relation": "requires"
+    },
+    {
+      "source": "stakeholder:西安市浮生闲猫咪驿站工作人员",
+      "target": "theme_fb:临床场景定义",
+      "relation": "raised"
+    },
+    {
+      "source": "theme_fb:临床场景定义",
+      "target": "hp:HP_20260419_西安市浮生闲猫咪驿站工作人员调研_HP利益相关者主线_JU_Kr",
+      "relation": "recorded_in"
+    },
+    {
+      "source": "theme_fb:临床场景定义",
+      "target": "module:Education",
+      "relation": "affects"
+    },
+    {
+      "source": "theme_act:临床场景定义_act",
+      "target": "next:HP_20260419_西安市浮生闲猫咪驿站工作人员调研_HP利益相关者主线_JU_Kr",
+      "relation": "requires"
+    },
+    {
+      "source": "stakeholder:杨陵揉谷镇除张村羊场人员张伟",
+      "target": "theme_fb:安全与毒性边界",
+      "relation": "raised"
+    },
+    {
+      "source": "theme_fb:安全与毒性边界",
+      "target": "hp:HP_20260420_杨陵除张村羊场人员张伟调研_HP利益相关者主线_JU_Krako",
+      "relation": "recorded_in"
+    },
+    {
+      "source": "theme_fb:安全与毒性边界",
+      "target": "theme_act:临床场景定义_act",
+      "relation": "led_to"
+    },
+    {
+      "source": "theme_fb:安全与毒性边界",
+      "target": "module:Implementation",
+      "relation": "affects"
+    },
+    {
+      "source": "theme_fb:安全与毒性边界",
+      "target": "module:Problem Definition",
+      "relation": "affects"
+    },
+    {
+      "source": "theme_fb:安全与毒性边界",
+      "target": "module:Safety",
+      "relation": "affects"
+    },
+    {
+      "source": "theme_fb:安全与毒性边界",
+      "target": "module:Education",
+      "relation": "affects"
+    },
+    {
+      "source": "theme_act:临床场景定义_act",
+      "target": "next:HP_20260420_杨陵除张村羊场人员张伟调研_HP利益相关者主线_JU_Krako",
+      "relation": "requires"
+    },
+    {
+      "source": "stakeholder:武功县诚威奶山羊羊场负责人杜欣愿",
+      "target": "theme_fb:临床场景定义",
+      "relation": "raised"
+    },
+    {
+      "source": "theme_fb:临床场景定义",
+      "target": "hp:HP_20260422_武功县诚威奶山羊羊场负责人杜欣愿羊乳房炎调研_HP利益相关者主线",
+      "relation": "recorded_in"
+    },
+    {
+      "source": "theme_act:临床场景定义_act",
+      "target": "next:HP_20260422_武功县诚威奶山羊羊场负责人杜欣愿羊乳房炎调研_HP利益相关者主线",
+      "relation": "requires"
+    },
+    {
+      "source": "stakeholder:基层执业兽医与散养户",
+      "target": "theme_fb:养殖场景定义",
+      "relation": "raised"
+    },
+    {
+      "source": "theme_fb:养殖场景定义",
+      "target": "hp:HP_20260501_下乡采访散养羊村民_HP利益相关者主线_JU_Krakow风格_",
+      "relation": "recorded_in"
+    },
+    {
+      "source": "theme_fb:养殖场景定义",
+      "target": "theme_act:临床场景定义_act",
+      "relation": "led_to"
+    },
+    {
+      "source": "theme_fb:养殖场景定义",
+      "target": "module:Implementation",
+      "relation": "affects"
+    },
+    {
+      "source": "theme_fb:养殖场景定义",
+      "target": "module:Safety",
+      "relation": "affects"
+    },
+    {
+      "source": "theme_fb:养殖场景定义",
+      "target": "module:Problem Definition",
+      "relation": "affects"
+    },
+    {
+      "source": "theme_act:临床场景定义_act",
+      "target": "next:HP_20260501_下乡采访散养羊村民_HP利益相关者主线_JU_Krakow风格_",
+      "relation": "requires"
+    },
+    {
+      "source": "stakeholder:iGEM 东北地区交流会参会队伍与经验分享者",
+      "target": "theme_fb:Wiki与叙事建设",
+      "relation": "raised"
+    },
+    {
+      "source": "theme_fb:Wiki与叙事建设",
+      "target": "hp:HP_20260502_iGEM东北地区交流会_HP主线校准_JU_Krakow风格_中",
+      "relation": "recorded_in"
+    },
+    {
+      "source": "theme_fb:Wiki与叙事建设",
+      "target": "theme_act:临床场景定义_act",
+      "relation": "led_to"
+    },
+    {
+      "source": "theme_fb:Wiki与叙事建设",
+      "target": "module:Problem Definition",
+      "relation": "affects"
+    },
+    {
+      "source": "theme_fb:Wiki与叙事建设",
+      "target": "module:Social Media",
+      "relation": "affects"
+    },
+    {
+      "source": "theme_fb:Wiki与叙事建设",
+      "target": "module:Education",
+      "relation": "affects"
+    },
+    {
+      "source": "theme_act:临床场景定义_act",
+      "target": "next:HP_20260502_iGEM东北地区交流会_HP主线校准_JU_Krakow风格_中",
+      "relation": "requires"
+    },
+    {
+      "source": "stakeholder:西北农林科技大学资环学院钱勋教授",
+      "target": "theme_fb:抗生素与耐药性",
+      "relation": "raised"
+    },
+    {
+      "source": "theme_fb:抗生素与耐药性",
+      "target": "hp:HP_20260527_钱勋教授访谈_HP小循环_主线优化版_JU_Krakow风格_中",
+      "relation": "recorded_in"
+    },
+    {
+      "source": "theme_fb:抗生素与耐药性",
+      "target": "theme_act:临床场景定义_act",
+      "relation": "led_to"
+    },
+    {
+      "source": "theme_fb:抗生素与耐药性",
+      "target": "module:Safety",
+      "relation": "affects"
+    },
+    {
+      "source": "theme_fb:抗生素与耐药性",
+      "target": "module:Material",
+      "relation": "affects"
+    },
+    {
+      "source": "theme_fb:抗生素与耐药性",
+      "target": "module:Environment",
+      "relation": "affects"
+    },
+    {
+      "source": "theme_fb:抗生素与耐药性",
+      "target": "module:Software",
+      "relation": "affects"
+    },
+    {
+      "source": "theme_fb:抗生素与耐药性",
+      "target": "module:Model",
+      "relation": "affects"
+    },
+    {
+      "source": "theme_act:临床场景定义_act",
+      "target": "evidence:分子动力学",
+      "relation": "supported_by"
+    },
+    {
+      "source": "theme_act:临床场景定义_act",
+      "target": "evidence:软件面板",
+      "relation": "supported_by"
+    },
+    {
+      "source": "theme_act:临床场景定义_act",
+      "target": "evidence:面板",
+      "relation": "supported_by"
+    },
+    {
+      "source": "theme_act:临床场景定义_act",
+      "target": "evidence:草图",
+      "relation": "supported_by"
+    },
+    {
+      "source": "theme_act:临床场景定义_act",
+      "target": "evidence:PDES",
+      "relation": "supported_by"
+    },
+    {
+      "source": "theme_act:临床场景定义_act",
+      "target": "evidence:Environmental Degradation Panel",
+      "relation": "supported_by"
+    },
+    {
+      "source": "theme_act:临床场景定义_act",
+      "target": "next:HP_20260527_钱勋教授访谈_HP小循环_主线优化版_JU_Krakow风格_中",
+      "relation": "requires"
+    },
+    {
+      "source": "theme_fb:临床场景定义",
+      "target": "theme_fb:AI模型与算法",
+      "relation": "related_via_module"
+    },
+    {
+      "source": "theme_fb:临床场景定义",
+      "target": "theme_fb:实验验证体系",
+      "relation": "related_via_module"
+    },
+    {
+      "source": "theme_fb:临床场景定义",
+      "target": "theme_fb:安全与毒性边界",
+      "relation": "related_via_module"
+    },
+    {
+      "source": "theme_fb:临床场景定义",
+      "target": "theme_fb:养殖场景定义",
+      "relation": "related_via_module"
+    },
+    {
+      "source": "theme_fb:临床场景定义",
+      "target": "theme_fb:Wiki与叙事建设",
+      "relation": "related_via_module"
+    },
+    {
+      "source": "theme_fb:AI模型与算法",
+      "target": "theme_fb:实验验证体系",
+      "relation": "related_via_module"
+    },
+    {
+      "source": "theme_fb:AI模型与算法",
+      "target": "theme_fb:安全与毒性边界",
+      "relation": "related_via_module"
+    },
+    {
+      "source": "theme_fb:AI模型与算法",
+      "target": "theme_fb:养殖场景定义",
+      "relation": "related_via_module"
+    },
+    {
+      "source": "theme_fb:AI模型与算法",
+      "target": "theme_fb:Wiki与叙事建设",
+      "relation": "related_via_module"
+    },
+    {
+      "source": "theme_fb:实验验证体系",
+      "target": "theme_fb:安全与毒性边界",
+      "relation": "related_via_module"
+    },
+    {
+      "source": "theme_fb:实验验证体系",
+      "target": "theme_fb:养殖场景定义",
+      "relation": "related_via_module"
+    },
+    {
+      "source": "theme_fb:实验验证体系",
+      "target": "theme_fb:Wiki与叙事建设",
+      "relation": "related_via_module"
+    },
+    {
+      "source": "theme_fb:安全与毒性边界",
+      "target": "theme_fb:养殖场景定义",
+      "relation": "related_via_module"
+    },
+    {
+      "source": "theme_fb:安全与毒性边界",
+      "target": "theme_fb:Wiki与叙事建设",
+      "relation": "related_via_module"
+    },
+    {
+      "source": "theme_fb:养殖场景定义",
+      "target": "theme_fb:Wiki与叙事建设",
+      "relation": "related_via_module"
+    },
+    {
+      "source": "theme_fb:临床场景定义",
+      "target": "theme_fb:抗生素与耐药性",
+      "relation": "related_via_module"
+    },
+    {
+      "source": "theme_fb:AI模型与算法",
+      "target": "theme_fb:抗生素与耐药性",
+      "relation": "related_via_module"
+    },
+    {
+      "source": "theme_fb:实验验证体系",
+      "target": "theme_fb:抗生素与耐药性",
+      "relation": "related_via_module"
+    },
+    {
+      "source": "theme_fb:安全与毒性边界",
+      "target": "theme_fb:抗生素与耐药性",
+      "relation": "related_via_module"
+    },
+    {
+      "source": "theme_fb:养殖场景定义",
+      "target": "theme_fb:抗生素与耐药性",
+      "relation": "related_via_module"
+    }
+  ]
+}
