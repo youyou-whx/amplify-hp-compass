@@ -674,24 +674,23 @@ def page_hp_map(cards: list[dict], graph: dict, analytics: dict | None) -> None:
                 net.save_graph(str(html_path))
                 html_text = html_path.read_text(encoding="utf-8")
 
-                # 内联本地 vis-network JS，避免依赖外部 CDN
+                # 内联本地 vis-network JS/CSS，避免依赖外部 CDN
                 vis_js_path = Path("lib/vis-9.1.2/vis-network.min.js")
                 if vis_js_path.exists():
                     vis_js_content = vis_js_path.read_text(encoding="utf-8")
-                    # 替换 CDN script 标签为内联版本
+                    # 用 lambda 避免 re.sub 把 JS 中的反斜杠当转义符解析
                     import re as _re
                     html_text = _re.sub(
                         r'<script[^>]*src="[^"]*vis-network[^"]*"[^>]*></script>',
-                        f'<script>{vis_js_content}</script>',
+                        lambda _m: f'<script>{vis_js_content}</script>',
                         html_text,
                     )
-                    # 如果 CDN CSS 也存在问题，内联本地 CSS
                     vis_css_path = Path("lib/vis-9.1.2/vis-network.css")
                     if vis_css_path.exists():
                         vis_css_content = vis_css_path.read_text(encoding="utf-8")
                         html_text = _re.sub(
                             r'<link[^>]*href="[^"]*vis-network[^"]*"[^>]*/?>',
-                            f'<style>{vis_css_content}</style>',
+                            lambda _m: f'<style>{vis_css_content}</style>',
                             html_text,
                         )
 
