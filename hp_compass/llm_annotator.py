@@ -165,6 +165,7 @@ def annotate_record(
     existing_records: list[dict[str, str]] | None = None,
     endpoint: str = "https://api.deepseek.com/chat/completions",
     model: str = "deepseek-chat",
+    stability: bool = False,
 ) -> LLMAnnotation:
     """对一条访谈记录执行 4 次调用，返回采用第一次运行结果的标注。
 
@@ -174,7 +175,7 @@ def annotate_record(
     raw_path = Path(raw_dir) / hp_slug
     raw_path.mkdir(parents=True, exist_ok=True)
 
-    # ── 调用 1 × 2 ──
+    # ── 调用 1（稳定性模式 × 2）──
     call1_run1 = chat_json(
         build_call1_messages(text, existing_records), api_key, TEMPERATURES["call1"],
         endpoint=endpoint, model=model,
@@ -182,7 +183,7 @@ def annotate_record(
     call1_run2 = chat_json(
         build_call1_messages(text, existing_records), api_key, TEMPERATURES["call1"],
         endpoint=endpoint, model=model,
-    )
+    ) if stability else None
 
     card_info = {
         "stakeholder": _extract_str(call1_run1, "stakeholder", 120),
@@ -193,11 +194,11 @@ def annotate_record(
         "evidence": _extract_list(call1_run1, "evidence"),
     }
 
-    # ── 调用 2 × 2 ──
+    # ── 调用 2（稳定性模式 × 2）──
     call2_run1 = chat_json(build_call2_messages(card_info), api_key, TEMPERATURES["call2"],
                            endpoint=endpoint, model=model)
     call2_run2 = chat_json(build_call2_messages(card_info), api_key, TEMPERATURES["call2"],
-                           endpoint=endpoint, model=model)
+                           endpoint=endpoint, model=model) if stability else None
 
     # ── 先用 call1 第一次结果推闭环状态，供调用 3 使用 ──
     evidence = card_info["evidence"]
@@ -225,7 +226,7 @@ def annotate_record(
     call3_run1 = chat_json(build_call3_messages(call3_info), api_key, TEMPERATURES["call3"],
                            endpoint=endpoint, model=model)
     call3_run2 = chat_json(build_call3_messages(call3_info), api_key, TEMPERATURES["call3"],
-                           endpoint=endpoint, model=model)
+                           endpoint=endpoint, model=model) if stability else None
 
     # ── 调用 4：英文 Wiki 文案（单次运行）──
     call4_info = dict(call3_info)
@@ -235,13 +236,16 @@ def annotate_record(
         endpoint=endpoint, model=model,
     )
 
-    # ── 稳定性统计（比较 9 模块 + 6 信号）──
-    module_grades_run2 = _parse_grades(call1_run2.get("module_grades", {}) or {}, MODULES)
-    maturity_grades_run2 = _parse_grades(call2_run2, MATURITY_TEXT_SIGNALS)
+    # ── 成熟度信号与稳定性统计（仅稳定性模式双运行比较）──
     maturity_grades = _parse_grades(call2_run1, MATURITY_TEXT_SIGNALS)
-    agreement, checked = _stability_agreement(
-        module_grades, module_grades_run2, maturity_grades, maturity_grades_run2
-    )
+    agreement: float | None = None
+    checked = 0
+    if stability and call1_run2 is not None and call2_run2 is not None:
+        module_grades_run2 = _parse_grades(call1_run2.get("module_grades", {}) or {}, MODULES)
+        maturity_grades_run2 = _parse_grades(call2_run2, MATURITY_TEXT_SIGNALS)
+        agreement, checked = _stability_agreement(
+            module_grades, module_grades_run2, maturity_grades, maturity_grades_run2
+        )
 
     # ── 存档原始 JSON ──
     archive = {
@@ -251,13 +255,14 @@ def annotate_record(
         "call4_run1": call4_run1,
     }
     for name, payload in archive.items():
-        (raw_path / f"{name}.json").write_text(
-            json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8"
-        )
+        if payload is not None:
+            (raw_path / f"{name}.json").write_text(
+                json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8"
+            )
     (raw_path / "stability.json").write_text(
         json.dumps(
             {
-                "agreement": round(agreement, 4),
+                "agreement": round(agreement, 4) if agreement is not None else None,
                 "checked_fields": checked,
                 "endpoint": endpoint,
                 "model": model,
@@ -298,7 +303,7 @@ def annotate_record(
         feedback_summary=_extract_str(call3_run1, "feedback_summary", 120),
         action_summary=_extract_str(call3_run1, "action_summary", 120),
         wiki_en_section=_extract_str(call4_run1, "wiki_section_en", 4000),
-        stability_agreement=round(agreement, 4),
+        stability_agreement=round(agreement, 4) if agreement is not None else None,
         stability_checked_fields=checked,
         raw_dir=str(raw_path),
     )

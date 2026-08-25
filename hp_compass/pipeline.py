@@ -30,6 +30,7 @@ def run_pipeline(
     api_key: str | None = None,
     endpoint: str = "https://api.deepseek.com/chat/completions",
     model: str = "deepseek-chat",
+    stability: bool = False,
 ) -> list[HPCard]:
     """处理管道。mode="rule" 走关键词规则层；mode="llm" 走大模型解析层。
 
@@ -44,7 +45,7 @@ def run_pipeline(
     for path, text in load_inputs(input_path):
         if mode == "llm" and api_key:
             card = _process_card_llm(path, text, output, api_key, cards,
-                                     endpoint=endpoint, model=model)
+                                     endpoint=endpoint, model=model, stability=stability)
         else:
             card = extract_card(path, text)
             card.processing_mode = "rule"
@@ -75,6 +76,7 @@ def run_llm_incremental(
     existing_cards: list[HPCard] | None = None,
     endpoint: str = "https://api.deepseek.com/chat/completions",
     model: str = "deepseek-chat",
+    stability: bool = False,
 ) -> list[HPCard]:
     """LLM 增量处理：只对新上传的 docx 文件跑 LLM，旧卡片保持不变。
 
@@ -94,7 +96,7 @@ def run_llm_incremental(
         if not text:
             continue
         card = _process_card_llm(path, text, output, api_key, cards,
-                                 endpoint=endpoint, model=model)
+                                 endpoint=endpoint, model=model, stability=stability)
 
         target = _find_extension_target(cards, card) if _is_extension_card(card) else None
         if target is not None:
@@ -123,12 +125,13 @@ def _process_card_llm(
     existing_cards: list[HPCard] | None = None,
     endpoint: str = "https://api.deepseek.com/chat/completions",
     model: str = "deepseek-chat",
+    stability: bool = False,
 ) -> HPCard:
     """LLM 模式处理单条记录：4 次调用 → 卡片 → 数学模块。"""
     slug = Path(path).stem[:48].replace(" ", "_")
     records_info = _build_records_info(existing_cards or [])
     annotation = annotate_record(text, api_key, output / "llm_raw", slug, records_info,
-                                 endpoint=endpoint, model=model)
+                                 endpoint=endpoint, model=model, stability=stability)
 
     card = HPCard(
         hp_id=build_hp_id(path, text),

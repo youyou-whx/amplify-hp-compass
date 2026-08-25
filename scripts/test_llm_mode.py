@@ -25,12 +25,13 @@ from hp_compass.pipeline import run_pipeline
 
 ENDPOINT = "https://api.deepseek.com/chat/completions"
 MODEL = "deepseek-chat"
+STABILITY = False
 
 
 def print_single(path: Path, api_key: str, raw_dir: Path) -> None:
     text = read_docx_text(path)
     annotation = annotate_record(text, api_key, raw_dir, path.stem[:40],
-                                 endpoint=ENDPOINT, model=MODEL)
+                                 endpoint=ENDPOINT, model=MODEL, stability=STABILITY)
 
     print("=" * 70)
     print(f"文件: {path.name}")
@@ -65,7 +66,7 @@ def print_single(path: Path, api_key: str, raw_dir: Path) -> None:
 
 
 def main() -> None:
-    global ENDPOINT, MODEL
+    global ENDPOINT, MODEL, STABILITY
     parser = argparse.ArgumentParser(description="HP Compass LLM 模式测试")
     parser.add_argument("--key", required=True, help="LLM API Key")
     parser.add_argument("--provider", default="DeepSeek",
@@ -75,6 +76,8 @@ def main() -> None:
     parser.add_argument("--file", help="单条 docx 文件（与 --input 二选一）")
     parser.add_argument("--input", help="docx 目录（全量管道）")
     parser.add_argument("--output", default="hp_compass_output_llm", help="全量模式输出目录")
+    parser.add_argument("--stability", action="store_true",
+                        help="稳定性检查：每条记录跑两遍并比较四梯度一致率")
     args = parser.parse_args()
 
     from hp_compass.llm_client import resolve_endpoint
@@ -82,7 +85,8 @@ def main() -> None:
     resolved_endpoint, models = resolve_endpoint(args.provider, args.endpoint)
     ENDPOINT = args.endpoint if args.endpoint else resolved_endpoint
     MODEL = args.model if args.model else (models[0] if models else "")
-    print(f"[配置] 厂商={args.provider} 端点={ENDPOINT} 模型={MODEL}")
+    STABILITY = args.stability
+    print(f"[配置] 厂商={args.provider} 端点={ENDPOINT} 模型={MODEL} 稳定性={STABILITY}")
 
     if args.file:
         print_single(Path(args.file), args.key, ROOT / "llm_raw_test")
@@ -90,7 +94,7 @@ def main() -> None:
 
     if args.input:
         cards = run_pipeline(args.input, args.output, mode="llm", api_key=args.key,
-                             endpoint=ENDPOINT, model=MODEL)
+                             endpoint=ENDPOINT, model=MODEL, stability=args.stability)
         print(f"\n全量完成：{len(cards)} 条记录 → {args.output}")
         for card in cards:
             print(f"  {card.hp_id[:50]}  P={card.priority_score:.3f}  "
