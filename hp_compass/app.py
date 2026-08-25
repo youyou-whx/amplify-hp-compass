@@ -1768,52 +1768,84 @@ def main() -> None:
             f"<div style='font-size:19px;font-weight:700;color:#3d2b1f;"
             f"margin-top:4px'>HP Compass</div>"
             f"<div style='font-size:11px;color:#5c4a3a;margin-top:2px'>"
-            f"AMPlify · Human Practices 决策导航</div>"
+            f"AMPlify · Human Practices Decision Navigator</div>"
             f"</div>",
             unsafe_allow_html=True,
         )
 
         st.divider()
 
-        data_dir = st.text_input("📁 数据目录", value=args.data,
-                                 help="运行 pipeline 后的输出目录")
+        data_dir = st.text_input("📁 Data Directory", value=args.data,
+                                 help="Pipeline output directory")
         if not Path(data_dir).exists():
-            st.warning(f"目录不存在: {data_dir}")
+            st.warning(f"Directory does not exist: {data_dir}")
 
         st.divider()
 
-        # ── LLM 解析层设置 ──
-        st.markdown("### 🤖 大模型解析")
+        # ── LLM parsing layer settings ──
+        st.markdown("### 🤖 LLM Parsing")
         use_llm = st.toggle(
-            "使用大模型增强（DeepSeek）",
-            value=False,
+            "Use LLM parsing",
+            value=True,
             key="llm_toggle",
-            help="开启后用大模型做文本解析，数学模型负责决策计算。关闭时走关键词规则模式。",
+            help="LLM handles text parsing; the math layer handles decision computation. Falls back to rule mode when no API key is provided.",
         )
         api_key = ""
+        endpoint = "https://api.deepseek.com/chat/completions"
+        model = "deepseek-chat"
         if use_llm:
+            from hp_compass.llm_client import CUSTOM_PROVIDER, resolve_endpoint, provider_names
+
+            provider = st.selectbox(
+                "Provider",
+                provider_names(),
+                key="llm_provider",
+            )
+            if provider == CUSTOM_PROVIDER:
+                custom_url = st.text_input(
+                    "Base URL (OpenAI-compatible)",
+                    key="llm_custom_url",
+                    placeholder="https://your-endpoint.com/v1",
+                )
+                custom_model = st.text_input(
+                    "Model name",
+                    key="llm_custom_model",
+                    placeholder="your-model-name",
+                )
+                resolved_endpoint, _ = resolve_endpoint(provider, custom_url)
+                if resolved_endpoint:
+                    endpoint = resolved_endpoint
+                if custom_model:
+                    model = custom_model
+            else:
+                provider_endpoint, provider_models = resolve_endpoint(provider)
+                if provider_endpoint:
+                    endpoint = provider_endpoint
+                if provider_models:
+                    model = st.selectbox("Model", provider_models, key="llm_model")
+
             api_key = st.text_input(
-                "🔑 DeepSeek API Key",
+                "🔑 API Key",
                 type="password",
                 value=st.session_state.get("ds_api_key", ""),
                 key="ds_api_key_input",
-                help="仅保存在当前会话内存中，不写入任何文件。",
+                help="Kept in session memory only; never written to disk.",
                 placeholder="sk-...",
             )
             if api_key:
                 st.session_state["ds_api_key"] = api_key
-        if not use_llm:
-            st.caption("🟡 规则模式：关键词匹配（无需 API Key）")
-        elif not api_key:
-            st.caption("🟡 未提供 Key，使用规则模式")
+        if use_llm and not api_key:
+            st.caption("No API key provided — rule mode (keyword matching) will be used")
+        elif not use_llm:
+            st.caption("Rule mode: keyword matching (no API key required)")
 
         st.divider()
 
-        # ── 文件上传 ──
-        st.markdown("### 📤 上传新记录")
+        # ── File upload ──
+        st.markdown("### 📤 Upload Records")
 
         uploaded_files = st.file_uploader(
-            "选择 .docx 访谈文件",
+            "Select .docx interview files",
             type=["docx"],
             accept_multiple_files=True,
             key="hp_docx_uploader",
@@ -1829,20 +1861,20 @@ def main() -> None:
         col_up, col_re = st.columns(2)
         with col_up:
             upload_clicked = st.button(
-                "⬆️ 处理上传",
+                "⬆️ Process Upload",
                 use_container_width=True,
                 disabled=not has_pending,
             )
         with col_re:
             rerun_clicked = st.button(
-                "🔄 重新分析全部",
+                "🔄 Re-analyze All",
                 use_container_width=True,
             )
 
         HP_RECORD_DIR = Path("hp record")
 
         def _mode_label() -> str:
-            return "LLM 解析模式" if (use_llm and api_key) else "规则模式"
+            return "LLM mode" if (use_llm and api_key) else "rule mode"
 
         def _load_existing_cards(data_dir: str) -> list[HPCard]:
             """从 hp_cards.json 读取现有卡片为 HPCard 对象。"""
@@ -1866,16 +1898,17 @@ def main() -> None:
 
             if saved:
                 mode = _mode_label()
-                with st.spinner(f"正在用{mode}分析 {len(saved)} 个新文件..."):
+                with st.spinner(f"Analyzing {len(saved)} file(s) with {mode}..."):
                     try:
                         if use_llm and api_key:
                             existing = _load_existing_cards(data_dir)
-                            run_llm_incremental(saved, data_dir, api_key, existing)
+                            run_llm_incremental(saved, data_dir, api_key, existing,
+                                                endpoint=endpoint, model=model)
                         else:
                             run_pipeline(str(HP_RECORD_DIR), data_dir)
                         st.session_state["pipeline_ok"] = True
                         st.session_state["pipeline_msg"] = (
-                            f"已用{mode}处理 {len(saved)} 个文件"
+                            f"Processed {len(saved)} file(s) with {mode}"
                         )
                     except Exception as e:
                         st.session_state["pipeline_ok"] = False
@@ -1886,30 +1919,31 @@ def main() -> None:
         if rerun_clicked:
             if HP_RECORD_DIR.exists() and list(HP_RECORD_DIR.glob("*.docx")):
                 mode = _mode_label()
-                with st.spinner(f"正在用{mode}重新分析全部记录..."):
+                with st.spinner(f"Re-analyzing all records with {mode}..."):
                     try:
                         if use_llm and api_key:
                             run_pipeline(
                                 str(HP_RECORD_DIR), data_dir,
                                 mode="llm", api_key=api_key,
+                                endpoint=endpoint, model=model,
                             )
                         else:
                             run_pipeline(str(HP_RECORD_DIR), data_dir)
                         st.session_state["pipeline_ok"] = True
-                        st.session_state["pipeline_msg"] = f"已用{mode}重新分析完成"
+                        st.session_state["pipeline_msg"] = f"Re-analysis completed with {mode}"
                     except Exception as e:
                         st.session_state["pipeline_ok"] = False
                         st.session_state["pipeline_msg"] = str(e)
                 st.rerun()
             else:
-                st.warning("hp record 目录为空，请先上传文件")
+                st.warning("hp record directory is empty — upload files first")
 
-        # 管道执行结果反馈（显示一次后自动清除）
+        # Pipeline result feedback (shown once, then cleared)
         if "pipeline_msg" in st.session_state:
             if st.session_state.get("pipeline_ok", False):
                 st.success(st.session_state["pipeline_msg"])
             else:
-                st.error(f"处理失败: {st.session_state['pipeline_msg']}")
+                st.error(f"Processing failed: {st.session_state['pipeline_msg']}")
             if "pipeline_shown" in st.session_state:
                 del st.session_state["pipeline_msg"]
                 del st.session_state["pipeline_ok"]
@@ -1920,7 +1954,7 @@ def main() -> None:
         st.divider()
 
         page = st.radio(
-            "页面导航",
+            "Page Navigation",
             ["🧭 HP Map", "📅 Timeline", "🔄 Loop Dashboard",
              "🎯 Next Step", "📝 Wiki Text"],
             label_visibility="collapsed",
@@ -1942,7 +1976,7 @@ def main() -> None:
         with col_c:
             st.metric("🔥", high_priority)
         st.caption(
-            f"HP 循环 {len(cards)} · L4 回访 {returned} · 高优先级 {high_priority}"
+            f"HP loops {len(cards)} · L4 returned {returned} · High priority {high_priority}"
         )
 
         st.divider()

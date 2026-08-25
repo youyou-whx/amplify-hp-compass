@@ -23,10 +23,14 @@ from hp_compass.docx_reader import read_docx_text
 from hp_compass.llm_annotator import annotate_record
 from hp_compass.pipeline import run_pipeline
 
+ENDPOINT = "https://api.deepseek.com/chat/completions"
+MODEL = "deepseek-chat"
+
 
 def print_single(path: Path, api_key: str, raw_dir: Path) -> None:
     text = read_docx_text(path)
-    annotation = annotate_record(text, api_key, raw_dir, path.stem[:40])
+    annotation = annotate_record(text, api_key, raw_dir, path.stem[:40],
+                                 endpoint=ENDPOINT, model=MODEL)
 
     print("=" * 70)
     print(f"文件: {path.name}")
@@ -61,19 +65,32 @@ def print_single(path: Path, api_key: str, raw_dir: Path) -> None:
 
 
 def main() -> None:
+    global ENDPOINT, MODEL
     parser = argparse.ArgumentParser(description="HP Compass LLM 模式测试")
-    parser.add_argument("--key", required=True, help="DeepSeek API Key")
+    parser.add_argument("--key", required=True, help="LLM API Key")
+    parser.add_argument("--provider", default="DeepSeek",
+                        help="厂商（DeepSeek/OpenAI/Moonshot Kimi/智谱 GLM/阿里通义千问/自定义）")
+    parser.add_argument("--model", default="", help="模型名（默认取厂商首个模型）")
+    parser.add_argument("--endpoint", default="", help="自定义端点（自定义厂商必填）")
     parser.add_argument("--file", help="单条 docx 文件（与 --input 二选一）")
     parser.add_argument("--input", help="docx 目录（全量管道）")
     parser.add_argument("--output", default="hp_compass_output_llm", help="全量模式输出目录")
     args = parser.parse_args()
+
+    from hp_compass.llm_client import resolve_endpoint
+
+    resolved_endpoint, models = resolve_endpoint(args.provider, args.endpoint)
+    ENDPOINT = args.endpoint if args.endpoint else resolved_endpoint
+    MODEL = args.model if args.model else (models[0] if models else "")
+    print(f"[配置] 厂商={args.provider} 端点={ENDPOINT} 模型={MODEL}")
 
     if args.file:
         print_single(Path(args.file), args.key, ROOT / "llm_raw_test")
         return
 
     if args.input:
-        cards = run_pipeline(args.input, args.output, mode="llm", api_key=args.key)
+        cards = run_pipeline(args.input, args.output, mode="llm", api_key=args.key,
+                             endpoint=ENDPOINT, model=MODEL)
         print(f"\n全量完成：{len(cards)} 条记录 → {args.output}")
         for card in cards:
             print(f"  {card.hp_id[:50]}  P={card.priority_score:.3f}  "

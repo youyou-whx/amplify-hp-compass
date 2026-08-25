@@ -163,6 +163,8 @@ def annotate_record(
     raw_dir: str | Path,
     hp_slug: str,
     existing_records: list[dict[str, str]] | None = None,
+    endpoint: str = "https://api.deepseek.com/chat/completions",
+    model: str = "deepseek-chat",
 ) -> LLMAnnotation:
     """对一条访谈记录执行 4 次调用，返回采用第一次运行结果的标注。
 
@@ -174,10 +176,12 @@ def annotate_record(
 
     # ── 调用 1 × 2 ──
     call1_run1 = chat_json(
-        build_call1_messages(text, existing_records), api_key, TEMPERATURES["call1"]
+        build_call1_messages(text, existing_records), api_key, TEMPERATURES["call1"],
+        endpoint=endpoint, model=model,
     )
     call1_run2 = chat_json(
-        build_call1_messages(text, existing_records), api_key, TEMPERATURES["call1"]
+        build_call1_messages(text, existing_records), api_key, TEMPERATURES["call1"],
+        endpoint=endpoint, model=model,
     )
 
     card_info = {
@@ -190,8 +194,10 @@ def annotate_record(
     }
 
     # ── 调用 2 × 2 ──
-    call2_run1 = chat_json(build_call2_messages(card_info), api_key, TEMPERATURES["call2"])
-    call2_run2 = chat_json(build_call2_messages(card_info), api_key, TEMPERATURES["call2"])
+    call2_run1 = chat_json(build_call2_messages(card_info), api_key, TEMPERATURES["call2"],
+                           endpoint=endpoint, model=model)
+    call2_run2 = chat_json(build_call2_messages(card_info), api_key, TEMPERATURES["call2"],
+                           endpoint=endpoint, model=model)
 
     # ── 先用 call1 第一次结果推闭环状态，供调用 3 使用 ──
     evidence = card_info["evidence"]
@@ -216,14 +222,17 @@ def annotate_record(
     call3_info = dict(card_info)
     call3_info["affected_modules"] = affected
     call3_info["loop_status"] = loop_status
-    call3_run1 = chat_json(build_call3_messages(call3_info), api_key, TEMPERATURES["call3"])
-    call3_run2 = chat_json(build_call3_messages(call3_info), api_key, TEMPERATURES["call3"])
+    call3_run1 = chat_json(build_call3_messages(call3_info), api_key, TEMPERATURES["call3"],
+                           endpoint=endpoint, model=model)
+    call3_run2 = chat_json(build_call3_messages(call3_info), api_key, TEMPERATURES["call3"],
+                           endpoint=endpoint, model=model)
 
     # ── 调用 4：英文 Wiki 文案（单次运行）──
     call4_info = dict(call3_info)
     call4_info["date"] = _extract_date(call1_run1)
     call4_run1 = chat_json(
-        build_call4_messages(call4_info), api_key, TEMPERATURES["call4"]
+        build_call4_messages(call4_info), api_key, TEMPERATURES["call4"],
+        endpoint=endpoint, model=model,
     )
 
     # ── 稳定性统计（比较 9 模块 + 6 信号）──
@@ -250,7 +259,8 @@ def annotate_record(
             {
                 "agreement": round(agreement, 4),
                 "checked_fields": checked,
-                "model": "deepseek-chat",
+                "endpoint": endpoint,
+                "model": model,
                 "temperatures": TEMPERATURES,
             },
             ensure_ascii=False,

@@ -28,6 +28,8 @@ def run_pipeline(
     deadline: str | None = None,
     mode: str = "rule",
     api_key: str | None = None,
+    endpoint: str = "https://api.deepseek.com/chat/completions",
+    model: str = "deepseek-chat",
 ) -> list[HPCard]:
     """处理管道。mode="rule" 走关键词规则层；mode="llm" 走大模型解析层。
 
@@ -41,7 +43,8 @@ def run_pipeline(
     cards: list[HPCard] = []
     for path, text in load_inputs(input_path):
         if mode == "llm" and api_key:
-            card = _process_card_llm(path, text, output, api_key, cards)
+            card = _process_card_llm(path, text, output, api_key, cards,
+                                     endpoint=endpoint, model=model)
         else:
             card = extract_card(path, text)
             card.processing_mode = "rule"
@@ -59,7 +62,7 @@ def run_pipeline(
 
     llm_meta = None
     if mode == "llm" and api_key and cards:
-        llm_meta = _generate_llm_meta(cards, api_key, output)
+        llm_meta = _generate_llm_meta(cards, api_key, output, endpoint=endpoint, model=model)
 
     rebuild_outputs(cards, output, llm_meta=llm_meta)
     return cards
@@ -70,6 +73,8 @@ def run_llm_incremental(
     output_dir: str | Path,
     api_key: str,
     existing_cards: list[HPCard] | None = None,
+    endpoint: str = "https://api.deepseek.com/chat/completions",
+    model: str = "deepseek-chat",
 ) -> list[HPCard]:
     """LLM 增量处理：只对新上传的 docx 文件跑 LLM，旧卡片保持不变。
 
@@ -88,7 +93,8 @@ def run_llm_incremental(
         text = loaded[0][1]
         if not text:
             continue
-        card = _process_card_llm(path, text, output, api_key, cards)
+        card = _process_card_llm(path, text, output, api_key, cards,
+                                 endpoint=endpoint, model=model)
 
         target = _find_extension_target(cards, card) if _is_extension_card(card) else None
         if target is not None:
@@ -103,7 +109,7 @@ def run_llm_incremental(
 
     llm_meta = None
     if cards and any(c.processing_mode == "llm" for c in cards):
-        llm_meta = _generate_llm_meta(cards, api_key, output)
+        llm_meta = _generate_llm_meta(cards, api_key, output, endpoint=endpoint, model=model)
 
     rebuild_outputs(cards, output, llm_meta=llm_meta)
     return cards
@@ -115,11 +121,14 @@ def _process_card_llm(
     output: Path,
     api_key: str,
     existing_cards: list[HPCard] | None = None,
+    endpoint: str = "https://api.deepseek.com/chat/completions",
+    model: str = "deepseek-chat",
 ) -> HPCard:
     """LLM 模式处理单条记录：4 次调用 → 卡片 → 数学模块。"""
     slug = Path(path).stem[:48].replace(" ", "_")
     records_info = _build_records_info(existing_cards or [])
-    annotation = annotate_record(text, api_key, output / "llm_raw", slug, records_info)
+    annotation = annotate_record(text, api_key, output / "llm_raw", slug, records_info,
+                                 endpoint=endpoint, model=model)
 
     card = HPCard(
         hp_id=build_hp_id(path, text),
@@ -162,7 +171,13 @@ def _process_card_llm(
     return card
 
 
-def _generate_llm_meta(cards: list[HPCard], api_key: str, output: Path) -> dict[str, str]:
+def _generate_llm_meta(
+    cards: list[HPCard],
+    api_key: str,
+    output: Path,
+    endpoint: str = "https://api.deepseek.com/chat/completions",
+    model: str = "deepseek-chat",
+) -> dict[str, str]:
     """生成英文总述与答辩叙事（一次 LLM 调用），原始 JSON 存档。"""
     ranked = sorted(cards, key=lambda c: c.priority_score, reverse=True)
     summary_lines = []
@@ -212,6 +227,8 @@ def _generate_llm_meta(cards: list[HPCard], api_key: str, output: Path) -> dict[
         build_call5_messages(cards_summary, graph_facts, methodology_facts),
         api_key,
         0.3,
+        endpoint=endpoint,
+        model=model,
     )
 
     meta_path = output / "llm_raw" / "overview_defense.json"
