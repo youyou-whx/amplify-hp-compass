@@ -1,0 +1,26 @@
+{
+  "next_step_cn": "回访时请携带广谱型候选肽的体外活性与安全性数据，并演示拌料给药方案的成本估算，重点说明对羊奶质量无影响。",
+  "next_step_en": "During the follow-up visit, bring in vitro activity and safety data of broad-spectrum candidate peptides, and demonstrate cost estimates for feed-based administration, emphasizing no impact on milk quality.",
+  "materials_cn": [
+    "广谱型候选抗菌肽的体外活性与安全性数据摘要",
+    "拌料给药方案的成本估算与操作流程说明",
+    "羊奶质量影响评估的初步结果（如有）"
+  ],
+  "materials_en": [
+    "Summary of in vitro activity and safety data for broad-spectrum candidate peptides",
+    "Cost estimation and operational procedure for feed-based administration",
+    "Preliminary results on milk quality impact (if available)"
+  ],
+  "questions_cn": [
+    "您对拌料给药方式的具体操作细节和成本接受度如何？",
+    "在混合感染场景下，您希望抗菌肽对哪些病原菌有优先覆盖？",
+    "如果抗菌肽能降低乳房炎发病率，您愿意为此增加多少成本？"
+  ],
+  "questions_en": [
+    "What are your specific operational concerns and cost acceptance for feed-based administration?",
+    "In mixed-infection scenarios, which pathogens would you prioritize for coverage?",
+    "If the antimicrobial peptide could reduce mastitis incidence, how much additional cost would you be willing to accept?"
+  ],
+  "feedback_summary": "羊场重视广谱、低损伤、给药便利和成本，不因技术新颖而接受。",
+  "action_summary": "项目转向泌乳羊场应用，强调广谱、拌料给药与羊奶安全，谨慎表达AI成果。"
+}

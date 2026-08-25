@@ -1,0 +1,26 @@
+{
+  "next_step_cn": "建议团队在下一轮回访中，携带基于广谱候选肽的体外抑菌数据（针对金葡菌和厌氧菌），并与养殖户讨论在真实羊场环境中进行小规模验证的可行性，同时收集关于给药方式和疗程的进一步反馈。",
+  "next_step_en": "In the next visit, bring in vitro efficacy data of broad-spectrum candidate peptides against S. aureus and anaerobes, discuss the feasibility of small-scale field validation, and gather more feedback on administration routes and treatment duration.",
+  "materials_cn": [
+    "候选抗菌肽的体外抑菌谱数据（含金葡菌和厌氧菌）",
+    "广谱抗菌肽与传统抗生素的对比说明图",
+    "羊场乳房炎病例记录表模板"
+  ],
+  "materials_en": [
+    "In vitro spectrum data of candidate AMPs (including S. aureus and anaerobes)",
+    "Comparative infographic of broad-spectrum AMPs vs. conventional antibiotics",
+    "Template for recording mastitis cases in the goat farm"
+  ],
+  "questions_cn": [
+    "如果我们的候选肽在体外对金葡菌和厌氧菌都有效，您是否愿意参与后续的小规模羊场试验？",
+    "您认为在实际治疗中，注射和灌注哪种方式更容易操作？对肽类药物的剂型有什么期望？",
+    "对于慢性复发性乳房炎，您希望新疗法在疗程和费用上达到什么水平才愿意替代现有抗生素？"
+  ],
+  "questions_en": [
+    "If our candidate peptides show efficacy against S. aureus and anaerobes in vitro, would you be willing to participate in a small-scale field trial?",
+    "In practice, which administration route (injection or infusion) is easier for you? What formulation would you expect for peptide drugs?",
+    "For chronic recurrent mastitis, what treatment duration and cost would make you consider replacing current antibiotics?"
+  ],
+  "feedback_summary": "奶山羊乳房炎慢性高发，依赖抗生素，需广谱免鉴定方案，养殖户看重真实病例验证。",
+  "action_summary": "项目转向回应真实治疗约束，强化广谱路线，明确疾病边界与应用标准。"
+}

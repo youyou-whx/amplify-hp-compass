@@ -1,0 +1,26 @@
+{
+  "next_step_cn": "回访时携带通俗易懂的抗菌肽原理图，明确说明其作为疫苗和抗生素的补充而非替代，并展示体外实验数据以界定验证边界。",
+  "next_step_en": "During follow-up, bring a simple diagram explaining AMPs, clarify they complement rather than replace vaccines/antibiotics, and present in vitro data to define validation limits.",
+  "materials_cn": [
+    "抗菌肽作用原理的通俗图解",
+    "体外实验数据摘要（非临床）",
+    "疫苗与抗菌肽互补关系的说明单页"
+  ],
+  "materials_en": [
+    "Simple diagram of AMP mechanism",
+    "Summary of in vitro data (non-clinical)",
+    "One-pager on how AMPs complement vaccines"
+  ],
+  "questions_cn": [
+    "您觉得我们这样解释抗菌肽，是否比之前更清楚？",
+    "如果抗菌肽能减少抗生素使用，您最关心哪些方面？",
+    "您认为在散养户中推广这类技术，最大的障碍是什么？"
+  ],
+  "questions_en": [
+    "Does this explanation of AMPs make more sense than before?",
+    "If AMPs can reduce antibiotic use, what concerns you most?",
+    "What do you think is the biggest barrier to adopting such technology among smallholders?"
+  ],
+  "feedback_summary": "散养户认可预防重要性，但对抗菌肽持审慎态度，担心其替代疫苗并忽视人畜共患病风险。",
+  "action_summary": "项目调整表述，强调抗菌肽为补充而非替代，明确实验验证边界，提升基层可理解性。"
+}

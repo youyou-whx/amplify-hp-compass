@@ -1,0 +1,30 @@
+{
+  "next_step_cn": "根据罗老师建议，已调整湿实验路线并筛选7条候选肽，下一步应完成化学合成与MIC验证，并同步探索表达纯化体系，同时准备回访以汇报进展并获取进一步指导。",
+  "next_step_en": "Following Dr. Luo's advice, we have adjusted the wet-lab pipeline and selected 7 candidate peptides. Next, we will complete chemical synthesis and MIC validation, explore expression/purification systems in parallel, and prepare for a follow-up visit to report progress and seek further guidance.",
+  "materials_cn": [
+    "更新后的湿实验路线图与候选肽列表",
+    "初步MIC/溶血/细胞毒性数据（如有）",
+    "表达纯化预实验结果或计划",
+    "Software报告中的Evidence Level与Production Feasibility标签示例"
+  ],
+  "materials_en": [
+    "Updated wet-lab pipeline and candidate peptide list",
+    "Preliminary MIC/hemolysis/cytotoxicity data (if available)",
+    "Expression/purification preliminary results or plans",
+    "Examples of Evidence Level and Production Feasibility tags in Software report"
+  ],
+  "questions_cn": [
+    "您对7条候选肽的筛选依据和数量是否满意？是否需要调整？",
+    "在表达纯化方面，您建议优先尝试哪种底盘（大肠杆菌、毕赤酵母还是枯草芽孢杆菌）？",
+    "对于短肽在胶上难以观察的问题，您推荐使用哪种标签或检测方法（如WB、液相）？",
+    "后续是否需要补充更接近羊乳腺细胞的细胞系进行安全性验证？"
+  ],
+  "questions_en": [
+    "Are you satisfied with the selection criteria and number of 7 candidate peptides? Any adjustments needed?",
+    "For expression and purification, which chassis (E. coli, Pichia pastoris, or B. subtilis) would you recommend trying first?",
+    "For short peptides that are hard to visualize on gels, which tag or detection method (e.g., WB, LC) do you recommend?",
+    "Should we include a more relevant cell line (e.g., goat mammary epithelial cells) for safety validation in the future?"
+  ],
+  "feedback_summary": "抗菌对象需与应用场景对应，覆盖革兰氏阳性/阴性菌，设强对照，完善湿实验证据链，生产体系可并行探索。",
+  "action_summary": "调整湿实验路线为模型筛选→化学合成→MIC→安全性→机制→表达纯化，筛选7条候选肽并标注证据等级。"
+}

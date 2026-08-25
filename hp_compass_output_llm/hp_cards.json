@@ -1,0 +1,2649 @@
+[
+  {
+    "hp_id": "HP_20260124_西安动物医院调研_HP小循环_JU_Krakow风格_中文版",
+    "source_file": "hp record\\20260124_西安动物医院调研_HP小循环_JU_Krakow风格_中文版.docx",
+    "date": "2026-01-24",
+    "stakeholder": "西北农林科技大学西安动物医院临床医生、院长及检验中心工作人员",
+    "stakeholder_type": "兽医临床 stakeholder",
+    "initial_question": "宠物细菌感染是否适合作为AI设计抗菌肽的第一个应用场景？常见病原、治疗周期、耐药性、治疗费用，以及抗菌肽可能以何种形式进入真实动物医疗。",
+    "feedback": "动物感染不能笼统写成所有细菌感染，不同系统对应不同病原、诊断方式和给药路径；宠物临床已有换药、联合用药、外用清洗、口服抗生素等成熟策略，抗菌肽在宠物市场中可能更像辅助或保健产品；皮肤、耳道等体表局部场景比广泛体内感染更现实；经济动物的减抗、无抗和残留控制可能具有更高价值。",
+    "project_action": "不再将AMPlify简单定位为宠物抗菌药，转向动物健康、抗生素减量和One Health的候选肽评估框架；保留皮肤/耳道局部使用作为可讨论场景，同时把畜禽、泌乳期、蛋鸡和养殖端减抗纳入后续调研方向；在后续模型和软件叙事中加入应用场景、给药路径、证据等级和安全边界等字段。",
+    "evidence": [
+      "访谈记录"
+    ],
+    "returned": false,
+    "processing_mode": "llm",
+    "visits": [],
+    "extension_ref": "",
+    "llm_module_values": {
+      "Safety": 0.7,
+      "Model": 0.7,
+      "Implementation": 0.7,
+      "Material": 0.35,
+      "Problem Definition": 1.0,
+      "Environment": 0.35,
+      "Software": 0.7,
+      "Education": 0.35,
+      "Social Media": 0.0
+    },
+    "llm_maturity_values": {
+      "design_reflection": 1.0,
+      "context_scene": 1.0,
+      "risk": 0.7,
+      "mitigation": 0.7,
+      "limitation": 0.7,
+      "boundary": 0.7
+    },
+    "llm_feedback_summary": "兽医临床反馈：抗菌肽应区分感染类型与给药路径，宠物市场更适合作辅助/保健，经济动物减抗价值更高。",
+    "llm_action_summary": "AMPlify转向动物健康与One Health候选肽评估框架，保留局部场景，纳入畜禽减抗与残留控制调研。",
+    "llm_wiki_en_section": "### 2026-01-24 — Veterinary Clinicians at Northwest A&F University Animal Hospital\n\n#### Key Feedback\n- Animal infections cannot be generalized as \"bacterial infections\"; different body systems involve distinct pathogens, diagnostic methods, and administration routes.\n- Pet clinics already have mature strategies including drug switching, combination therapy, topical cleaning, and oral antibiotics; antimicrobial peptides may be positioned more as adjunctive or health-care products in the pet market.\n- Local applications (e.g., skin, ear canal) are more realistic than broad systemic infections for initial peptide use.\n- Reducing antibiotic use, achieving antibiotic-free production, and controlling residues in food animals may offer higher value than pet applications.\n\n#### Modules Affected\n- Safety\n- Model\n- Implementation\n- Material\n- Problem Definition\n- Environment\n- Software\n- Education\n\n#### Project Changes\n- Reframed AMPlify from a simple pet antimicrobial to a candidate peptide evaluation framework for animal health, antibiotic reduction, and One Health.\n- Retained skin/ear topical use as a discussable scenario, while adding livestock, lactating animals, laying hens, and farming-side antibiotic reduction to future investigation directions.\n- Incorporated fields for application scenario, administration route, evidence level, and safety boundaries into subsequent model and software narratives.\n\n#### Storyline Position\nThis first stakeholder engagement grounded our project in real veterinary practice, shifting our focus from a narrow pet-drug mindset to a broader One Health perspective. It set the stage for later dialogues with livestock stakeholders and shaped our integrated framework for responsible peptide development.",
+    "llm_stability": 0.9333,
+    "llm_raw_dir": "hp_compass_output_llm\\llm_raw\\20260124_西安动物医院调研_HP小循环_JU_Krakow风格_中文版",
+    "llm_next_step_cn": "针对兽医临床反馈，建议在后续调研中优先收集畜禽、泌乳期和蛋鸡养殖端的减抗需求与残留控制数据，并完善抗菌肽候选物的局部给药路径与证据等级评估。",
+    "llm_next_step_en": "Based on the veterinary clinical feedback, prioritize collecting data on antimicrobial reduction needs and residue control in livestock, lactating animals, and laying hens, and refine local administration routes and evidence levels for AMP candidates.",
+    "llm_materials_cn": [
+      "AMPlify候选肽的体外活性与安全性数据摘要",
+      "皮肤/耳道局部感染场景的案例或文献资料",
+      "畜禽减抗政策与残留标准的相关文件"
+    ],
+    "llm_materials_en": [
+      "Summary of in vitro activity and safety data for AMPlify candidate peptides",
+      "Case studies or literature on skin/ear local infection scenarios",
+      "Relevant documents on antimicrobial reduction policies and residue standards in livestock"
+    ],
+    "llm_questions_cn": [
+      "在畜禽养殖中，哪些具体感染场景对抗菌肽的局部或口服应用需求最迫切？",
+      "针对泌乳期和蛋鸡，残留控制对抗菌肽开发有哪些特殊要求？",
+      "您认为抗菌肽作为辅助或保健产品，在宠物临床中的定位应如何与现有抗生素策略互补？"
+    ],
+    "llm_questions_en": [
+      "In livestock farming, which specific infection scenarios have the most urgent need for topical or oral AMP applications?",
+      "For lactating animals and laying hens, what special requirements do residue control impose on AMP development?",
+      "How do you think AMPs as adjunct or health-care products should complement existing antibiotic strategies in pet clinical practice?"
+    ],
+    "categories": [
+      {
+        "category": "Problem Definition",
+        "score": 1.0,
+        "matched_terms": [
+          "LLM:1.00"
+        ]
+      },
+      {
+        "category": "Safety",
+        "score": 0.7,
+        "matched_terms": [
+          "LLM:0.70"
+        ]
+      },
+      {
+        "category": "Model",
+        "score": 0.7,
+        "matched_terms": [
+          "LLM:0.70"
+        ]
+      },
+      {
+        "category": "Implementation",
+        "score": 0.7,
+        "matched_terms": [
+          "LLM:0.70"
+        ]
+      },
+      {
+        "category": "Software",
+        "score": 0.7,
+        "matched_terms": [
+          "LLM:0.70"
+        ]
+      }
+    ],
+    "affected_modules": [
+      "Problem Definition",
+      "Safety",
+      "Model",
+      "Implementation",
+      "Software"
+    ],
+    "module_memberships": {
+      "Safety": 0.7,
+      "Model": 0.7,
+      "Implementation": 0.7,
+      "Material": 0.35,
+      "Problem Definition": 1.0,
+      "Environment": 0.35,
+      "Software": 0.7,
+      "Education": 0.35,
+      "Social Media": 0.0
+    },
+    "loop_status": "L3_Evidenced",
+    "loop_level": 3,
+    "evidence_strength": 0.55,
+    "priority_score": 0.765,
+    "priority_factors": {
+      "loop_gap": 0.25,
+      "cross_module_impact": 1.0,
+      "project_criticality": 0.7,
+      "time_urgency": 0.7,
+      "evidence_weakness": 0.45,
+      "stakeholder_value": 0.85
+    },
+    "fce_vector": {
+      "b1": 0.0,
+      "b2": 0.1833,
+      "b3": 0.406,
+      "b4": 0.4107
+    },
+    "fce_u1_vector": {
+      "b1_1": 0.0,
+      "b1_2": 0.1141,
+      "b1_3": 0.3424,
+      "b1_4": 0.5435
+    },
+    "fce_u2_vector": {
+      "b2_1": 0.0,
+      "b2_2": 0.3218,
+      "b2_3": 0.5334,
+      "b2_4": 0.1448
+    },
+    "maturity_scores": {
+      "design_reflection": 5,
+      "context_exploration": 5,
+      "diverse_perspectives": 5,
+      "impact_anticipation": 3,
+      "hp_response": 1,
+      "limitation_integrity": 3
+    },
+    "maturity_eigenvalues": {
+      "design_reflection": 3.965,
+      "context_exploration": 3.843,
+      "diverse_perspectives": 4.577,
+      "impact_anticipation": 2.851,
+      "hp_response": 2.02,
+      "limitation_integrity": 2.998
+    },
+    "maturity_memberships": {
+      "design_reflection": {
+        "0": 0.0,
+        "1": 0.0,
+        "2": 0.25,
+        "3": 0.3,
+        "4": 0.0,
+        "5": 0.45
+      },
+      "context_exploration": {
+        "0": 0.0,
+        "1": 0.0,
+        "2": 0.3678,
+        "3": 0.0,
+        "4": 0.1724,
+        "5": 0.4598
+      },
+      "diverse_perspectives": {
+        "0": 0.0,
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.3056,
+        "4": 0.0944,
+        "5": 0.6
+      },
+      "impact_anticipation": {
+        "0": 0.0167,
+        "1": 0.2024,
+        "2": 0.031,
+        "3": 0.7167,
+        "4": 0.0167,
+        "5": 0.0167
+      },
+      "hp_response": {
+        "0": 0.0417,
+        "1": 0.2917,
+        "2": 0.2917,
+        "3": 0.2917,
+        "4": 0.0417,
+        "5": 0.0417
+      },
+      "limitation_integrity": {
+        "0": 0.025,
+        "1": 0.025,
+        "2": 0.025,
+        "3": 0.875,
+        "4": 0.025,
+        "5": 0.025
+      }
+    },
+    "next_step": "针对兽医临床反馈，建议在后续调研中优先收集畜禽、泌乳期和蛋鸡养殖端的减抗需求与残留控制数据，并完善抗菌肽候选物的局部给药路径与证据等级评估。",
+    "next_step_en": "Based on the veterinary clinical feedback, prioritize collecting data on antimicrobial reduction needs and residue control in livestock, lactating animals, and laying hens, and refine local administration routes and evidence levels for AMP candidates.",
+    "suggested_materials": [
+      "AMPlify候选肽的体外活性与安全性数据摘要",
+      "皮肤/耳道局部感染场景的案例或文献资料",
+      "畜禽减抗政策与残留标准的相关文件"
+    ],
+    "suggested_materials_en": [
+      "Summary of in vitro activity and safety data for AMPlify candidate peptides",
+      "Case studies or literature on skin/ear local infection scenarios",
+      "Relevant documents on antimicrobial reduction policies and residue standards in livestock"
+    ],
+    "suggested_questions": [
+      "在畜禽养殖中，哪些具体感染场景对抗菌肽的局部或口服应用需求最迫切？",
+      "针对泌乳期和蛋鸡，残留控制对抗菌肽开发有哪些特殊要求？",
+      "您认为抗菌肽作为辅助或保健产品，在宠物临床中的定位应如何与现有抗生素策略互补？"
+    ],
+    "suggested_questions_en": [
+      "In livestock farming, which specific infection scenarios have the most urgent need for topical or oral AMP applications?",
+      "For lactating animals and laying hens, what special requirements do residue control impose on AMP development?",
+      "How do you think AMPs as adjunct or health-care products should complement existing antibiotic strategies in pet clinical practice?"
+    ]
+  },
+  {
+    "hp_id": "HP_20260309_家畜生物学重点实验室调研_HP小循环_JU_Krakow风格_中",
+    "source_file": "hp record\\20260309_家畜生物学重点实验室调研_HP小循环_JU_Krakow风格_中文版.docx",
+    "date": "2026-03-09",
+    "stakeholder": "西北农林科技大学家畜生物学重点实验室刘军教授",
+    "stakeholder_type": "动物健康、家畜专家",
+    "initial_question": "羊/牛乳腺炎是否适合作为 AI 设计抗菌肽的核心应用，以及养殖端真正关心的疗效、成本、给药和残留问题。",
+    "feedback": "乳腺炎在奶羊和奶牛中常见，病原组成受地区、场区环境、卧床清洁、挤奶流程和药浴消毒影响；杨凌附近羊群临床型乳腺炎约 5%–10%，隐性/亚临床乳腺炎可达 20%–30%。抗菌肽作为新型抗菌策略有潜力，但项目不应只围绕乳腺炎，科学核心应是设计和筛选能高效杀伤耐药菌、同时低真核细胞毒性的候选抗菌肽。关键障碍包括细胞毒性、递送路径、乳汁/消化环境稳定性、生产成本、残留与监管边界。",
+    "project_action": "将乳腺炎从唯一目标疾病调整为养殖端减抗和耐药压力的代表场景，主线转向耐药菌筛选、活性-安全窗口和证据分级报告；在 Model/Software 中加入场景适配、毒性窗口、递送可行性、生产可行性和风险边界标签；在实验叙事中强调 MIC、溶血、CCK-8、TEM、MD 与理化性质共同支持候选肽评估，并明确当前仍是体外和模型层面的候选筛选。",
+    "evidence": [
+      "MIC",
+      "溶血",
+      "CCK-8",
+      "TEM",
+      "MD",
+      "理化性质"
+    ],
+    "returned": false,
+    "processing_mode": "llm",
+    "visits": [],
+    "extension_ref": "",
+    "llm_module_values": {
+      "Safety": 1.0,
+      "Model": 1.0,
+      "Implementation": 1.0,
+      "Material": 0.7,
+      "Problem Definition": 1.0,
+      "Environment": 0.7,
+      "Software": 1.0,
+      "Education": 0.35,
+      "Social Media": 0.0
+    },
+    "llm_maturity_values": {
+      "design_reflection": 1.0,
+      "context_scene": 1.0,
+      "risk": 1.0,
+      "mitigation": 0.7,
+      "limitation": 1.0,
+      "boundary": 1.0
+    },
+    "llm_feedback_summary": "乳腺炎是重要场景但非唯一目标，应聚焦耐药菌杀伤与低毒性，并考虑递送、稳定性和监管。",
+    "llm_action_summary": "将乳腺炎调整为代表性场景，主线转向耐药菌筛选与活性-安全窗口，并增加场景适配和风险标签。",
+    "llm_wiki_en_section": "### 2026-03-09 — Prof. Jun Liu, Key Laboratory of Animal Biology, Northwest A&F University\n\n#### Key Feedback\n- Mastitis is common in dairy sheep and cows, with clinical cases at 5%–10% and subclinical cases at 20%–30% in the Yangling area.\n- Pathogen composition varies with region, barn hygiene, milking procedures, and teat dipping.\n- AMPs hold promise, but the project should not focus solely on mastitis; the core science is designing peptides that kill resistant bacteria with low eukaryotic toxicity.\n- Key barriers: cytotoxicity, delivery routes, stability in milk/digestive environments, production costs, and regulatory/residue concerns.\n\n#### Modules Affected\n- Safety, Model, Implementation, Material, Problem Definition, Environment, Software, Education\n\n#### Project Changes\n- Reframed mastitis as a representative scenario for antibiotic reduction and resistance pressure, not the sole target.\n- Shifted main narrative to resistant bacteria screening, activity-safety window, and evidence-level reporting.\n- Added scenario adaptation, toxicity window, delivery feasibility, production feasibility, and risk boundary tags to Model/Software.\n- Emphasized in experimental narrative that MIC, hemolysis, CCK-8, TEM, MD, and physicochemical properties jointly support candidate evaluation, while clarifying current stage is in vitro and model-based screening.\n\n#### Storyline Position\nThis consultation broadened our project from a single disease application to a robust scientific framework for AMP design, aligning with One Health by addressing antibiotic resistance in livestock. It set the stage for iterative feedback and refinement in subsequent human practices engagements.",
+    "llm_stability": 1.0,
+    "llm_raw_dir": "hp_compass_output_llm\\llm_raw\\20260309_家畜生物学重点实验室调研_HP小循环_JU_Krakow风格_中文版",
+    "llm_next_step_cn": "建议在完成体外筛选和模型评估后，向刘军教授反馈候选肽的MIC、溶血和细胞毒性数据，并讨论在羊群中进行初步现场验证的可行性。",
+    "llm_next_step_en": "After completing in vitro screening and model evaluation, share MIC, hemolysis, and cytotoxicity data with Prof. Liu and discuss the feasibility of preliminary field validation in sheep flocks.",
+    "llm_materials_cn": [
+      "候选抗菌肽的体外活性与毒性数据汇总表",
+      "AMPlify 项目更新版海报或幻灯片",
+      "关于乳腺炎场景适配的模型预测报告"
+    ],
+    "llm_materials_en": [
+      "Summary table of in vitro activity and toxicity data for candidate AMPs",
+      "Updated AMPlify project poster or slides",
+      "Model prediction report on mastitis scenario adaptation"
+    ],
+    "llm_questions_cn": [
+      "您认为我们目前的候选肽在哪些理化性质上还需要优化，以更好地适应乳汁环境？",
+      "对于隐性乳腺炎的检测，您有哪些建议可以帮助我们在现场评估中更准确地判断疗效？",
+      "在羊群中进行初步试验时，您认为最关键的伦理和操作注意事项是什么？"
+    ],
+    "llm_questions_en": [
+      "What physicochemical properties of our current candidate AMPs do you think need optimization for better performance in the milk environment?",
+      "What suggestions do you have for detecting subclinical mastitis to more accurately assess efficacy in field trials?",
+      "What are the most critical ethical and operational considerations for conducting preliminary trials in sheep flocks?"
+    ],
+    "categories": [
+      {
+        "category": "Safety",
+        "score": 1.0,
+        "matched_terms": [
+          "LLM:1.00"
+        ]
+      },
+      {
+        "category": "Model",
+        "score": 1.0,
+        "matched_terms": [
+          "LLM:1.00"
+        ]
+      },
+      {
+        "category": "Implementation",
+        "score": 1.0,
+        "matched_terms": [
+          "LLM:1.00"
+        ]
+      },
+      {
+        "category": "Problem Definition",
+        "score": 1.0,
+        "matched_terms": [
+          "LLM:1.00"
+        ]
+      },
+      {
+        "category": "Software",
+        "score": 1.0,
+        "matched_terms": [
+          "LLM:1.00"
+        ]
+      }
+    ],
+    "affected_modules": [
+      "Safety",
+      "Model",
+      "Implementation",
+      "Problem Definition",
+      "Software"
+    ],
+    "module_memberships": {
+      "Safety": 1.0,
+      "Model": 1.0,
+      "Implementation": 1.0,
+      "Material": 0.7,
+      "Problem Definition": 1.0,
+      "Environment": 0.7,
+      "Software": 1.0,
+      "Education": 0.35,
+      "Social Media": 0.0
+    },
+    "loop_status": "L3_Evidenced",
+    "loop_level": 3,
+    "evidence_strength": 0.933,
+    "priority_score": 0.83,
+    "priority_factors": {
+      "loop_gap": 0.25,
+      "cross_module_impact": 1.0,
+      "project_criticality": 0.95,
+      "time_urgency": 0.7,
+      "evidence_weakness": 0.067,
+      "stakeholder_value": 0.95
+    },
+    "fce_vector": {
+      "b1": 0.0606,
+      "b2": 0.0404,
+      "b3": 0.2369,
+      "b4": 0.6621
+    },
+    "fce_u1_vector": {
+      "b1_1": 0.0,
+      "b1_2": 0.0,
+      "b1_3": 0.1321,
+      "b1_4": 0.8679
+    },
+    "fce_u2_vector": {
+      "b2_1": 0.1821,
+      "b2_2": 0.1212,
+      "b2_3": 0.4469,
+      "b2_4": 0.2498
+    },
+    "maturity_scores": {
+      "design_reflection": 5,
+      "context_exploration": 5,
+      "diverse_perspectives": 5,
+      "impact_anticipation": 5,
+      "hp_response": 1,
+      "limitation_integrity": 5
+    },
+    "maturity_eigenvalues": {
+      "design_reflection": 4.419,
+      "context_exploration": 3.721,
+      "diverse_perspectives": 4.534,
+      "impact_anticipation": 4.403,
+      "hp_response": 2.744,
+      "limitation_integrity": 4.988
+    },
+    "maturity_memberships": {
+      "design_reflection": {
+        "0": 0.0,
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.2817,
+        "4": 0.2347,
+        "5": 0.4836
+      },
+      "context_exploration": {
+        "0": 0.0,
+        "1": 0.1358,
+        "2": 0.292,
+        "3": 0.0,
+        "4": 0.1901,
+        "5": 0.3821
+      },
+      "diverse_perspectives": {
+        "0": 0.0,
+        "1": 0.0,
+        "2": 0.3,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.7
+      },
+      "impact_anticipation": {
+        "0": 0.0167,
+        "1": 0.0167,
+        "2": 0.0167,
+        "3": 0.3667,
+        "4": 0.0167,
+        "5": 0.5667
+      },
+      "hp_response": {
+        "0": 0.0391,
+        "1": 0.2739,
+        "2": 0.0391,
+        "3": 0.2739,
+        "4": 0.2739,
+        "5": 0.1002
+      },
+      "limitation_integrity": {
+        "0": 0.025,
+        "1": 0.025,
+        "2": 0.025,
+        "3": 0.025,
+        "4": 0.025,
+        "5": 0.875
+      }
+    },
+    "next_step": "建议在完成体外筛选和模型评估后，向刘军教授反馈候选肽的MIC、溶血和细胞毒性数据，并讨论在羊群中进行初步现场验证的可行性。",
+    "next_step_en": "After completing in vitro screening and model evaluation, share MIC, hemolysis, and cytotoxicity data with Prof. Liu and discuss the feasibility of preliminary field validation in sheep flocks.",
+    "suggested_materials": [
+      "候选抗菌肽的体外活性与毒性数据汇总表",
+      "AMPlify 项目更新版海报或幻灯片",
+      "关于乳腺炎场景适配的模型预测报告"
+    ],
+    "suggested_materials_en": [
+      "Summary table of in vitro activity and toxicity data for candidate AMPs",
+      "Updated AMPlify project poster or slides",
+      "Model prediction report on mastitis scenario adaptation"
+    ],
+    "suggested_questions": [
+      "您认为我们目前的候选肽在哪些理化性质上还需要优化，以更好地适应乳汁环境？",
+      "对于隐性乳腺炎的检测，您有哪些建议可以帮助我们在现场评估中更准确地判断疗效？",
+      "在羊群中进行初步试验时，您认为最关键的伦理和操作注意事项是什么？"
+    ],
+    "suggested_questions_en": [
+      "What physicochemical properties of our current candidate AMPs do you think need optimization for better performance in the milk environment?",
+      "What suggestions do you have for detecting subclinical mastitis to more accurately assess efficacy in field trials?",
+      "What are the most critical ethical and operational considerations for conducting preliminary trials in sheep flocks?"
+    ]
+  },
+  {
+    "hp_id": "HP_20260315_赵天意老师访谈_HP技术小循环_主线优化版_JU_Krakow风",
+    "source_file": "hp record\\20260315_赵天意老师访谈_HP技术小循环_主线优化版_JU_Krakow风格_中文版.docx",
+    "date": null,
+    "stakeholder": "赵天意老师，生物大数据相关方向教师",
+    "stakeholder_type": "AI、生物大数据专家",
+    "initial_question": "确认生成的候选肽是否真的具有抗菌靶向性，模型是否被数据噪声误导，有限经费下如何提高命中率。",
+    "feedback": "赵老师指出，只有生成器是不够的，必须建立能判断抗菌潜力、毒性和关键性质的判别器；不能把大量无关蛋白序列直接混入抗菌肽微调；少量合成候选面临很高失败风险；结构和膜相互作用分析应作为筛选依据。",
+    "project_action": "将早期 ESM-2 微调思路发展为 TAM-Flow：ESM-2 + LoRA 编码、DiT-Rectified Flow 生成、Oracle 专家模型评分和 RAFT 奖励过滤；同时加入理化性质、MD、合成质谱、MIC、溶血、CCK-8 和 TEM，形成从预测到实测的证据链。",
+    "evidence": [
+      "MIC",
+      "溶血",
+      "CCK-8",
+      "TEM",
+      "分子动力学",
+      "理化性质",
+      "质谱"
+    ],
+    "returned": false,
+    "processing_mode": "llm",
+    "visits": [],
+    "extension_ref": "",
+    "llm_module_values": {
+      "Safety": 1.0,
+      "Model": 1.0,
+      "Implementation": 0.7,
+      "Material": 0.7,
+      "Problem Definition": 0.7,
+      "Environment": 0.0,
+      "Software": 0.7,
+      "Education": 0.0,
+      "Social Media": 0.0
+    },
+    "llm_maturity_values": {
+      "design_reflection": 1.0,
+      "context_scene": 0.7,
+      "risk": 0.7,
+      "mitigation": 0.7,
+      "limitation": 0.7,
+      "boundary": 0.7
+    },
+    "llm_feedback_summary": "赵老师强调需建立判别器筛选抗菌潜力与毒性，避免无关序列混入，并重视结构膜分析。",
+    "llm_action_summary": "项目开发 TAM-Flow 生成-判别框架，并整合理化、MD、合成及活性验证形成证据链。",
+    "llm_wiki_en_section": "### Date Unknown — Teacher Zhao Tianyi, AI & Biological Data Expert\n\n#### Key Feedback\n- A generator alone is insufficient; a discriminator is essential to evaluate antimicrobial potential, toxicity, and key properties.\n- Mixing large amounts of unrelated protein sequences into antimicrobial peptide fine-tuning is misleading and should be avoided.\n- With limited budget, synthesizing only a few candidates carries high failure risk; structural and membrane interaction analyses should guide candidate selection.\n\n#### Modules Affected\n- Safety\n- Model\n- Implementation\n- Material\n- Problem Definition\n- Software\n\n#### Project Changes\n- Evolved the early ESM-2 fine-tuning approach into TAM-Flow: ESM-2 + LoRA encoding, DiT-Rectified Flow generation, Oracle expert model scoring, and RAFT reward filtering.\n- Integrated physicochemical property analysis, molecular dynamics, synthesis with mass spectrometry, MIC assays, hemolysis tests, CCK-8 cytotoxicity, and TEM imaging to build a comprehensive evidence chain from prediction to experimental validation.\n\n#### Storyline Position\nThis consultation sharpened our project's focus on rigorous validation, steering us from a purely generative model toward a robust discriminator-integrated pipeline. It reinforced the importance of combining computational predictions with experimental verification, a cornerstone of our One Health mission.",
+    "llm_stability": 1.0,
+    "llm_raw_dir": "hp_compass_output_llm\\llm_raw\\20260315_赵天意老师访谈_HP技术小循环_主线优化版_JU_Krakow风格_中文版",
+    "llm_next_step_cn": "建议在完成一轮合成与活性验证后，带着实测数据回访赵老师，重点展示判别器与生成器的协同效果，并请教如何进一步优化筛选阈值。",
+    "llm_next_step_en": "After completing a round of synthesis and activity validation, revisit Prof. Zhao with experimental data, focusing on the synergy between discriminator and generator, and seek advice on refining screening thresholds.",
+    "llm_materials_cn": [
+      "TAM-Flow 模型架构与训练流程说明",
+      "初步合成肽的 MIC、溶血及细胞毒性数据",
+      "与随机序列对比的理化性质分布图"
+    ],
+    "llm_materials_en": [
+      "TAM-Flow architecture and training pipeline description",
+      "MIC, hemolysis, and cytotoxicity data for initial synthetic peptides",
+      "Physicochemical property distribution plots compared with random sequences"
+    ],
+    "llm_questions_cn": [
+      "您认为当前判别器的评分权重是否合理？哪些指标应优先考虑？",
+      "对于少量合成候选的高失败风险，您建议如何扩大候选多样性或提高命中率？",
+      "在膜相互作用分析中，哪些实验或模拟手段最能有效筛选抗菌肽？"
+    ],
+    "llm_questions_en": [
+      "Do you think the current scoring weights of the discriminator are reasonable? Which metrics should be prioritized?",
+      "Given the high failure risk with few synthetic candidates, how would you suggest increasing candidate diversity or hit rate?",
+      "In membrane interaction analysis, which experimental or simulation methods are most effective for screening antimicrobial peptides?"
+    ],
+    "categories": [
+      {
+        "category": "Safety",
+        "score": 1.0,
+        "matched_terms": [
+          "LLM:1.00"
+        ]
+      },
+      {
+        "category": "Model",
+        "score": 1.0,
+        "matched_terms": [
+          "LLM:1.00"
+        ]
+      },
+      {
+        "category": "Implementation",
+        "score": 0.7,
+        "matched_terms": [
+          "LLM:0.70"
+        ]
+      },
+      {
+        "category": "Material",
+        "score": 0.7,
+        "matched_terms": [
+          "LLM:0.70"
+        ]
+      },
+      {
+        "category": "Problem Definition",
+        "score": 0.7,
+        "matched_terms": [
+          "LLM:0.70"
+        ]
+      }
+    ],
+    "affected_modules": [
+      "Safety",
+      "Model",
+      "Implementation",
+      "Material",
+      "Problem Definition"
+    ],
+    "module_memberships": {
+      "Safety": 1.0,
+      "Model": 1.0,
+      "Implementation": 0.7,
+      "Material": 0.7,
+      "Problem Definition": 0.7,
+      "Environment": 0.0,
+      "Software": 0.7,
+      "Education": 0.0,
+      "Social Media": 0.0
+    },
+    "loop_status": "L3_Evidenced",
+    "loop_level": 3,
+    "evidence_strength": 0.943,
+    "priority_score": 0.824,
+    "priority_factors": {
+      "loop_gap": 0.25,
+      "cross_module_impact": 1.0,
+      "project_criticality": 0.95,
+      "time_urgency": 0.7,
+      "evidence_weakness": 0.057,
+      "stakeholder_value": 0.85
+    },
+    "fce_vector": {
+      "b1": 0.0585,
+      "b2": 0.0369,
+      "b3": 0.2749,
+      "b4": 0.6296
+    },
+    "fce_u1_vector": {
+      "b1_1": 0.0,
+      "b1_2": 0.0,
+      "b1_3": 0.1321,
+      "b1_4": 0.8679
+    },
+    "fce_u2_vector": {
+      "b2_1": 0.1757,
+      "b2_2": 0.1109,
+      "b2_3": 0.5611,
+      "b2_4": 0.1523
+    },
+    "maturity_scores": {
+      "design_reflection": 3,
+      "context_exploration": 3,
+      "diverse_perspectives": 3,
+      "impact_anticipation": 3,
+      "hp_response": 1,
+      "limitation_integrity": 3
+    },
+    "maturity_eigenvalues": {
+      "design_reflection": 3.626,
+      "context_exploration": 2.7,
+      "diverse_perspectives": 3.32,
+      "impact_anticipation": 3.694,
+      "hp_response": 2.804,
+      "limitation_integrity": 3.664
+    },
+    "maturity_memberships": {
+      "design_reflection": {
+        "0": 0.0,
+        "1": 0.0,
+        "2": 0.0543,
+        "3": 0.4474,
+        "4": 0.2109,
+        "5": 0.2873
+      },
+      "context_exploration": {
+        "0": 0.0,
+        "1": 0.1326,
+        "2": 0.2852,
+        "3": 0.325,
+        "4": 0.1718,
+        "5": 0.0854
+      },
+      "diverse_perspectives": {
+        "0": 0.0,
+        "1": 0.0,
+        "2": 0.3,
+        "3": 0.3333,
+        "4": 0.0667,
+        "5": 0.3
+      },
+      "impact_anticipation": {
+        "0": 0.05,
+        "1": 0.05,
+        "2": 0.05,
+        "3": 0.45,
+        "4": 0.05,
+        "5": 0.35
+      },
+      "hp_response": {
+        "0": 0.038,
+        "1": 0.2661,
+        "2": 0.038,
+        "3": 0.2661,
+        "4": 0.249,
+        "5": 0.1429
+      },
+      "limitation_integrity": {
+        "0": 0.025,
+        "1": 0.025,
+        "2": 0.025,
+        "3": 0.525,
+        "4": 0.025,
+        "5": 0.375
+      }
+    },
+    "next_step": "建议在完成一轮合成与活性验证后，带着实测数据回访赵老师，重点展示判别器与生成器的协同效果，并请教如何进一步优化筛选阈值。",
+    "next_step_en": "After completing a round of synthesis and activity validation, revisit Prof. Zhao with experimental data, focusing on the synergy between discriminator and generator, and seek advice on refining screening thresholds.",
+    "suggested_materials": [
+      "TAM-Flow 模型架构与训练流程说明",
+      "初步合成肽的 MIC、溶血及细胞毒性数据",
+      "与随机序列对比的理化性质分布图"
+    ],
+    "suggested_materials_en": [
+      "TAM-Flow architecture and training pipeline description",
+      "MIC, hemolysis, and cytotoxicity data for initial synthetic peptides",
+      "Physicochemical property distribution plots compared with random sequences"
+    ],
+    "suggested_questions": [
+      "您认为当前判别器的评分权重是否合理？哪些指标应优先考虑？",
+      "对于少量合成候选的高失败风险，您建议如何扩大候选多样性或提高命中率？",
+      "在膜相互作用分析中，哪些实验或模拟手段最能有效筛选抗菌肽？"
+    ],
+    "suggested_questions_en": [
+      "Do you think the current scoring weights of the discriminator are reasonable? Which metrics should be prioritized?",
+      "Given the high failure risk with few synthetic candidates, how would you suggest increasing candidate diversity or hit rate?",
+      "In membrane interaction analysis, which experimental or simulation methods are most effective for screening antimicrobial peptides?"
+    ]
+  },
+  {
+    "hp_id": "HP_20260320_罗自卫老师湿实验访谈_HP小循环_JU_Krakow风格_中文版",
+    "source_file": "hp record\\20260320_罗自卫老师湿实验访谈_HP小循环_JU_Krakow风格_中文版修改.docx",
+    "date": "2026-03-20",
+    "stakeholder": "西北农林科技大学罗自卫老师",
+    "stakeholder_type": "湿实验、合成生物学专家",
+    "initial_question": "怎样把 AI 生成的序列变成可验证、可解释、可进入软件报告的证据？",
+    "feedback": "抗菌对象必须和应用场景对应，不能只测试方便获得的菌株；同时应覆盖革兰氏阳性菌和阴性菌，并设置已报道高活性抗菌肽或抗生素作为强对照。MIC、溶血、细胞毒性、表达量、纯化结果和产物鉴定需要构成一条完善的湿实验证据链。生产体系可以与功能验证并行推进：先用化学合成肽验证活性，再用大肠杆菌、毕赤酵母或枯草芽孢杆菌等底盘探索表达与纯化可行性。候选数量需要参考文献工作量和预算；比赛中数量可少于论文筛选，但必须说明筛选依据。HaCaT 成本低、资料多，适合初筛；但它不能完全代表羊乳腺细胞，后续需要更场景化验证。总蛋白浓度不能证明目标肽存在；短肽还可能在胶上难以直接观察，需要标签、WB、液相或质谱等证据。",
+    "project_action": "将湿实验路线调整为“模型筛选 -> 化学合成 -> MIC 活性验证 -> 溶血/CCK-8 安全性验证 -> TEM/机制支持 -> 表达与纯化可行性”。从模型输出和候选库中筛选 7 条代表性候选肽进入实验验证，并在报告中解释筛选依据和证据边界。在 Software 报告中加入 Evidence Level 和 Production Feasibility 标签，区分实测数据、模型推断、文献支持和未来验证。",
+    "evidence": [
+      "MIC",
+      "溶血",
+      "CCK-8",
+      "TEM",
+      "MD模拟",
+      "SDS-PAGE/WB",
+      "HPLC",
+      "质谱"
+    ],
+    "returned": false,
+    "processing_mode": "llm",
+    "visits": [],
+    "extension_ref": "",
+    "llm_module_values": {
+      "Safety": 1.0,
+      "Model": 1.0,
+      "Implementation": 0.7,
+      "Material": 0.7,
+      "Problem Definition": 0.7,
+      "Environment": 0.35,
+      "Software": 1.0,
+      "Education": 0.35,
+      "Social Media": 0.0
+    },
+    "llm_maturity_values": {
+      "design_reflection": 1.0,
+      "context_scene": 0.7,
+      "risk": 0.7,
+      "mitigation": 0.7,
+      "limitation": 1.0,
+      "boundary": 1.0
+    },
+    "llm_feedback_summary": "抗菌对象需与应用场景对应，覆盖革兰氏阴阳菌，设置强对照，证据链需完善，HaCaT不能完全代表羊乳腺细胞。",
+    "llm_action_summary": "调整湿实验路线为模型筛选-化学合成-MIC-安全性-TEM-表达纯化，筛选7条候选肽，软件加入证据等级和生产可行性标签。",
+    "llm_wiki_en_section": "### 2026-03-20 — Prof. Zimei Luo, Northwest A&F University (Wet-lab & Synthetic Biology)\n\n#### Key Feedback\n- The antimicrobial target must match the intended application scenario; testing only easily available strains is insufficient.\n- Both Gram-positive and Gram-negative bacteria should be covered, with strong positive controls (e.g., known high-activity AMPs or antibiotics).\n- A complete wet-lab evidence chain requires MIC, hemolysis, cytotoxicity, expression yield, purification results, and product identification.\n- Production system development can run in parallel with functional validation: first chemically synthesize peptides for activity tests, then explore expression and purification in E. coli, Pichia pastoris, or B. subtilis.\n- The number of candidates should be justified by literature workload and budget; fewer than a paper screen is acceptable if the selection rationale is clear.\n- HaCaT cells are low-cost and well-documented for initial screening, but they do not fully represent goat mammary cells; more scenario-specific validation is needed later.\n- Total protein concentration does not prove the presence of the target peptide; short peptides may be hard to visualize on gels, requiring tags, Western blot, HPLC, or mass spectrometry.\n\n#### Modules Affected\n- Safety\n- Model\n- Implementation\n- Material\n- Problem Definition\n- Environment\n- Software\n- Education\n\n#### Project Changes\n- Adjusted the wet-lab pipeline to: model screening → chemical synthesis → MIC activity validation → hemolysis/CCK-8 safety validation → TEM/mechanism support → expression and purification feasibility.\n- Selected 7 representative candidate peptides from model outputs and candidate library for experimental validation, with clear explanation of selection criteria and evidence boundaries in the report.\n- Added \"Evidence Level\" and \"Production Feasibility\" tags in the Software report to distinguish measured data, model predictions, literature support, and future validation.\n\n#### Storyline Position\nThis consultation grounded our AI-driven design in rigorous experimental reality, transforming our wet-lab plan into a stepwise evidence chain. It also strengthened our One Health narrative by ensuring our peptides are validated against relevant pathogens and safety parameters, making our software predictions more actionable for real-world animal health applications.",
+    "llm_stability": 1.0,
+    "llm_raw_dir": "hp_compass_output_llm\\llm_raw\\20260320_罗自卫老师湿实验访谈_HP小循环_JU_Krakow风格_中文版修改",
+    "llm_next_step_cn": "根据罗老师建议，调整湿实验路线并筛选7条候选肽，同时完善证据链和软件标签，建议回访时展示初步MIC和安全性数据，并讨论表达系统选择。",
+    "llm_next_step_en": "Following Dr. Luo's advice, adjust the wet-lab pipeline and select 7 candidate peptides, while strengthening the evidence chain and software tags. On revisit, present preliminary MIC and safety data and discuss expression system choices.",
+    "llm_materials_cn": [
+      "更新后的湿实验路线图（含化学合成、MIC、溶血/CCK-8、TEM、表达纯化）",
+      "7条候选肽的序列及筛选依据说明",
+      "软件报告中Evidence Level和Production Feasibility标签的示例",
+      "初步MIC或安全性数据（如有）"
+    ],
+    "llm_materials_en": [
+      "Updated wet-lab pipeline diagram (chemical synthesis, MIC, hemolysis/CCK-8, TEM, expression/purification)",
+      "List of 7 candidate peptides with selection rationale",
+      "Sample of Evidence Level and Production Feasibility tags in software report",
+      "Preliminary MIC or safety data if available"
+    ],
+    "llm_questions_cn": [
+      "您认为在表达纯化阶段，大肠杆菌、毕赤酵母和枯草芽孢杆菌哪个更适合我们目前的候选肽？",
+      "对于短肽在胶上难以观察的问题，您建议优先采用哪种检测方法（如WB、液相或质谱）？",
+      "在后续实验中，如何更场景化地验证羊乳腺细胞的安全性？是否需要引入原代细胞或3D模型？",
+      "您对7条候选肽的数量和筛选依据有何进一步建议？"
+    ],
+    "llm_questions_en": [
+      "Which expression host (E. coli, Pichia pastoris, or Bacillus subtilis) would you recommend for our current candidate peptides?",
+      "For short peptides that are hard to visualize on gels, which detection method (e.g., Western blot, LC, or MS) should we prioritize?",
+      "How can we more contextually validate safety in goat mammary cells? Should we consider primary cells or 3D models?",
+      "Do you have further suggestions on the number (7) and selection criteria of candidate peptides?"
+    ],
+    "categories": [
+      {
+        "category": "Safety",
+        "score": 1.0,
+        "matched_terms": [
+          "LLM:1.00"
+        ]
+      },
+      {
+        "category": "Model",
+        "score": 1.0,
+        "matched_terms": [
+          "LLM:1.00"
+        ]
+      },
+      {
+        "category": "Software",
+        "score": 1.0,
+        "matched_terms": [
+          "LLM:1.00"
+        ]
+      },
+      {
+        "category": "Implementation",
+        "score": 0.7,
+        "matched_terms": [
+          "LLM:0.70"
+        ]
+      },
+      {
+        "category": "Material",
+        "score": 0.7,
+        "matched_terms": [
+          "LLM:0.70"
+        ]
+      }
+    ],
+    "affected_modules": [
+      "Safety",
+      "Model",
+      "Software",
+      "Implementation",
+      "Material"
+    ],
+    "module_memberships": {
+      "Safety": 1.0,
+      "Model": 1.0,
+      "Implementation": 0.7,
+      "Material": 0.7,
+      "Problem Definition": 0.7,
+      "Environment": 0.35,
+      "Software": 1.0,
+      "Education": 0.35,
+      "Social Media": 0.0
+    },
+    "loop_status": "L3_Evidenced",
+    "loop_level": 3,
+    "evidence_strength": 0.819,
+    "priority_score": 0.843,
+    "priority_factors": {
+      "loop_gap": 0.25,
+      "cross_module_impact": 1.0,
+      "project_criticality": 0.95,
+      "time_urgency": 0.7,
+      "evidence_weakness": 0.181,
+      "stakeholder_value": 0.85
+    },
+    "fce_vector": {
+      "b1": 0.0236,
+      "b2": 0.0416,
+      "b3": 0.2987,
+      "b4": 0.6361
+    },
+    "fce_u1_vector": {
+      "b1_1": 0.0,
+      "b1_2": 0.0,
+      "b1_3": 0.1321,
+      "b1_4": 0.8679
+    },
+    "fce_u2_vector": {
+      "b2_1": 0.0708,
+      "b2_2": 0.125,
+      "b2_3": 0.6325,
+      "b2_4": 0.1717
+    },
+    "maturity_scores": {
+      "design_reflection": 3,
+      "context_exploration": 3,
+      "diverse_perspectives": 5,
+      "impact_anticipation": 3,
+      "hp_response": 3,
+      "limitation_integrity": 5
+    },
+    "maturity_eigenvalues": {
+      "design_reflection": 3.171,
+      "context_exploration": 2.63,
+      "diverse_perspectives": 4.487,
+      "impact_anticipation": 3.37,
+      "hp_response": 2.76,
+      "limitation_integrity": 4.988
+    },
+    "maturity_memberships": {
+      "design_reflection": {
+        "0": 0.0,
+        "1": 0.0,
+        "2": 0.0595,
+        "3": 0.6592,
+        "4": 0.0812,
+        "5": 0.2
+      },
+      "context_exploration": {
+        "0": 0.0,
+        "1": 0.1429,
+        "2": 0.3071,
+        "3": 0.485,
+        "4": 0.065,
+        "5": 0.0
+      },
+      "diverse_perspectives": {
+        "0": 0.0,
+        "1": 0.0,
+        "2": 0.2711,
+        "3": 0.0,
+        "4": 0.1205,
+        "5": 0.6084
+      },
+      "impact_anticipation": {
+        "0": 0.0167,
+        "1": 0.2024,
+        "2": 0.031,
+        "3": 0.4167,
+        "4": 0.0167,
+        "5": 0.3167
+      },
+      "hp_response": {
+        "0": 0.0417,
+        "1": 0.1631,
+        "2": 0.1702,
+        "3": 0.4604,
+        "4": 0.1229,
+        "5": 0.0417
+      },
+      "limitation_integrity": {
+        "0": 0.025,
+        "1": 0.025,
+        "2": 0.025,
+        "3": 0.025,
+        "4": 0.025,
+        "5": 0.875
+      }
+    },
+    "next_step": "根据罗老师建议，调整湿实验路线并筛选7条候选肽，同时完善证据链和软件标签，建议回访时展示初步MIC和安全性数据，并讨论表达系统选择。",
+    "next_step_en": "Following Dr. Luo's advice, adjust the wet-lab pipeline and select 7 candidate peptides, while strengthening the evidence chain and software tags. On revisit, present preliminary MIC and safety data and discuss expression system choices.",
+    "suggested_materials": [
+      "更新后的湿实验路线图（含化学合成、MIC、溶血/CCK-8、TEM、表达纯化）",
+      "7条候选肽的序列及筛选依据说明",
+      "软件报告中Evidence Level和Production Feasibility标签的示例",
+      "初步MIC或安全性数据（如有）"
+    ],
+    "suggested_materials_en": [
+      "Updated wet-lab pipeline diagram (chemical synthesis, MIC, hemolysis/CCK-8, TEM, expression/purification)",
+      "List of 7 candidate peptides with selection rationale",
+      "Sample of Evidence Level and Production Feasibility tags in software report",
+      "Preliminary MIC or safety data if available"
+    ],
+    "suggested_questions": [
+      "您认为在表达纯化阶段，大肠杆菌、毕赤酵母和枯草芽孢杆菌哪个更适合我们目前的候选肽？",
+      "对于短肽在胶上难以观察的问题，您建议优先采用哪种检测方法（如WB、液相或质谱）？",
+      "在后续实验中，如何更场景化地验证羊乳腺细胞的安全性？是否需要引入原代细胞或3D模型？",
+      "您对7条候选肽的数量和筛选依据有何进一步建议？"
+    ],
+    "suggested_questions_en": [
+      "Which expression host (E. coli, Pichia pastoris, or Bacillus subtilis) would you recommend for our current candidate peptides?",
+      "For short peptides that are hard to visualize on gels, which detection method (e.g., Western blot, LC, or MS) should we prioritize?",
+      "How can we more contextually validate safety in goat mammary cells? Should we consider primary cells or 3D models?",
+      "Do you have further suggestions on the number (7) and selection criteria of candidate peptides?"
+    ]
+  },
+  {
+    "hp_id": "HP_20260418_哈工大生命学院院长调研_HP简版_JU_Krakow风格_中文版",
+    "source_file": "hp record\\20260418_哈工大生命学院院长调研_HP简版_JU_Krakow风格_中文版修改.docx",
+    "date": "2026-04-18",
+    "stakeholder": "哈尔滨工业大学生命科学与医学学部聂桓老师",
+    "stakeholder_type": "iGEM、Wiki 交流 stakeholder",
+    "initial_question": "项目如何在跨校交流中被更清楚地讲述，以及如何通过跨校合作提升项目的工程化逻辑和可理解性。",
+    "feedback": "iGEM 是跨学科、跨校际的交流平台。真正有价值的合作应共享不可复制的资源、失败经验和项目建设思路，而不是停留在表面交流。项目需要被其他团队看懂，叙事需要经得起外部提问，工程化目标也需要用更清晰的语言表达。",
+    "project_action": "将“跨校交流与外部视角”加入 HP 主线，在介绍 AMPlify 时不仅展示候选肽和实验结果，还说明项目的工程化目标、合作价值和证据边界。",
+    "evidence": [
+      "MIC",
+      "溶血",
+      "CCK-8",
+      "TEM",
+      "分子动力学"
+    ],
+    "returned": false,
+    "processing_mode": "llm",
+    "visits": [],
+    "extension_ref": "",
+    "llm_module_values": {
+      "Safety": 0.35,
+      "Model": 0.7,
+      "Implementation": 0.7,
+      "Material": 0.35,
+      "Problem Definition": 0.7,
+      "Environment": 0.35,
+      "Software": 0.7,
+      "Education": 1.0,
+      "Social Media": 0.7
+    },
+    "llm_maturity_values": {
+      "design_reflection": 0.7,
+      "context_scene": 0.35,
+      "risk": 0.0,
+      "mitigation": 0.0,
+      "limitation": 0.7,
+      "boundary": 0.7
+    },
+    "llm_feedback_summary": "iGEM合作应共享不可复制资源、失败经验与建设思路，而非表面交流。",
+    "llm_action_summary": "将跨校交流与外部视角纳入HP主线，强化工程化目标与证据边界表达。",
+    "llm_wiki_en_section": "### 2026-04-18 — Prof. Nie Huan, School of Life Science and Medicine, Harbin Institute of Technology\n\n#### Key Feedback\n- iGEM is a platform for interdisciplinary and inter-institutional exchange; meaningful collaboration should share non-replicable resources, lessons from failures, and project-building insights, rather than superficial interactions.\n- The project must be understandable to other teams; the narrative should withstand external questioning.\n- Engineering goals need to be articulated in clearer, more precise language.\n\n#### Modules Affected\n- Safety, Model, Implementation, Material, Problem Definition, Environment, Software, Education, Social Media\n\n#### Project Changes\n- Integrated \"cross-institutional exchange and external perspectives\" into the main Human Practices storyline.\n- When presenting AMPlify, we now not only showcase candidate peptides and experimental results but also explicitly explain the project's engineering goals, collaborative value, and the boundaries of our evidence.\n- Refined our communication to make the engineering logic more transparent and accessible to external reviewers.\n\n#### Storyline Position\nThis conversation marked a turning point in our Human Practices journey, pushing us to frame AMPlify not just as a scientific output but as a collaborative, engineering-driven initiative. It set the stage for future exchanges by emphasizing the importance of shared, non-replicable knowledge and resilient storytelling.",
+    "llm_stability": 0.9333,
+    "llm_raw_dir": "hp_compass_output_llm\\llm_raw\\20260418_哈工大生命学院院长调研_HP简版_JU_Krakow风格_中文版修改",
+    "llm_next_step_cn": "建议在后续回访中，向聂桓老师展示项目在跨学科叙事和工程化目标上的具体改进，并探讨如何将共享失败经验与不可复制资源纳入合作框架。",
+    "llm_next_step_en": "In the follow-up, present specific improvements in interdisciplinary narrative and engineering goals, and discuss how to incorporate shared failure experiences and non-replicable resources into the collaboration framework.",
+    "llm_materials_cn": [
+      "更新后的项目介绍PPT（突出工程化目标与证据边界）",
+      "跨学科合作框架草案（含共享失败经验与不可复制资源的机制）",
+      "项目Wiki页面截图（展示叙事改进）"
+    ],
+    "llm_materials_en": [
+      "Updated project presentation PPT (highlighting engineering goals and evidence boundaries)",
+      "Draft interdisciplinary collaboration framework (including mechanisms for sharing failure experiences and non-replicable resources)",
+      "Screenshots of project Wiki pages (showing narrative improvements)"
+    ],
+    "llm_questions_cn": [
+      "您认为我们在项目介绍中如何更清晰地表达工程化目标，以便其他团队快速理解？",
+      "对于共享失败经验，您建议我们采用哪些具体形式或平台？",
+      "您觉得哪些类型的不可复制资源最值得在跨校合作中共享？",
+      "我们的叙事改进是否有效解决了您之前提到的‘被看懂’问题？"
+    ],
+    "llm_questions_en": [
+      "How can we more clearly express our engineering goals in the project introduction so that other teams can quickly understand?",
+      "What specific formats or platforms do you suggest for sharing failure experiences?",
+      "What types of non-replicable resources do you think are most valuable to share in cross-institutional collaborations?",
+      "Have our narrative improvements effectively addressed the 'being understood' issue you mentioned earlier?"
+    ],
+    "categories": [
+      {
+        "category": "Education",
+        "score": 1.0,
+        "matched_terms": [
+          "LLM:1.00"
+        ]
+      },
+      {
+        "category": "Model",
+        "score": 0.7,
+        "matched_terms": [
+          "LLM:0.70"
+        ]
+      },
+      {
+        "category": "Implementation",
+        "score": 0.7,
+        "matched_terms": [
+          "LLM:0.70"
+        ]
+      },
+      {
+        "category": "Problem Definition",
+        "score": 0.7,
+        "matched_terms": [
+          "LLM:0.70"
+        ]
+      },
+      {
+        "category": "Software",
+        "score": 0.7,
+        "matched_terms": [
+          "LLM:0.70"
+        ]
+      }
+    ],
+    "affected_modules": [
+      "Education",
+      "Model",
+      "Implementation",
+      "Problem Definition",
+      "Software"
+    ],
+    "module_memberships": {
+      "Safety": 0.35,
+      "Model": 0.7,
+      "Implementation": 0.7,
+      "Material": 0.35,
+      "Problem Definition": 0.7,
+      "Environment": 0.35,
+      "Software": 0.7,
+      "Education": 1.0,
+      "Social Media": 0.7
+    },
+    "loop_status": "L3_Evidenced",
+    "loop_level": 3,
+    "evidence_strength": 0.97,
+    "priority_score": 0.71,
+    "priority_factors": {
+      "loop_gap": 0.25,
+      "cross_module_impact": 1.0,
+      "project_criticality": 0.6,
+      "time_urgency": 0.7,
+      "evidence_weakness": 0.03,
+      "stakeholder_value": 0.85
+    },
+    "fce_vector": {
+      "b1": 0.0651,
+      "b2": 0.2644,
+      "b3": 0.2585,
+      "b4": 0.412
+    },
+    "fce_u1_vector": {
+      "b1_1": 0.0,
+      "b1_2": 0.3424,
+      "b1_3": 0.1141,
+      "b1_4": 0.5435
+    },
+    "fce_u2_vector": {
+      "b2_1": 0.1955,
+      "b2_2": 0.1082,
+      "b2_3": 0.5476,
+      "b2_4": 0.1487
+    },
+    "maturity_scores": {
+      "design_reflection": 3,
+      "context_exploration": 1,
+      "diverse_perspectives": 4,
+      "impact_anticipation": 1,
+      "hp_response": 3,
+      "limitation_integrity": 3
+    },
+    "maturity_eigenvalues": {
+      "design_reflection": 4.0,
+      "context_exploration": 1.747,
+      "diverse_perspectives": 4.171,
+      "impact_anticipation": 1.204,
+      "hp_response": 3.723,
+      "limitation_integrity": 2.385
+    },
+    "maturity_memberships": {
+      "design_reflection": {
+        "0": 0.0,
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.4706,
+        "4": 0.0588,
+        "5": 0.4706
+      },
+      "context_exploration": {
+        "0": 0.0,
+        "1": 0.4456,
+        "2": 0.3163,
+        "3": 0.0,
+        "4": 0.0476,
+        "5": 0.1905
+      },
+      "diverse_perspectives": {
+        "0": 0.0,
+        "1": 0.0,
+        "2": 0.103,
+        "3": 0.1854,
+        "4": 0.3846,
+        "5": 0.3269
+      },
+      "impact_anticipation": {
+        "0": 0.0833,
+        "1": 0.5476,
+        "2": 0.119,
+        "3": 0.0833,
+        "4": 0.0833,
+        "5": 0.0833
+      },
+      "hp_response": {
+        "0": 0.0467,
+        "1": 0.1369,
+        "2": 0.0467,
+        "3": 0.3266,
+        "4": 0.1166,
+        "5": 0.3266
+      },
+      "limitation_integrity": {
+        "0": 0.025,
+        "1": 0.35,
+        "2": 0.05,
+        "3": 0.525,
+        "4": 0.025,
+        "5": 0.025
+      }
+    },
+    "next_step": "建议在后续回访中，向聂桓老师展示项目在跨学科叙事和工程化目标上的具体改进，并探讨如何将共享失败经验与不可复制资源纳入合作框架。",
+    "next_step_en": "In the follow-up, present specific improvements in interdisciplinary narrative and engineering goals, and discuss how to incorporate shared failure experiences and non-replicable resources into the collaboration framework.",
+    "suggested_materials": [
+      "更新后的项目介绍PPT（突出工程化目标与证据边界）",
+      "跨学科合作框架草案（含共享失败经验与不可复制资源的机制）",
+      "项目Wiki页面截图（展示叙事改进）"
+    ],
+    "suggested_materials_en": [
+      "Updated project presentation PPT (highlighting engineering goals and evidence boundaries)",
+      "Draft interdisciplinary collaboration framework (including mechanisms for sharing failure experiences and non-replicable resources)",
+      "Screenshots of project Wiki pages (showing narrative improvements)"
+    ],
+    "suggested_questions": [
+      "您认为我们在项目介绍中如何更清晰地表达工程化目标，以便其他团队快速理解？",
+      "对于共享失败经验，您建议我们采用哪些具体形式或平台？",
+      "您觉得哪些类型的不可复制资源最值得在跨校合作中共享？",
+      "我们的叙事改进是否有效解决了您之前提到的‘被看懂’问题？"
+    ],
+    "suggested_questions_en": [
+      "How can we more clearly express our engineering goals in the project introduction so that other teams can quickly understand?",
+      "What specific formats or platforms do you suggest for sharing failure experiences?",
+      "What types of non-replicable resources do you think are most valuable to share in cross-institutional collaborations?",
+      "Have our narrative improvements effectively addressed the 'being understood' issue you mentioned earlier?"
+    ]
+  },
+  {
+    "hp_id": "HP_20260419_西安市浮生闲猫咪驿站工作人员调研_HP利益相关者主线_JU_Kr",
+    "source_file": "hp record\\20260419_西安市浮生闲猫咪驿站工作人员调研_HP利益相关者主线_JU_Krakow风格_中文版.docx",
+    "date": "2026-04-19",
+    "stakeholder": "西安市浮生闲猫咪驿站工作人员",
+    "stakeholder_type": "养殖端 stakeholder",
+    "initial_question": "宠物端真实用药行为是否存在被忽略的风险？",
+    "feedback": "宠物猫并不是频繁使用抗生素的对象，但不当用药、过量用药、反复皮肤病和局部感染仍可能造成治疗困难。实际场景中，问题常常不是'用不用抗生素'这么简单，而是诊断、剂量、联合用药和主人认知共同决定结果。",
+    "project_action": "我们把宠物端写成 AMPlify 主线中的'日常照护与用药认知'层：它帮助我们解释为什么抗菌药物替代方案必须谨慎、可解释，并明确边界；同时也说明项目主要验证场景仍应聚焦更高风险、更可控的动物感染问题。",
+    "evidence": [],
+    "returned": false,
+    "processing_mode": "llm",
+    "visits": [],
+    "extension_ref": "",
+    "llm_module_values": {
+      "Safety": 0.7,
+      "Model": 0.0,
+      "Implementation": 0.7,
+      "Material": 0.0,
+      "Problem Definition": 1.0,
+      "Environment": 0.7,
+      "Software": 0.0,
+      "Education": 1.0,
+      "Social Media": 0.35
+    },
+    "llm_maturity_values": {
+      "design_reflection": 0.7,
+      "context_scene": 0.7,
+      "risk": 0.7,
+      "mitigation": 0.7,
+      "limitation": 0.7,
+      "boundary": 0.7
+    },
+    "llm_feedback_summary": "宠物端抗生素使用问题复杂，涉及诊断、剂量、联合用药和主人认知，需谨慎处理替代方案。",
+    "llm_action_summary": "将宠物端定位为'日常照护与用药认知'层，明确项目验证重点仍为高风险可控感染场景。",
+    "llm_wiki_en_section": "### 2026-04-19 — Staff at Xi'an Fushengxian Cat Shelter\n\n#### Key Feedback\n- Cats are not frequent antibiotic users, but improper use, overuse, and recurrent skin or localized infections can still lead to treatment difficulties.\n- The real-world problem is not simply 'whether to use antibiotics' but a complex interplay of diagnosis, dosage, combination therapy, and owner awareness.\n- The shelter staff emphasized that the decision to use antibiotics is often influenced by practical constraints and owner behavior, not just clinical need.\n\n#### Modules Affected\n- Safety\n- Implementation\n- Problem Definition\n- Environment\n- Education\n- Social Media\n\n#### Project Changes\n- Reframed the pet companion animal context as a 'daily care and medication awareness' layer within AMPlify's main storyline.\n- Clarified that AMPlify's alternative antimicrobials must be cautious, explainable, and have clear boundaries in this context.\n- Reaffirmed that the primary validation scenarios should focus on higher-risk, more controllable animal infections, rather than pet use cases.\n- Incorporated the shelter's insights into our educational and social media materials to raise awareness about responsible antibiotic use in pets.\n\n#### Storyline Position\nThis conversation added a nuanced layer to our project narrative, highlighting the importance of understanding real-world antibiotic use behaviors. It reinforced that AMPlify's role is not to replace all antibiotics but to provide targeted alternatives where they are most needed, while promoting responsible use across all animal care settings.",
+    "llm_stability": 0.9333,
+    "llm_raw_dir": "hp_compass_output_llm\\llm_raw\\20260419_西安市浮生闲猫咪驿站工作人员调研_HP利益相关者主线_JU_Krakow风格_",
+    "llm_next_step_cn": "建议在后续回访中，向驿站工作人员展示 AMPlify 在宠物皮肤病与局部感染场景的体外评估数据，并共同探讨如何将'诊断-剂量-联合用药'认知融入项目教育材料，同时明确项目当前仅处于科研阶段，不涉及临床使用。",
+    "llm_next_step_en": "In the follow-up visit, present AMPlify's in vitro evaluation data for pet skin and local infection scenarios, and discuss with the shelter staff how to integrate the 'diagnosis-dose-combination' awareness into educational materials, while clarifying that the project is currently at the research stage only.",
+    "llm_materials_cn": [
+      "AMPlify 宠物皮肤感染场景的体外评估结果摘要",
+      "抗菌肽与传统抗生素作用机制对比的科普折页",
+      "宠物用药认知调查问卷（用于收集更多反馈）"
+    ],
+    "llm_materials_en": [
+      "Summary of AMPlify in vitro evaluation for pet skin infection scenarios",
+      "Educational brochure comparing mechanisms of antimicrobial peptides vs. traditional antibiotics",
+      "Survey questionnaire on pet medication awareness (to gather more feedback)"
+    ],
+    "llm_questions_cn": [
+      "您认为在宠物皮肤病治疗中，主人最常出现的用药误区有哪些？",
+      "如果 AMPlify 未来提供辅助诊断建议，您希望它以什么形式呈现给宠物主人？",
+      "您觉得哪些信息最能帮助宠物主人理解抗菌肽替代方案的科研边界？"
+    ],
+    "llm_questions_en": [
+      "What are the most common medication misconceptions among pet owners in treating skin diseases?",
+      "If AMPlify were to provide diagnostic support in the future, what format would be most helpful for pet owners?",
+      "What information do you think would best help pet owners understand the research boundaries of antimicrobial peptide alternatives?"
+    ],
+    "categories": [
+      {
+        "category": "Problem Definition",
+        "score": 1.0,
+        "matched_terms": [
+          "LLM:1.00"
+        ]
+      },
+      {
+        "category": "Education",
+        "score": 1.0,
+        "matched_terms": [
+          "LLM:1.00"
+        ]
+      },
+      {
+        "category": "Safety",
+        "score": 0.7,
+        "matched_terms": [
+          "LLM:0.70"
+        ]
+      },
+      {
+        "category": "Implementation",
+        "score": 0.7,
+        "matched_terms": [
+          "LLM:0.70"
+        ]
+      },
+      {
+        "category": "Environment",
+        "score": 0.7,
+        "matched_terms": [
+          "LLM:0.70"
+        ]
+      }
+    ],
+    "affected_modules": [
+      "Problem Definition",
+      "Education",
+      "Safety",
+      "Implementation",
+      "Environment"
+    ],
+    "module_memberships": {
+      "Safety": 0.7,
+      "Model": 0.0,
+      "Implementation": 0.7,
+      "Material": 0.0,
+      "Problem Definition": 1.0,
+      "Environment": 0.7,
+      "Software": 0.0,
+      "Education": 1.0,
+      "Social Media": 0.35
+    },
+    "loop_status": "L2_Actioned",
+    "loop_level": 2,
+    "evidence_strength": 0.0,
+    "priority_score": 0.637,
+    "priority_factors": {
+      "loop_gap": 0.5,
+      "cross_module_impact": 1.0,
+      "project_criticality": 0.7,
+      "time_urgency": 0.7,
+      "evidence_weakness": 1.0,
+      "stakeholder_value": 0.5
+    },
+    "fce_vector": {
+      "b1": 0.0,
+      "b2": 0.5208,
+      "b3": 0.2282,
+      "b4": 0.251
+    },
+    "fce_u1_vector": {
+      "b1_1": 0.0,
+      "b1_2": 0.5925,
+      "b1_3": 0.1575,
+      "b1_4": 0.25
+    },
+    "fce_u2_vector": {
+      "b2_1": 0.0,
+      "b2_2": 0.3773,
+      "b2_3": 0.3697,
+      "b2_4": 0.253
+    },
+    "maturity_scores": {
+      "design_reflection": 2,
+      "context_exploration": 3,
+      "diverse_perspectives": 5,
+      "impact_anticipation": 3,
+      "hp_response": 2,
+      "limitation_integrity": 3
+    },
+    "maturity_eigenvalues": {
+      "design_reflection": 1.919,
+      "context_exploration": 3.261,
+      "diverse_perspectives": 4.385,
+      "impact_anticipation": 2.999,
+      "hp_response": 1.828,
+      "limitation_integrity": 2.998
+    },
+    "maturity_memberships": {
+      "design_reflection": {
+        "0": 0.0417,
+        "1": 0.2917,
+        "2": 0.3417,
+        "3": 0.2417,
+        "4": 0.0417,
+        "5": 0.0417
+      },
+      "context_exploration": {
+        "0": 0.0333,
+        "1": 0.0333,
+        "2": 0.0333,
+        "3": 0.5917,
+        "4": 0.075,
+        "5": 0.2333
+      },
+      "diverse_perspectives": {
+        "0": 0.0,
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.4,
+        "4": 0.0,
+        "5": 0.6
+      },
+      "impact_anticipation": {
+        "0": 0.0167,
+        "1": 0.0167,
+        "2": 0.0167,
+        "3": 0.9167,
+        "4": 0.0167,
+        "5": 0.0167
+      },
+      "hp_response": {
+        "0": 0.0909,
+        "1": 0.2727,
+        "2": 0.3636,
+        "3": 0.0909,
+        "4": 0.0909,
+        "5": 0.0909
+      },
+      "limitation_integrity": {
+        "0": 0.025,
+        "1": 0.025,
+        "2": 0.025,
+        "3": 0.875,
+        "4": 0.025,
+        "5": 0.025
+      }
+    },
+    "next_step": "建议在后续回访中，向驿站工作人员展示 AMPlify 在宠物皮肤病与局部感染场景的体外评估数据，并共同探讨如何将'诊断-剂量-联合用药'认知融入项目教育材料，同时明确项目当前仅处于科研阶段，不涉及临床使用。",
+    "next_step_en": "In the follow-up visit, present AMPlify's in vitro evaluation data for pet skin and local infection scenarios, and discuss with the shelter staff how to integrate the 'diagnosis-dose-combination' awareness into educational materials, while clarifying that the project is currently at the research stage only.",
+    "suggested_materials": [
+      "AMPlify 宠物皮肤感染场景的体外评估结果摘要",
+      "抗菌肽与传统抗生素作用机制对比的科普折页",
+      "宠物用药认知调查问卷（用于收集更多反馈）"
+    ],
+    "suggested_materials_en": [
+      "Summary of AMPlify in vitro evaluation for pet skin infection scenarios",
+      "Educational brochure comparing mechanisms of antimicrobial peptides vs. traditional antibiotics",
+      "Survey questionnaire on pet medication awareness (to gather more feedback)"
+    ],
+    "suggested_questions": [
+      "您认为在宠物皮肤病治疗中，主人最常出现的用药误区有哪些？",
+      "如果 AMPlify 未来提供辅助诊断建议，您希望它以什么形式呈现给宠物主人？",
+      "您觉得哪些信息最能帮助宠物主人理解抗菌肽替代方案的科研边界？"
+    ],
+    "suggested_questions_en": [
+      "What are the most common medication misconceptions among pet owners in treating skin diseases?",
+      "If AMPlify were to provide diagnostic support in the future, what format would be most helpful for pet owners?",
+      "What information do you think would best help pet owners understand the research boundaries of antimicrobial peptide alternatives?"
+    ]
+  },
+  {
+    "hp_id": "HP_20260420_杨陵除张村羊场人员张伟调研_HP利益相关者主线_JU_Krako",
+    "source_file": "hp record\\20260420_杨陵除张村羊场人员张伟调研_HP利益相关者主线_JU_Krakow风格_中文版.docx",
+    "date": "2026-04-20",
+    "stakeholder": "杨陵揉谷镇除张村羊场人员张伟",
+    "stakeholder_type": "养殖端 stakeholder",
+    "initial_question": "在禁抗、食品安全和规模化管理限制下，养殖端真正需要什么样的抗菌替代方案？",
+    "feedback": "羊场以预防为主，乳房炎频率不高但损失明显，混合感染风险使一线更重视广谱、低损伤、给药便利性和成本可控性。养殖户不会因为技术概念新颖就接受，首先关心是否有效、是否影响羊体健康和羊奶质量、能否降低治疗和人工成本、是否适合群体化管理。更倾向广谱型抗菌肽，因为羊群可能同时暴露于多种病原，实际养殖中很难每次先完成专业病原检测再选择特异性产品。",
+    "project_action": "主线从“设计候选抗菌肽”推进为“候选肽必须面对真实养殖约束”，将应用背景具体到泌乳羊场、羊奶安全和群体化防控，将给药方式（拌料）纳入项目叙事，并提醒谨慎表达AI设计成果。",
+    "evidence": [],
+    "returned": false,
+    "processing_mode": "llm",
+    "visits": [],
+    "extension_ref": "",
+    "llm_module_values": {
+      "Safety": 0.7,
+      "Model": 0.35,
+      "Implementation": 1.0,
+      "Material": 0.7,
+      "Problem Definition": 1.0,
+      "Environment": 0.7,
+      "Software": 0.35,
+      "Education": 0.35,
+      "Social Media": 0.0
+    },
+    "llm_maturity_values": {
+      "design_reflection": 1.0,
+      "context_scene": 1.0,
+      "risk": 0.7,
+      "mitigation": 0.7,
+      "limitation": 0.7,
+      "boundary": 0.7
+    },
+    "llm_feedback_summary": "羊场重视广谱、低损伤、给药便利和成本，不因技术新颖而接受。",
+    "llm_action_summary": "项目转向泌乳羊场应用，强调广谱、拌料给药与羊奶安全，谨慎表达AI成果。",
+    "llm_wiki_en_section": "### 2026-04-20 — Zhang Wei, Sheep Farm Worker, Chuchu Village, Rougu Town, Yangling\n\n#### Key Feedback\n- The farm prioritizes prevention over treatment; mastitis is not frequent but causes significant losses when it occurs.\n- Mixed infections are common, so farm workers prefer broad-spectrum antimicrobial alternatives that are low-damage, easy to administer, and cost-effective.\\- Farmers are not swayed by novel technology; they first ask whether it works, whether it affects sheep health and milk quality, whether it reduces treatment and labor costs, and whether it fits group management.\n- They favor broad-spectrum antimicrobial peptides because sheep may be exposed to multiple pathogens simultaneously, and it is impractical to run diagnostic tests before each treatment.\n\n#### Modules Affected\n- Problem Definition\n- Safety\n- Model\n- Implementation\n- Material\n- Environment\n- Software\n- Education\n\n#### Project Changes\n- Shifted the project's main line from \"designing candidate AMPs\" to \"candidate peptides must address real farming constraints.\"\n- Specified the application context to lactating sheep farms, milk safety, and group-based prevention.\n- Incorporated the delivery method (feed mixing) into the project narrative.\n- Added a caution to temper claims about AI-designed outcomes.\n\n#### Storyline Position\nThis interview grounded the project in the realities of livestock management, steering the design toward practical, broad-spectrum solutions that farmers would trust and adopt. It reinforced the importance of integrating stakeholder feedback early, shaping the project's trajectory from lab-focused design to field-ready application.",
+    "llm_stability": 1.0,
+    "llm_raw_dir": "hp_compass_output_llm\\llm_raw\\20260420_杨陵除张村羊场人员张伟调研_HP利益相关者主线_JU_Krakow风格_中文版",
+    "llm_next_step_cn": "回访时请携带广谱型候选肽的体外活性与安全性数据，并演示拌料给药方案的成本估算，重点说明对羊奶质量无影响。",
+    "llm_next_step_en": "During the follow-up visit, bring in vitro activity and safety data of broad-spectrum candidate peptides, and demonstrate cost estimates for feed-based administration, emphasizing no impact on milk quality.",
+    "llm_materials_cn": [
+      "广谱型候选抗菌肽的体外活性与安全性数据摘要",
+      "拌料给药方案的成本估算与操作流程说明",
+      "羊奶质量影响评估的初步结果（如有）"
+    ],
+    "llm_materials_en": [
+      "Summary of in vitro activity and safety data for broad-spectrum candidate peptides",
+      "Cost estimation and operational procedure for feed-based administration",
+      "Preliminary results on milk quality impact (if available)"
+    ],
+    "llm_questions_cn": [
+      "您对拌料给药方式的具体操作细节和成本接受度如何？",
+      "在混合感染场景下，您希望抗菌肽对哪些病原菌有优先覆盖？",
+      "如果抗菌肽能降低乳房炎发病率，您愿意为此增加多少成本？"
+    ],
+    "llm_questions_en": [
+      "What are your specific operational concerns and cost acceptance for feed-based administration?",
+      "In mixed-infection scenarios, which pathogens would you prioritize for coverage?",
+      "If the antimicrobial peptide could reduce mastitis incidence, how much additional cost would you be willing to accept?"
+    ],
+    "categories": [
+      {
+        "category": "Implementation",
+        "score": 1.0,
+        "matched_terms": [
+          "LLM:1.00"
+        ]
+      },
+      {
+        "category": "Problem Definition",
+        "score": 1.0,
+        "matched_terms": [
+          "LLM:1.00"
+        ]
+      },
+      {
+        "category": "Safety",
+        "score": 0.7,
+        "matched_terms": [
+          "LLM:0.70"
+        ]
+      },
+      {
+        "category": "Material",
+        "score": 0.7,
+        "matched_terms": [
+          "LLM:0.70"
+        ]
+      },
+      {
+        "category": "Environment",
+        "score": 0.7,
+        "matched_terms": [
+          "LLM:0.70"
+        ]
+      }
+    ],
+    "affected_modules": [
+      "Implementation",
+      "Problem Definition",
+      "Safety",
+      "Material",
+      "Environment"
+    ],
+    "module_memberships": {
+      "Safety": 0.7,
+      "Model": 0.35,
+      "Implementation": 1.0,
+      "Material": 0.7,
+      "Problem Definition": 1.0,
+      "Environment": 0.7,
+      "Software": 0.35,
+      "Education": 0.35,
+      "Social Media": 0.0
+    },
+    "loop_status": "L2_Actioned",
+    "loop_level": 2,
+    "evidence_strength": 0.0,
+    "priority_score": 0.689,
+    "priority_factors": {
+      "loop_gap": 0.5,
+      "cross_module_impact": 1.0,
+      "project_criticality": 0.8,
+      "time_urgency": 0.7,
+      "evidence_weakness": 1.0,
+      "stakeholder_value": 0.8
+    },
+    "fce_vector": {
+      "b1": 0.0,
+      "b2": 0.3745,
+      "b3": 0.3224,
+      "b4": 0.3031
+    },
+    "fce_u1_vector": {
+      "b1_1": 0.0,
+      "b1_2": 0.5047,
+      "b1_3": 0.1963,
+      "b1_4": 0.2991
+    },
+    "fce_u2_vector": {
+      "b2_1": 0.0,
+      "b2_2": 0.1136,
+      "b2_3": 0.5751,
+      "b2_4": 0.3113
+    },
+    "maturity_scores": {
+      "design_reflection": 2,
+      "context_exploration": 5,
+      "diverse_perspectives": 5,
+      "impact_anticipation": 3,
+      "hp_response": 2,
+      "limitation_integrity": 3
+    },
+    "maturity_eigenvalues": {
+      "design_reflection": 2.346,
+      "context_exploration": 4.667,
+      "diverse_perspectives": 4.761,
+      "impact_anticipation": 2.999,
+      "hp_response": 1.914,
+      "limitation_integrity": 2.998
+    },
+    "maturity_memberships": {
+      "design_reflection": {
+        "0": 0.0417,
+        "1": 0.2917,
+        "2": 0.3417,
+        "3": 0.0417,
+        "4": 0.0417,
+        "5": 0.2417
+      },
+      "context_exploration": {
+        "0": 0.0333,
+        "1": 0.0333,
+        "2": 0.0333,
+        "3": 0.2417,
+        "4": 0.075,
+        "5": 0.5833
+      },
+      "diverse_perspectives": {
+        "0": 0.0,
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.1389,
+        "4": 0.2611,
+        "5": 0.6
+      },
+      "impact_anticipation": {
+        "0": 0.0167,
+        "1": 0.0167,
+        "2": 0.0167,
+        "3": 0.9167,
+        "4": 0.0167,
+        "5": 0.0167
+      },
+      "hp_response": {
+        "0": 0.0952,
+        "1": 0.2381,
+        "2": 0.381,
+        "3": 0.0952,
+        "4": 0.0952,
+        "5": 0.0952
+      },
+      "limitation_integrity": {
+        "0": 0.025,
+        "1": 0.025,
+        "2": 0.025,
+        "3": 0.875,
+        "4": 0.025,
+        "5": 0.025
+      }
+    },
+    "next_step": "回访时请携带广谱型候选肽的体外活性与安全性数据，并演示拌料给药方案的成本估算，重点说明对羊奶质量无影响。",
+    "next_step_en": "During the follow-up visit, bring in vitro activity and safety data of broad-spectrum candidate peptides, and demonstrate cost estimates for feed-based administration, emphasizing no impact on milk quality.",
+    "suggested_materials": [
+      "广谱型候选抗菌肽的体外活性与安全性数据摘要",
+      "拌料给药方案的成本估算与操作流程说明",
+      "羊奶质量影响评估的初步结果（如有）"
+    ],
+    "suggested_materials_en": [
+      "Summary of in vitro activity and safety data for broad-spectrum candidate peptides",
+      "Cost estimation and operational procedure for feed-based administration",
+      "Preliminary results on milk quality impact (if available)"
+    ],
+    "suggested_questions": [
+      "您对拌料给药方式的具体操作细节和成本接受度如何？",
+      "在混合感染场景下，您希望抗菌肽对哪些病原菌有优先覆盖？",
+      "如果抗菌肽能降低乳房炎发病率，您愿意为此增加多少成本？"
+    ],
+    "suggested_questions_en": [
+      "What are your specific operational concerns and cost acceptance for feed-based administration?",
+      "In mixed-infection scenarios, which pathogens would you prioritize for coverage?",
+      "If the antimicrobial peptide could reduce mastitis incidence, how much additional cost would you be willing to accept?"
+    ]
+  },
+  {
+    "hp_id": "HP_20260422_武功县诚威奶山羊羊场负责人杜欣愿羊乳房炎调研_HP利益相关者主线",
+    "source_file": "hp record\\20260422_武功县诚威奶山羊羊场负责人杜欣愿羊乳房炎调研_HP利益相关者主线_JU_Krakow风格_中文版，修改.docx",
+    "date": "2026-04-22",
+    "stakeholder": "武功县诚威奶山羊羊场负责人杜欣愿",
+    "stakeholder_type": "养殖端 stakeholder",
+    "initial_question": "团队想了解奶山羊乳房炎的发病情况、防控实践、现有治疗痛点和新型抗菌肽产品需求，以明确项目真正要回应的疾病痛点。",
+    "feedback": "乳房炎年发病率约10%，慢性型常见且易复发，造成泌乳下降、硬块、萎缩；急性或败血性少见但危害大，常与金黄色葡萄球菌、厌氧菌相关。现有治疗依赖氨苄西林钠，肌肉注射和乳房灌注联合给药，疗程7天，彻底恢复需10-14天，费用200-300元，慢性病例第二年可能复发。基层缺乏病原检测条件，倾向广谱通用型方案，免鉴定、覆盖多病原。养殖户更相信2-4只患病羊的真实验证和口碑扩散。",
+    "project_action": "团队将项目主线从'候选抗菌肽能否抗菌'推进到'候选抗菌肽是否能回应奶山羊乳房炎的真实治疗约束'，强化广谱路线，明确未来必须面对的疾病边界和应用标准。",
+    "evidence": [
+      "访谈记录"
+    ],
+    "returned": false,
+    "processing_mode": "llm",
+    "visits": [],
+    "extension_ref": "",
+    "llm_module_values": {
+      "Safety": 0.7,
+      "Model": 0.35,
+      "Implementation": 1.0,
+      "Material": 0.7,
+      "Problem Definition": 1.0,
+      "Environment": 0.35,
+      "Software": 0.0,
+      "Education": 0.35,
+      "Social Media": 0.35
+    },
+    "llm_maturity_values": {
+      "design_reflection": 1.0,
+      "context_scene": 1.0,
+      "risk": 0.7,
+      "mitigation": 0.35,
+      "limitation": 0.7,
+      "boundary": 0.7
+    },
+    "llm_feedback_summary": "奶山羊乳房炎慢性高发，依赖抗生素，需广谱免鉴定方案，养殖户看重真实病例验证。",
+    "llm_action_summary": "项目转向回应真实治疗约束，强化广谱路线，明确疾病边界与应用标准。",
+    "llm_wiki_en_section": "### 2026-04-22 — Du Xinyuan, Manager of Chengwei Dairy Goat Farm, Wugong County\n\n#### Key Feedback\n- Annual mastitis incidence around 10%, with chronic cases being common and prone to relapse, leading to reduced milk yield, udder hardening, and atrophy.\n- Acute or septicemic mastitis is rare but severe, often associated with *Staphylococcus aureus* and anaerobic bacteria.\n- Current treatment relies on ampicillin sodium, administered via intramuscular injection and intramammary infusion, over a 7-day course; full recovery takes 10–14 days and costs 200–300 RMB per case. Chronic cases may recur the following year.\n- Grassroots farms lack pathogen detection capabilities, so they prefer broad-spectrum, universal treatments that do not require pathogen identification and cover multiple pathogens.\n- Farmers trust real-world validation on 2–4 affected goats and word-of-mouth over theoretical claims.\n\n#### Modules Affected\n- Safety\n- Model\n- Implementation\n- Material\n- Problem Definition\n- Environment\n- Education\n- Social Media\n\n#### Project Changes\n- Shifted the project's core focus from \"whether candidate AMPs are antimicrobial\" to \"whether candidate AMPs can address the real treatment constraints of dairy goat mastitis.\"\n- Strengthened the broad-spectrum approach, ensuring the AMP candidates are designed to cover multiple pathogens without requiring prior identification.\n- Defined the disease boundaries and application standards that the final product must meet, based on the farm's practical conditions (e.g., cost, treatment duration, and ease of use).\n- Incorporated the need for on-farm validation on a small number of animals (2–4) into the implementation strategy.\n\n#### Storyline Position\nThis conversation grounded the project in the real-world context of a local dairy goat farm, moving the narrative from laboratory-centric AMP discovery to a solution-oriented approach that addresses the specific pain points of livestock producers. It reinforced the One Health mission by aligning our technical development with the practical needs of animal health and antibiotic reduction.",
+    "llm_stability": 0.8,
+    "llm_raw_dir": "hp_compass_output_llm\\llm_raw\\20260422_武功县诚威奶山羊羊场负责人杜欣愿羊乳房炎调研_HP利益相关者主线_JU_Kra",
+    "llm_next_step_cn": "建议团队在下一轮回访中，携带基于广谱候选肽的体外抑菌数据（针对金葡菌和厌氧菌），并与养殖户讨论在真实羊场环境中进行小规模验证的可行性，同时收集关于给药方式和疗程的进一步反馈。",
+    "llm_next_step_en": "In the next visit, bring in vitro efficacy data of broad-spectrum candidate peptides against S. aureus and anaerobes, discuss the feasibility of small-scale field validation, and gather more feedback on administration routes and treatment duration.",
+    "llm_materials_cn": [
+      "候选抗菌肽的体外抑菌谱数据（含金葡菌和厌氧菌）",
+      "广谱抗菌肽与传统抗生素的对比说明图",
+      "羊场乳房炎病例记录表模板"
+    ],
+    "llm_materials_en": [
+      "In vitro spectrum data of candidate AMPs (including S. aureus and anaerobes)",
+      "Comparative infographic of broad-spectrum AMPs vs. conventional antibiotics",
+      "Template for recording mastitis cases in the goat farm"
+    ],
+    "llm_questions_cn": [
+      "如果我们的候选肽在体外对金葡菌和厌氧菌都有效，您是否愿意参与后续的小规模羊场试验？",
+      "您认为在实际治疗中，注射和灌注哪种方式更容易操作？对肽类药物的剂型有什么期望？",
+      "对于慢性复发性乳房炎，您希望新疗法在疗程和费用上达到什么水平才愿意替代现有抗生素？"
+    ],
+    "llm_questions_en": [
+      "If our candidate peptides show efficacy against S. aureus and anaerobes in vitro, would you be willing to participate in a small-scale field trial?",
+      "In practice, which administration route (injection or infusion) is easier for you? What formulation would you expect for peptide drugs?",
+      "For chronic recurrent mastitis, what treatment duration and cost would make you consider replacing current antibiotics?"
+    ],
+    "categories": [
+      {
+        "category": "Implementation",
+        "score": 1.0,
+        "matched_terms": [
+          "LLM:1.00"
+        ]
+      },
+      {
+        "category": "Problem Definition",
+        "score": 1.0,
+        "matched_terms": [
+          "LLM:1.00"
+        ]
+      },
+      {
+        "category": "Safety",
+        "score": 0.7,
+        "matched_terms": [
+          "LLM:0.70"
+        ]
+      },
+      {
+        "category": "Material",
+        "score": 0.7,
+        "matched_terms": [
+          "LLM:0.70"
+        ]
+      },
+      {
+        "category": "Model",
+        "score": 0.35,
+        "matched_terms": [
+          "LLM:0.35"
+        ]
+      }
+    ],
+    "affected_modules": [
+      "Implementation",
+      "Problem Definition",
+      "Safety",
+      "Material",
+      "Model"
+    ],
+    "module_memberships": {
+      "Safety": 0.7,
+      "Model": 0.35,
+      "Implementation": 1.0,
+      "Material": 0.7,
+      "Problem Definition": 1.0,
+      "Environment": 0.35,
+      "Software": 0.0,
+      "Education": 0.35,
+      "Social Media": 0.35
+    },
+    "loop_status": "L3_Evidenced",
+    "loop_level": 3,
+    "evidence_strength": 0.55,
+    "priority_score": 0.787,
+    "priority_factors": {
+      "loop_gap": 0.25,
+      "cross_module_impact": 1.0,
+      "project_criticality": 0.8,
+      "time_urgency": 0.7,
+      "evidence_weakness": 0.45,
+      "stakeholder_value": 0.8
+    },
+    "fce_vector": {
+      "b1": 0.0,
+      "b2": 0.1155,
+      "b3": 0.4558,
+      "b4": 0.4287
+    },
+    "fce_u1_vector": {
+      "b1_1": 0.0,
+      "b1_2": 0.0,
+      "b1_3": 0.3962,
+      "b1_4": 0.6038
+    },
+    "fce_u2_vector": {
+      "b2_1": 0.0,
+      "b2_2": 0.3469,
+      "b2_3": 0.5751,
+      "b2_4": 0.0781
+    },
+    "maturity_scores": {
+      "design_reflection": 3,
+      "context_exploration": 2,
+      "diverse_perspectives": 5,
+      "impact_anticipation": 3,
+      "hp_response": 2,
+      "limitation_integrity": 3
+    },
+    "maturity_eigenvalues": {
+      "design_reflection": 2.958,
+      "context_exploration": 3.265,
+      "diverse_perspectives": 4.523,
+      "impact_anticipation": 2.466,
+      "hp_response": 2.37,
+      "limitation_integrity": 2.998
+    },
+    "maturity_memberships": {
+      "design_reflection": {
+        "0": 0.0,
+        "1": 0.0,
+        "2": 0.3095,
+        "3": 0.4905,
+        "4": 0.0,
+        "5": 0.2
+      },
+      "context_exploration": {
+        "0": 0.0,
+        "1": 0.0,
+        "2": 0.4,
+        "3": 0.2083,
+        "4": 0.0417,
+        "5": 0.35
+      },
+      "diverse_perspectives": {
+        "0": 0.0,
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.3333,
+        "4": 0.0667,
+        "5": 0.6
+      },
+      "impact_anticipation": {
+        "0": 0.0167,
+        "1": 0.3417,
+        "2": 0.0417,
+        "3": 0.5667,
+        "4": 0.0167,
+        "5": 0.0167
+      },
+      "hp_response": {
+        "0": 0.0493,
+        "1": 0.1612,
+        "2": 0.3454,
+        "3": 0.3454,
+        "4": 0.0493,
+        "5": 0.0493
+      },
+      "limitation_integrity": {
+        "0": 0.025,
+        "1": 0.025,
+        "2": 0.025,
+        "3": 0.875,
+        "4": 0.025,
+        "5": 0.025
+      }
+    },
+    "next_step": "建议团队在下一轮回访中，携带基于广谱候选肽的体外抑菌数据（针对金葡菌和厌氧菌），并与养殖户讨论在真实羊场环境中进行小规模验证的可行性，同时收集关于给药方式和疗程的进一步反馈。",
+    "next_step_en": "In the next visit, bring in vitro efficacy data of broad-spectrum candidate peptides against S. aureus and anaerobes, discuss the feasibility of small-scale field validation, and gather more feedback on administration routes and treatment duration.",
+    "suggested_materials": [
+      "候选抗菌肽的体外抑菌谱数据（含金葡菌和厌氧菌）",
+      "广谱抗菌肽与传统抗生素的对比说明图",
+      "羊场乳房炎病例记录表模板"
+    ],
+    "suggested_materials_en": [
+      "In vitro spectrum data of candidate AMPs (including S. aureus and anaerobes)",
+      "Comparative infographic of broad-spectrum AMPs vs. conventional antibiotics",
+      "Template for recording mastitis cases in the goat farm"
+    ],
+    "suggested_questions": [
+      "如果我们的候选肽在体外对金葡菌和厌氧菌都有效，您是否愿意参与后续的小规模羊场试验？",
+      "您认为在实际治疗中，注射和灌注哪种方式更容易操作？对肽类药物的剂型有什么期望？",
+      "对于慢性复发性乳房炎，您希望新疗法在疗程和费用上达到什么水平才愿意替代现有抗生素？"
+    ],
+    "suggested_questions_en": [
+      "If our candidate peptides show efficacy against S. aureus and anaerobes in vitro, would you be willing to participate in a small-scale field trial?",
+      "In practice, which administration route (injection or infusion) is easier for you? What formulation would you expect for peptide drugs?",
+      "For chronic recurrent mastitis, what treatment duration and cost would make you consider replacing current antibiotics?"
+    ]
+  },
+  {
+    "hp_id": "HP_20260501_下乡采访散养羊村民_HP利益相关者主线_JU_Krakow风格_",
+    "source_file": "hp record\\20260501_下乡采访散养羊村民_HP利益相关者主线_JU_Krakow风格_中文版.docx",
+    "date": "2026-05-01",
+    "stakeholder": "基层执业兽医与散养户（乡村散养羊户）",
+    "stakeholder_type": "养殖端 stakeholder",
+    "initial_question": "在更分散、更依赖经验判断的散养场景中，项目需求是否仍然成立？",
+    "feedback": "散养户重视疫苗、通风和预防；认可乳腺炎根源是细菌感染，但对抗菌肽这类'高科技'方案保持审慎。受访者质疑抗菌肽是否意味着疫苗都不需要了，并提到炭疽、布病等人畜共患病风险。",
+    "project_action": "主线加入'基层可理解性'和'实验验证边界'：不能把抗菌肽说成万能替代品，需用更朴素、准确的语言解释项目，并明确其适应场景和验证边界。",
+    "evidence": [
+      "访谈记录"
+    ],
+    "returned": false,
+    "processing_mode": "llm",
+    "visits": [],
+    "extension_ref": "",
+    "llm_module_values": {
+      "Safety": 0.7,
+      "Model": 0.35,
+      "Implementation": 0.7,
+      "Material": 0.35,
+      "Problem Definition": 1.0,
+      "Environment": 0.7,
+      "Software": 0.0,
+      "Education": 0.7,
+      "Social Media": 0.35
+    },
+    "llm_maturity_values": {
+      "design_reflection": 1.0,
+      "context_scene": 1.0,
+      "risk": 0.7,
+      "mitigation": 0.7,
+      "limitation": 1.0,
+      "boundary": 1.0
+    },
+    "llm_feedback_summary": "散养户认可抗菌肽潜力，但担忧其替代疫苗，需明确其补充定位与验证边界。",
+    "llm_action_summary": "项目调整沟通策略，强调抗菌肽非替代疫苗，并强化实验验证边界的说明。",
+    "llm_wiki_en_section": "### 2026-05-01 — Rural Livestock Farmers and Practicing Veterinarians\n\n#### Key Feedback\n- Farmers prioritize vaccines, ventilation, and preventive care over treatment.\n- They recognize that mastitis is caused by bacterial infections, but remain skeptical of 'high-tech' solutions like antimicrobial peptides.\n- A farmer questioned whether AMPs would replace vaccines entirely, highlighting concerns about zoonotic diseases such as anthrax and brucellosis.\n\n#### Modules Affected\n- Safety\n- Model\n- Implementation\n- Material\n- Problem Definition\n- Environment\n- Education\n- Social Media\n\n#### Project Changes\n- Emphasized that AMPs are not a universal substitute for vaccines or other preventive measures.\n- Adopted simpler, more accurate language to explain the project to non-specialist audiences.\n- Clearly defined the intended use cases and validation boundaries of AMPs in the context of rural farming.\n\n#### Storyline Position\nThis conversation grounded our project in the realities of rural livestock management, reminding us that trust is built through clarity and humility. It reinforced that our solution must complement, not replace, existing practices, and that effective communication is as vital as the science itself.",
+    "llm_stability": 0.8667,
+    "llm_raw_dir": "hp_compass_output_llm\\llm_raw\\20260501_下乡采访散养羊村民_HP利益相关者主线_JU_Krakow风格_中文版",
+    "llm_next_step_cn": "回访时用更朴实的语言解释抗菌肽的定位，强调其是疫苗和管理的补充而非替代，并展示体外实验数据说明验证边界。",
+    "llm_next_step_en": "In the follow-up, explain AMPs as a supplement to vaccines and management, not a replacement, and present in vitro data to clarify validation boundaries.",
+    "llm_materials_cn": [
+      "抗菌肽作用机制的通俗图解",
+      "体外实验数据摘要（非临床）",
+      "疫苗与抗菌肽互补关系的说明单页"
+    ],
+    "llm_materials_en": [
+      "Simple diagram of AMP mechanism",
+      "Summary of in vitro data (non-clinical)",
+      "One-pager on complementarity of vaccines and AMPs"
+    ],
+    "llm_questions_cn": [
+      "您觉得我们这样解释抗菌肽，是否更容易理解？",
+      "在您的养殖实践中，哪些环节最需要抗菌肽这类工具？",
+      "您认为我们还需要提供哪些证据，才能让您更信任这个方案？"
+    ],
+    "llm_questions_en": [
+      "Does our explanation of AMPs make more sense to you now?",
+      "In your farming practice, which aspects could benefit most from AMPs?",
+      "What additional evidence would increase your trust in this approach?"
+    ],
+    "categories": [
+      {
+        "category": "Problem Definition",
+        "score": 1.0,
+        "matched_terms": [
+          "LLM:1.00"
+        ]
+      },
+      {
+        "category": "Safety",
+        "score": 0.7,
+        "matched_terms": [
+          "LLM:0.70"
+        ]
+      },
+      {
+        "category": "Implementation",
+        "score": 0.7,
+        "matched_terms": [
+          "LLM:0.70"
+        ]
+      },
+      {
+        "category": "Environment",
+        "score": 0.7,
+        "matched_terms": [
+          "LLM:0.70"
+        ]
+      },
+      {
+        "category": "Education",
+        "score": 0.7,
+        "matched_terms": [
+          "LLM:0.70"
+        ]
+      }
+    ],
+    "affected_modules": [
+      "Problem Definition",
+      "Safety",
+      "Implementation",
+      "Environment",
+      "Education"
+    ],
+    "module_memberships": {
+      "Safety": 0.7,
+      "Model": 0.35,
+      "Implementation": 0.7,
+      "Material": 0.35,
+      "Problem Definition": 1.0,
+      "Environment": 0.7,
+      "Software": 0.0,
+      "Education": 0.7,
+      "Social Media": 0.35
+    },
+    "loop_status": "L3_Evidenced",
+    "loop_level": 3,
+    "evidence_strength": 0.55,
+    "priority_score": 0.726,
+    "priority_factors": {
+      "loop_gap": 0.25,
+      "cross_module_impact": 1.0,
+      "project_criticality": 0.7,
+      "time_urgency": 0.7,
+      "evidence_weakness": 0.45,
+      "stakeholder_value": 0.5
+    },
+    "fce_vector": {
+      "b1": 0.0,
+      "b2": 0.286,
+      "b3": 0.3515,
+      "b4": 0.3625
+    },
+    "fce_u1_vector": {
+      "b1_1": 0.0,
+      "b1_2": 0.1141,
+      "b1_3": 0.3424,
+      "b1_4": 0.5435
+    },
+    "fce_u2_vector": {
+      "b2_1": 0.0,
+      "b2_2": 0.6303,
+      "b2_3": 0.3697,
+      "b2_4": 0.0
+    },
+    "maturity_scores": {
+      "design_reflection": 3,
+      "context_exploration": 5,
+      "diverse_perspectives": 5,
+      "impact_anticipation": 3,
+      "hp_response": 2,
+      "limitation_integrity": 5
+    },
+    "maturity_eigenvalues": {
+      "design_reflection": 2.578,
+      "context_exploration": 4.462,
+      "diverse_perspectives": 4.577,
+      "impact_anticipation": 2.999,
+      "hp_response": 2.411,
+      "limitation_integrity": 4.309
+    },
+    "maturity_memberships": {
+      "design_reflection": {
+        "0": 0.0,
+        "1": 0.25,
+        "2": 0.25,
+        "3": 0.3,
+        "4": 0.0,
+        "5": 0.2
+      },
+      "context_exploration": {
+        "0": 0.0,
+        "1": 0.0,
+        "2": 0.2,
+        "3": 0.2083,
+        "4": 0.0417,
+        "5": 0.55
+      },
+      "diverse_perspectives": {
+        "0": 0.0,
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.3056,
+        "4": 0.0944,
+        "5": 0.6
+      },
+      "impact_anticipation": {
+        "0": 0.0167,
+        "1": 0.0167,
+        "2": 0.0167,
+        "3": 0.9167,
+        "4": 0.0167,
+        "5": 0.0167
+      },
+      "hp_response": {
+        "0": 0.0507,
+        "1": 0.1385,
+        "2": 0.3547,
+        "3": 0.3547,
+        "4": 0.0507,
+        "5": 0.0507
+      },
+      "limitation_integrity": {
+        "0": 0.025,
+        "1": 0.025,
+        "2": 0.025,
+        "3": 0.375,
+        "4": 0.025,
+        "5": 0.525
+      }
+    },
+    "next_step": "回访时用更朴实的语言解释抗菌肽的定位，强调其是疫苗和管理的补充而非替代，并展示体外实验数据说明验证边界。",
+    "next_step_en": "In the follow-up, explain AMPs as a supplement to vaccines and management, not a replacement, and present in vitro data to clarify validation boundaries.",
+    "suggested_materials": [
+      "抗菌肽作用机制的通俗图解",
+      "体外实验数据摘要（非临床）",
+      "疫苗与抗菌肽互补关系的说明单页"
+    ],
+    "suggested_materials_en": [
+      "Simple diagram of AMP mechanism",
+      "Summary of in vitro data (non-clinical)",
+      "One-pager on complementarity of vaccines and AMPs"
+    ],
+    "suggested_questions": [
+      "您觉得我们这样解释抗菌肽，是否更容易理解？",
+      "在您的养殖实践中，哪些环节最需要抗菌肽这类工具？",
+      "您认为我们还需要提供哪些证据，才能让您更信任这个方案？"
+    ],
+    "suggested_questions_en": [
+      "Does our explanation of AMPs make more sense to you now?",
+      "In your farming practice, which aspects could benefit most from AMPs?",
+      "What additional evidence would increase your trust in this approach?"
+    ]
+  },
+  {
+    "hp_id": "HP_20260502_iGEM东北地区交流会_HP主线校准_JU_Krakow风格_中",
+    "source_file": "hp record\\20260502_iGEM东北地区交流会_HP主线校准_JU_Krakow风格_中文版(1).docx",
+    "date": "2026-05-02",
+    "stakeholder": "吉林大学举办的iGEM东北地区交流会参会队伍、经验分享者及其他iGEM成员",
+    "stakeholder_type": "iGEM、Wiki 交流 stakeholder",
+    "initial_question": "团队希望判断已有的大量调研材料能否被整理成清楚的项目主线，而不是变成彼此分散的活动记录。",
+    "feedback": "交流会提醒我们，高质量HP不取决于活动数量，而取决于能否说明Stakeholder → Feedback → Action → Impact；Education也不应堆数量，而要让受众真正理解问题；Wiki、海报和答辩需要共享同一条逻辑。",
+    "project_action": "会后，团队开始把HP写作重心放在概述、摘要卡片和故事主线；将Education从数量导向调整为互动质量导向；并要求每一次调研都写清它在主线中的位置，以及它如何改变项目表达或设计。",
+    "evidence": [],
+    "returned": false,
+    "processing_mode": "llm",
+    "visits": [],
+    "extension_ref": "",
+    "llm_module_values": {
+      "Safety": 0.0,
+      "Model": 0.0,
+      "Implementation": 0.7,
+      "Material": 0.0,
+      "Problem Definition": 0.7,
+      "Environment": 0.35,
+      "Software": 0.0,
+      "Education": 1.0,
+      "Social Media": 0.35
+    },
+    "llm_maturity_values": {
+      "design_reflection": 1.0,
+      "context_scene": 0.35,
+      "risk": 0.0,
+      "mitigation": 0.0,
+      "limitation": 0.7,
+      "boundary": 0.7
+    },
+    "llm_feedback_summary": "交流会提醒：HP质量重于数量，需明确Stakeholder→Feedback→Action→Impact，Education应重互动理解。",
+    "llm_action_summary": "团队重构HP叙事主线，调整Education为质量导向，并确保每次调研明确其在主线中的位置。",
+    "llm_wiki_en_section": "### 2026-05-02 — iGEM Northeast Regional Exchange, Jilin University\n\n#### Key Feedback\n- The exchange emphasized that high-quality Human Practices is not about the number of activities, but about clearly demonstrating the chain: Stakeholder → Feedback → Action → Impact.\n- Education efforts should not focus on quantity, but on ensuring the audience truly understands the problem.\n- The Wiki, poster, and presentation must share a single, coherent storyline.\n\n#### Modules Affected\n- Implementation\n- Problem Definition\n- Environment\n- Education\n- Social Media\n\n#### Project Changes\n- We shifted our HP writing focus to the overview, summary cards, and the main storyline.\n- We reoriented our Education module from quantity-driven to interaction-quality-driven.\n- We now require that every research activity explicitly states its position in the storyline and how it influenced our project's expression or design.\n\n#### Storyline Position\nThis exchange served as a pivotal checkpoint, helping us consolidate our extensive research into a clear, unified narrative. It reinforced that our project's impact is best communicated through a coherent story that connects stakeholder feedback to concrete actions, rather than a collection of isolated activities.",
+    "llm_stability": 1.0,
+    "llm_raw_dir": "hp_compass_output_llm\\llm_raw\\20260502_iGEM东北地区交流会_HP主线校准_JU_Krakow风格_中文版(1)",
+    "llm_next_step_cn": "建议在后续交流会上向分享者展示更新后的Wiki主线与HP叙事，并请其评估逻辑一致性是否提升。",
+    "llm_next_step_en": "Suggest presenting the updated Wiki narrative and HP storyline to the sharing team at a follow-up exchange, asking them to evaluate whether logical consistency has improved.",
+    "llm_materials_cn": [
+      "更新后的Wiki概述页与摘要卡片",
+      "HP故事主线图（Stakeholder→Feedback→Action→Impact）",
+      "Education互动活动记录与反馈",
+      "调研与项目修改对照表"
+    ],
+    "llm_materials_en": [
+      "Updated Wiki overview page and summary cards",
+      "HP storyline diagram (Stakeholder→Feedback→Action→Impact)",
+      "Education interactive activity records and feedback",
+      "Mapping table of research findings to project changes"
+    ],
+    "llm_questions_cn": [
+      "您认为我们现在的HP叙事是否清晰体现了每个反馈如何转化为行动？",
+      "在Education方面，我们调整后的互动活动是否更有效地让受众理解问题？",
+      "Wiki、海报和答辩的逻辑一致性是否还有改进空间？",
+      "您对我们下一步的HP重点有何建议？"
+    ],
+    "llm_questions_en": [
+      "Do you think our current HP narrative clearly shows how each feedback led to an action?",
+      "Regarding Education, do our adjusted interactive activities better help the audience understand the problem?",
+      "Is there still room to improve the logical consistency across Wiki, poster, and presentation?",
+      "What suggestions do you have for our next HP focus?"
+    ],
+    "categories": [
+      {
+        "category": "Education",
+        "score": 1.0,
+        "matched_terms": [
+          "LLM:1.00"
+        ]
+      },
+      {
+        "category": "Implementation",
+        "score": 0.7,
+        "matched_terms": [
+          "LLM:0.70"
+        ]
+      },
+      {
+        "category": "Problem Definition",
+        "score": 0.7,
+        "matched_terms": [
+          "LLM:0.70"
+        ]
+      },
+      {
+        "category": "Environment",
+        "score": 0.35,
+        "matched_terms": [
+          "LLM:0.35"
+        ]
+      },
+      {
+        "category": "Social Media",
+        "score": 0.35,
+        "matched_terms": [
+          "LLM:0.35"
+        ]
+      }
+    ],
+    "affected_modules": [
+      "Education",
+      "Implementation",
+      "Problem Definition",
+      "Environment",
+      "Social Media"
+    ],
+    "module_memberships": {
+      "Safety": 0.0,
+      "Model": 0.0,
+      "Implementation": 0.7,
+      "Material": 0.0,
+      "Problem Definition": 0.7,
+      "Environment": 0.35,
+      "Software": 0.0,
+      "Education": 1.0,
+      "Social Media": 0.35
+    },
+    "loop_status": "L2_Actioned",
+    "loop_level": 2,
+    "evidence_strength": 0.0,
+    "priority_score": 0.602,
+    "priority_factors": {
+      "loop_gap": 0.5,
+      "cross_module_impact": 0.775,
+      "project_criticality": 0.6,
+      "time_urgency": 0.7,
+      "evidence_weakness": 1.0,
+      "stakeholder_value": 0.65
+    },
+    "fce_vector": {
+      "b1": 0.0,
+      "b2": 0.53,
+      "b3": 0.3591,
+      "b4": 0.1109
+    },
+    "fce_u1_vector": {
+      "b1_1": 0.0,
+      "b1_2": 0.6696,
+      "b1_3": 0.2904,
+      "b1_4": 0.04
+    },
+    "fce_u2_vector": {
+      "b2_1": 0.0,
+      "b2_2": 0.2503,
+      "b2_3": 0.4967,
+      "b2_4": 0.253
+    },
+    "maturity_scores": {
+      "design_reflection": 2,
+      "context_exploration": 1,
+      "diverse_perspectives": 2,
+      "impact_anticipation": 1,
+      "hp_response": 2,
+      "limitation_integrity": 3
+    },
+    "maturity_eigenvalues": {
+      "design_reflection": 2.346,
+      "context_exploration": 1.742,
+      "diverse_perspectives": 2.486,
+      "impact_anticipation": 1.842,
+      "hp_response": 1.891,
+      "limitation_integrity": 2.944
+    },
+    "maturity_memberships": {
+      "design_reflection": {
+        "0": 0.0417,
+        "1": 0.2917,
+        "2": 0.3417,
+        "3": 0.0417,
+        "4": 0.0417,
+        "5": 0.2417
+      },
+      "context_exploration": {
+        "0": 0.0333,
+        "1": 0.5012,
+        "2": 0.1655,
+        "3": 0.0333,
+        "4": 0.0333,
+        "5": 0.2333
+      },
+      "diverse_perspectives": {
+        "0": 0.0,
+        "1": 0.0,
+        "2": 0.5071,
+        "3": 0.4929,
+        "4": 0.0,
+        "5": 0.0
+      },
+      "impact_anticipation": {
+        "0": 0.1333,
+        "1": 0.319,
+        "2": 0.1476,
+        "3": 0.1333,
+        "4": 0.1333,
+        "5": 0.1333
+      },
+      "hp_response": {
+        "0": 0.094,
+        "1": 0.2476,
+        "2": 0.3762,
+        "3": 0.094,
+        "4": 0.094,
+        "5": 0.094
+      },
+      "limitation_integrity": {
+        "0": 0.0833,
+        "1": 0.0833,
+        "2": 0.0833,
+        "3": 0.5833,
+        "4": 0.0833,
+        "5": 0.0833
+      }
+    },
+    "next_step": "建议在后续交流会上向分享者展示更新后的Wiki主线与HP叙事，并请其评估逻辑一致性是否提升。",
+    "next_step_en": "Suggest presenting the updated Wiki narrative and HP storyline to the sharing team at a follow-up exchange, asking them to evaluate whether logical consistency has improved.",
+    "suggested_materials": [
+      "更新后的Wiki概述页与摘要卡片",
+      "HP故事主线图（Stakeholder→Feedback→Action→Impact）",
+      "Education互动活动记录与反馈",
+      "调研与项目修改对照表"
+    ],
+    "suggested_materials_en": [
+      "Updated Wiki overview page and summary cards",
+      "HP storyline diagram (Stakeholder→Feedback→Action→Impact)",
+      "Education interactive activity records and feedback",
+      "Mapping table of research findings to project changes"
+    ],
+    "suggested_questions": [
+      "您认为我们现在的HP叙事是否清晰体现了每个反馈如何转化为行动？",
+      "在Education方面，我们调整后的互动活动是否更有效地让受众理解问题？",
+      "Wiki、海报和答辩的逻辑一致性是否还有改进空间？",
+      "您对我们下一步的HP重点有何建议？"
+    ],
+    "suggested_questions_en": [
+      "Do you think our current HP narrative clearly shows how each feedback led to an action?",
+      "Regarding Education, do our adjusted interactive activities better help the audience understand the problem?",
+      "Is there still room to improve the logical consistency across Wiki, poster, and presentation?",
+      "What suggestions do you have for our next HP focus?"
+    ]
+  },
+  {
+    "hp_id": "HP_20260527_钱勋教授访谈_HP小循环_主线优化版_JU_Krakow风格_中",
+    "source_file": "hp record\\20260527_钱勋教授访谈_HP小循环_主线优化版_JU_Krakow风格_中文版（修改）.docx",
+    "date": "2026-05-27",
+    "stakeholder": "西北农林科技大学资环学院钱勋教授",
+    "stakeholder_type": "环境微生物、ARG 专家",
+    "initial_question": "如果抗菌肽未来用于动物健康，它是否会像传统抗生素一样通过粪便、废水或其他路径进入环境？如果会，我们该如何负责任地描述它的环境边界？",
+    "feedback": "全球超70%抗生素用于畜禽养殖，约30%-60%以原型或不完全代谢物随粪尿排出。养殖粪污资源化利用、市政或养殖废水尾水、地表径流、土壤和水体迁移、养殖场气溶胶暴露等都可能参与生态循环。现有污水和粪污处理体系通常不把抗生素、耐药菌或 ARGs 作为常规监测指标，因此处理后是否完全去除这些风险并不容易判断。环境中即使只有低浓度抗生素残留，也能长期诱导抗性基因富集，形成持续选择压力。环境中已形成高背景抗性基因库，即使减少抗生素使用，抗性也难以快速回到原始状态。",
+    "project_action": "将候选肽筛选逻辑从 activity-safety balance 扩展为 activity-safety-environment balance，建立 Peptide Degradation Ease Score（PDES）模型来衡量抗菌肽的预测降解难易程度，并在软件报告中加入 Environmental Degradation Panel。PDES 只作为模型推断和决策支持，不被表述为已经完成的环境降解实验证据。同时调整安全表述，将“更环保”改写为“可能具有较低环境持留风险，但仍需要降解实验和微生态验证”。",
+    "evidence": [
+      "MIC",
+      "溶血",
+      "CCK-8",
+      "TEM",
+      "分子动力学",
+      "理化性质分析",
+      "PDES",
+      "Environmental Degradation Panel"
+    ],
+    "returned": false,
+    "processing_mode": "llm",
+    "visits": [],
+    "extension_ref": "",
+    "llm_module_values": {
+      "Safety": 1.0,
+      "Model": 1.0,
+      "Implementation": 0.7,
+      "Material": 0.35,
+      "Problem Definition": 1.0,
+      "Environment": 1.0,
+      "Software": 1.0,
+      "Education": 0.35,
+      "Social Media": 0.0
+    },
+    "llm_maturity_values": {
+      "design_reflection": 1.0,
+      "context_scene": 1.0,
+      "risk": 1.0,
+      "mitigation": 1.0,
+      "limitation": 1.0,
+      "boundary": 1.0
+    },
+    "llm_feedback_summary": "环境低浓度抗生素持续诱导抗性基因富集，现有处理体系缺乏监测，需关注环境持留风险。",
+    "llm_action_summary": "扩展筛选逻辑为 activity-safety-environment balance，新增 PDES 模型与 Environmental Degradation Panel，调整安全表述。",
+    "llm_wiki_en_section": "### 2026-05-27 — Prof. Xun Qian, College of Natural Resources and Environment, Northwest A&F University\n\n#### Key Feedback\n- Globally, over 70% of antibiotics are used in livestock production, and 30–60% are excreted unchanged or as partially metabolized compounds via urine and feces.\n- These residues can enter the environment through manure recycling, wastewater effluent (municipal or farm), surface runoff, soil and water transport, and even aerosol exposure from farms.\n- Current wastewater and manure treatment systems typically do not monitor antibiotics, resistant bacteria, or ARGs as routine parameters, so it is unclear whether treatment fully removes these risks.\n- Even low concentrations of antibiotic residues in the environment can exert long-term selective pressure, enriching resistance genes.\n- Environmental reservoirs already harbor a high background of resistance genes, and reducing antibiotic use alone will not quickly revert resistance levels.\n\n#### Modules Affected\n- Safety\n- Model\n- Implementation\n- Material\n- Problem Definition\n- Environment\n- Software\n- Education\n\n#### Project Changes\n- Expanded the peptide screening logic from an activity-safety balance to an activity-safety-environment balance.\n- Developed a Peptide Degradation Ease Score (PDES) model to estimate the predicted degradability of candidate peptides.\n- Added an Environmental Degradation Panel to the software report, presenting PDES as a model-based decision support tool, not as experimental evidence of degradation.\n- Revised safety language from claiming peptides are \"more eco-friendly\" to stating they \"may have lower environmental persistence risk, but still require degradation experiments and microecological validation.\"\n\n#### Storyline Position\nThis consultation grounded AMPlify's environmental responsibility in concrete data, shifting our design from a purely efficacy-driven approach to one that proactively considers the fate of peptides in the environment. It reinforced our commitment to transparent, evidence-based claims and set the stage for future degradation studies.",
+    "llm_stability": 1.0,
+    "llm_raw_dir": "hp_compass_output_llm\\llm_raw\\20260527_钱勋教授访谈_HP小循环_主线优化版_JU_Krakow风格_中文版（修改）",
+    "llm_next_step_cn": "建议在后续回访中，向钱勋教授展示 PDES 模型的初步验证结果，并探讨如何将环境降解预测与现有粪污处理工艺结合，以增强模型的实际应用价值。",
+    "llm_next_step_en": "In the follow-up, present preliminary validation results of the PDES model to Prof. Qian, and discuss how to integrate environmental degradation prediction with existing manure treatment processes to enhance practical utility.",
+    "llm_materials_cn": [
+      "PDES 模型的技术说明与初步验证数据",
+      "AMPlify 软件中 Environmental Degradation Panel 的界面截图",
+      "项目更新后的安全表述文档",
+      "关于环境抗性基因背景的文献综述"
+    ],
+    "llm_materials_en": [
+      "Technical description and preliminary validation data of the PDES model",
+      "Screenshots of the Environmental Degradation Panel in AMPlify software",
+      "Updated safety language document",
+      "Literature review on environmental resistance gene background"
+    ],
+    "llm_questions_cn": [
+      "您认为 PDES 模型中的哪些参数最需要结合真实环境数据校准？",
+      "在养殖粪污处理流程中，哪个环节最适合引入抗菌肽降解评估？",
+      "您对将 PDES 预测结果与现有监测指标（如 ARG 丰度）关联有何建议？",
+      "我们如何设计实验来验证 PDES 的预测，同时兼顾成本和可行性？"
+    ],
+    "llm_questions_en": [
+      "Which parameters in the PDES model do you think need calibration with real environmental data most?",
+      "In the manure treatment process, which stage is most suitable for integrating antimicrobial peptide degradation assessment?",
+      "What suggestions do you have for linking PDES predictions with existing monitoring indicators (e.g., ARG abundance)?",
+      "How can we design experiments to validate PDES predictions while balancing cost and feasibility?"
+    ],
+    "categories": [
+      {
+        "category": "Safety",
+        "score": 1.0,
+        "matched_terms": [
+          "LLM:1.00"
+        ]
+      },
+      {
+        "category": "Model",
+        "score": 1.0,
+        "matched_terms": [
+          "LLM:1.00"
+        ]
+      },
+      {
+        "category": "Problem Definition",
+        "score": 1.0,
+        "matched_terms": [
+          "LLM:1.00"
+        ]
+      },
+      {
+        "category": "Environment",
+        "score": 1.0,
+        "matched_terms": [
+          "LLM:1.00"
+        ]
+      },
+      {
+        "category": "Software",
+        "score": 1.0,
+        "matched_terms": [
+          "LLM:1.00"
+        ]
+      }
+    ],
+    "affected_modules": [
+      "Safety",
+      "Model",
+      "Problem Definition",
+      "Environment",
+      "Software"
+    ],
+    "module_memberships": {
+      "Safety": 1.0,
+      "Model": 1.0,
+      "Implementation": 0.7,
+      "Material": 0.35,
+      "Problem Definition": 1.0,
+      "Environment": 1.0,
+      "Software": 1.0,
+      "Education": 0.35,
+      "Social Media": 0.0
+    },
+    "loop_status": "L3_Evidenced",
+    "loop_level": 3,
+    "evidence_strength": 0.787,
+    "priority_score": 0.855,
+    "priority_factors": {
+      "loop_gap": 0.25,
+      "cross_module_impact": 1.0,
+      "project_criticality": 0.95,
+      "time_urgency": 0.7,
+      "evidence_weakness": 0.213,
+      "stakeholder_value": 0.95
+    },
+    "fce_vector": {
+      "b1": 0.0143,
+      "b2": 0.0472,
+      "b3": 0.2622,
+      "b4": 0.6762
+    },
+    "fce_u1_vector": {
+      "b1_1": 0.0,
+      "b1_2": 0.0,
+      "b1_3": 0.1321,
+      "b1_4": 0.8679
+    },
+    "fce_u2_vector": {
+      "b2_1": 0.0431,
+      "b2_2": 0.1418,
+      "b2_3": 0.5229,
+      "b2_4": 0.2923
+    },
+    "maturity_scores": {
+      "design_reflection": 3,
+      "context_exploration": 5,
+      "diverse_perspectives": 5,
+      "impact_anticipation": 5,
+      "hp_response": 3,
+      "limitation_integrity": 5
+    },
+    "maturity_eigenvalues": {
+      "design_reflection": 3.828,
+      "context_exploration": 3.403,
+      "diverse_perspectives": 4.534,
+      "impact_anticipation": 5.0,
+      "hp_response": 2.765,
+      "limitation_integrity": 4.988
+    },
+    "maturity_memberships": {
+      "design_reflection": {
+        "0": 0.0,
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.5354,
+        "4": 0.0146,
+        "5": 0.45
+      },
+      "context_exploration": {
+        "0": 0.0,
+        "1": 0.1429,
+        "2": 0.3071,
+        "3": 0.1883,
+        "4": 0.0117,
+        "5": 0.35
+      },
+      "diverse_perspectives": {
+        "0": 0.0,
+        "1": 0.0,
+        "2": 0.3,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.7
+      },
+      "impact_anticipation": {
+        "0": 0.0,
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 1.0
+      },
+      "hp_response": {
+        "0": 0.0417,
+        "1": 0.0417,
+        "2": 0.2917,
+        "3": 0.5271,
+        "4": 0.0563,
+        "5": 0.0417
+      },
+      "limitation_integrity": {
+        "0": 0.025,
+        "1": 0.025,
+        "2": 0.025,
+        "3": 0.025,
+        "4": 0.025,
+        "5": 0.875
+      }
+    },
+    "next_step": "建议在后续回访中，向钱勋教授展示 PDES 模型的初步验证结果，并探讨如何将环境降解预测与现有粪污处理工艺结合，以增强模型的实际应用价值。",
+    "next_step_en": "In the follow-up, present preliminary validation results of the PDES model to Prof. Qian, and discuss how to integrate environmental degradation prediction with existing manure treatment processes to enhance practical utility.",
+    "suggested_materials": [
+      "PDES 模型的技术说明与初步验证数据",
+      "AMPlify 软件中 Environmental Degradation Panel 的界面截图",
+      "项目更新后的安全表述文档",
+      "关于环境抗性基因背景的文献综述"
+    ],
+    "suggested_materials_en": [
+      "Technical description and preliminary validation data of the PDES model",
+      "Screenshots of the Environmental Degradation Panel in AMPlify software",
+      "Updated safety language document",
+      "Literature review on environmental resistance gene background"
+    ],
+    "suggested_questions": [
+      "您认为 PDES 模型中的哪些参数最需要结合真实环境数据校准？",
+      "在养殖粪污处理流程中，哪个环节最适合引入抗菌肽降解评估？",
+      "您对将 PDES 预测结果与现有监测指标（如 ARG 丰度）关联有何建议？",
+      "我们如何设计实验来验证 PDES 的预测，同时兼顾成本和可行性？"
+    ],
+    "suggested_questions_en": [
+      "Which parameters in the PDES model do you think need calibration with real environmental data most?",
+      "In the manure treatment process, which stage is most suitable for integrating antimicrobial peptide degradation assessment?",
+      "What suggestions do you have for linking PDES predictions with existing monitoring indicators (e.g., ARG abundance)?",
+      "How can we design experiments to validate PDES predictions while balancing cost and feasibility?"
+    ]
+  }
+]

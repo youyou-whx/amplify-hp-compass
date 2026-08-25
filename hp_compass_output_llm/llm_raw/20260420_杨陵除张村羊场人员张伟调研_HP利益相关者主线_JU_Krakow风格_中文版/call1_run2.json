@@ -1,0 +1,22 @@
+{
+  "date": "2026-04-20",
+  "stakeholder": "杨陵揉谷镇除张村羊场人员张伟",
+  "stakeholder_type": "养殖端 stakeholder",
+  "initial_question": "在禁抗、食品安全和规模化管理限制下，养殖端真正需要什么样的抗菌替代方案？",
+  "feedback": "羊场以预防为主，乳房炎频率不高但损失明显，混合感染风险使一线更重视广谱、低损伤、给药便利性和成本可控性。养殖户不会因为技术概念新颖就接受，首先关心是否有效、是否影响羊体健康和羊奶质量、能否降低治疗和人工成本、是否适合群体化管理。更倾向广谱型抗菌肽，因为羊群可能同时暴露于多种病原，实际养殖中很难每次先完成专业病原检测再选择特异性产品。",
+  "project_action": "主线从“设计候选抗菌肽”推进为“候选肽必须面对真实养殖约束”，将应用背景具体到泌乳羊场、羊奶安全和群体化防控，将给药方式（拌料）纳入项目叙事，并提醒谨慎表达AI设计成果，强调实证效果、专家推荐和监管认可。",
+  "evidence": [],
+  "returned": false,
+  "is_extension_of": null,
+  "module_grades": {
+    "Safety": "中",
+    "Model": "弱",
+    "Implementation": "强",
+    "Material": "中",
+    "Problem Definition": "强",
+    "Environment": "中",
+    "Software": "弱",
+    "Education": "弱",
+    "Social Media": "无"
+  }
+}

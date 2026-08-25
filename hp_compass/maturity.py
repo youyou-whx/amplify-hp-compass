@@ -304,21 +304,32 @@ def _key_type_membership(stype: str | None) -> float:
 #  Signal variable computation (one function per dimension)
 # ═══════════════════════════════════════════════════════════════
 
+def _llm_signal(card: HPCard, signal_key: str) -> float | None:
+    """LLM 模式下返回文本信号的四梯度代表性数值；否则返回 None。"""
+    if card.processing_mode == "llm" and signal_key in card.llm_maturity_values:
+        return card.llm_maturity_values[signal_key]
+    return None
+
+
 def _compute_signals_dim1(card: HPCard) -> list[float]:
     """Dimension 1: Reflecting on design decisions — 4 signals.
 
     x_{1,1} = ℓ / 4          (loop level normalised)
     x_{1,2} = |M ∩ D| / |D|  (design-module coverage, D={Model, Software, Problem Def})
     x_{1,3} = σ_e            (evidence strength)
-    x_{1,4} = design-reflection keyword density
+    x_{1,4} = design-reflection keyword density（LLM 模式：design_reflection 四梯度）
     """
     x1 = card.loop_level / 4.0
     modules = set(card.affected_modules)
     design_hit = len(modules & DESIGN_MODULES)
     x2 = design_hit / max(1, len(DESIGN_MODULES))
     x3 = card.evidence_strength
-    action_text = card.project_action.lower()
-    x4 = _keyword_density(action_text, DESIGN_REFLECTION_KEYWORDS, _DESIGN_KW_SATURATION)
+    llm_x4 = _llm_signal(card, "design_reflection")
+    if llm_x4 is not None:
+        x4 = llm_x4
+    else:
+        action_text = card.project_action.lower()
+        x4 = _keyword_density(action_text, DESIGN_REFLECTION_KEYWORDS, _DESIGN_KW_SATURATION)
     return [x1, x2, x3, x4]
 
 
@@ -327,15 +338,19 @@ def _compute_signals_dim2(card: HPCard) -> list[float]:
 
     x_{2,1} = τ type membership        (stakeholder-type → real-world relevance)
     x_{2,2} = |M ∩ R| / |R|            (real-world module coverage, R={Impl, Env})
-    x_{2,3} = scene keyword density     (in feedback ⊕ initial question)
+    x_{2,3} = scene keyword density     (LLM 模式：context_scene 四梯度)
     x_{2,4} = σ_e                       (evidence strength)
     """
     x1 = _stakeholder_type_membership(card.stakeholder_type)
     modules = set(card.affected_modules)
     rw_hit = len(modules & REAL_WORLD_MODULES)
     x2 = rw_hit / max(1, len(REAL_WORLD_MODULES))
-    scene_text = (card.feedback + " " + card.initial_question).lower()
-    x3 = _keyword_density(scene_text, REAL_WORLD_KEYWORDS, _SCENE_KW_SATURATION)
+    llm_x3 = _llm_signal(card, "context_scene")
+    if llm_x3 is not None:
+        x3 = llm_x3
+    else:
+        scene_text = (card.feedback + " " + card.initial_question).lower()
+        x3 = _keyword_density(scene_text, REAL_WORLD_KEYWORDS, _SCENE_KW_SATURATION)
     x4 = card.evidence_strength
     return [x1, x2, x3, x4]
 
@@ -365,10 +380,18 @@ def _compute_signals_dim4(card: HPCard) -> list[float]:
     """
     x1 = card.module_memberships.get("Safety", 0.0)
     x2 = card.module_memberships.get("Environment", 0.0)
-    risk_text = (card.feedback + " " + card.project_action).lower()
-    x3 = _keyword_density(risk_text, RISK_KEYWORDS, _RISK_KW_SATURATION)
-    x4 = _keyword_density(card.project_action.lower(), MITIGATION_KEYWORDS,
-                          _MITIGATION_KW_SATURATION)
+    llm_x3 = _llm_signal(card, "risk")
+    if llm_x3 is not None:
+        x3 = llm_x3
+    else:
+        risk_text = (card.feedback + " " + card.project_action).lower()
+        x3 = _keyword_density(risk_text, RISK_KEYWORDS, _RISK_KW_SATURATION)
+    llm_x4 = _llm_signal(card, "mitigation")
+    if llm_x4 is not None:
+        x4 = llm_x4
+    else:
+        x4 = _keyword_density(card.project_action.lower(), MITIGATION_KEYWORDS,
+                              _MITIGATION_KW_SATURATION)
     evidence_text = " ".join(card.evidence).lower()
     x5 = 1.0 if _any_artifact(evidence_text, RISK_EVIDENCE_ARTIFACTS) else 0.0
     return [x1, x2, x3, x4, x5]
@@ -397,11 +420,20 @@ def _compute_signals_dim6(card: HPCard) -> list[float]:
     x_{6,3} = boundary language density
     x_{6,4} = boundary evidence    (1 if any boundary artifact present, else 0)
     """
-    lim_text = (card.feedback + " " + card.project_action).lower()
-    lam = _keyword_count(lim_text, LIMITATION_KEYWORDS)
-    x1 = min(1.0, lam / _LIMITATION_KW_DENOM)
+    llm_x1 = _llm_signal(card, "limitation")
+    if llm_x1 is not None:
+        x1 = llm_x1
+    else:
+        lim_text = (card.feedback + " " + card.project_action).lower()
+        lam = _keyword_count(lim_text, LIMITATION_KEYWORDS)
+        x1 = min(1.0, lam / _LIMITATION_KW_DENOM)
     x2 = card.module_memberships.get("Safety", 0.0)
-    x3 = _keyword_density(lim_text, BOUNDARY_LANGUAGE, _BOUNDARY_KW_SATURATION)
+    llm_x3 = _llm_signal(card, "boundary")
+    if llm_x3 is not None:
+        x3 = llm_x3
+    else:
+        lim_text = (card.feedback + " " + card.project_action).lower()
+        x3 = _keyword_density(lim_text, BOUNDARY_LANGUAGE, _BOUNDARY_KW_SATURATION)
     evidence_text = " ".join(card.evidence).lower()
     x4 = 1.0 if _any_artifact(evidence_text, BOUNDARY_ARTIFACTS) else 0.0
     return [x1, x2, x3, x4]

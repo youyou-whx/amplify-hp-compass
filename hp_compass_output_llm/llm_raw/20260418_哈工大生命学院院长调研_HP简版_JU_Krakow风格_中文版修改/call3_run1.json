@@ -1,0 +1,28 @@
+{
+  "next_step_cn": "建议在后续回访中，向聂桓老师展示项目在跨学科叙事和工程化目标上的具体改进，并探讨如何将共享失败经验与不可复制资源纳入合作框架。",
+  "next_step_en": "In the follow-up, present specific improvements in interdisciplinary narrative and engineering goals, and discuss how to incorporate shared failure experiences and non-replicable resources into the collaboration framework.",
+  "materials_cn": [
+    "更新后的项目介绍PPT（突出工程化目标与证据边界）",
+    "跨学科合作框架草案（含共享失败经验与不可复制资源的机制）",
+    "项目Wiki页面截图（展示叙事改进）"
+  ],
+  "materials_en": [
+    "Updated project presentation PPT (highlighting engineering goals and evidence boundaries)",
+    "Draft interdisciplinary collaboration framework (including mechanisms for sharing failure experiences and non-replicable resources)",
+    "Screenshots of project Wiki pages (showing narrative improvements)"
+  ],
+  "questions_cn": [
+    "您认为我们在项目介绍中如何更清晰地表达工程化目标，以便其他团队快速理解？",
+    "对于共享失败经验，您建议我们采用哪些具体形式或平台？",
+    "您觉得哪些类型的不可复制资源最值得在跨校合作中共享？",
+    "我们的叙事改进是否有效解决了您之前提到的‘被看懂’问题？"
+  ],
+  "questions_en": [
+    "How can we more clearly express our engineering goals in the project introduction so that other teams can quickly understand?",
+    "What specific formats or platforms do you suggest for sharing failure experiences?",
+    "What types of non-replicable resources do you think are most valuable to share in cross-institutional collaborations?",
+    "Have our narrative improvements effectively addressed the 'being understood' issue you mentioned earlier?"
+  ],
+  "feedback_summary": "iGEM合作应共享不可复制资源、失败经验与建设思路，而非表面交流。",
+  "action_summary": "将跨校交流与外部视角纳入HP主线，强化工程化目标与证据边界表达。"
+}

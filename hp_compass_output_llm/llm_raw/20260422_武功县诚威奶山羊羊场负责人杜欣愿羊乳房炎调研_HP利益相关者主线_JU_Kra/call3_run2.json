@@ -1,0 +1,26 @@
+{
+  "next_step_cn": "建议在下一轮回访中，携带基于广谱抗菌肽候选的体外抑菌数据（尤其针对金黄色葡萄球菌和厌氧菌），并与养殖户讨论未来在羊场开展小规模验证的可行性。",
+  "next_step_en": "In the next follow-up, bring in vitro efficacy data of broad-spectrum AMP candidates against key pathogens (e.g., S. aureus and anaerobes) and discuss the feasibility of a small-scale field trial at the farm.",
+  "materials_cn": [
+    "候选抗菌肽体外抑菌实验数据摘要（含对金黄色葡萄球菌和厌氧菌的MIC）",
+    "广谱抗菌肽作用机制与安全性初步评估报告",
+    "未来羊场验证方案草案（含动物伦理与采样计划）"
+  ],
+  "materials_en": [
+    "Summary of in vitro antimicrobial activity data (MICs against S. aureus and anaerobes)",
+    "Preliminary safety and mechanism assessment report for broad-spectrum AMP candidates",
+    "Draft protocol for future on-farm validation (including animal ethics and sampling plan)"
+  ],
+  "questions_cn": [
+    "如果我们的候选抗菌肽在体外对金黄色葡萄球菌有效，您是否愿意参与后续的羊场小规模验证？",
+    "在您的羊场，乳房炎治疗中除了氨苄西林，是否还尝试过其他药物或方法？效果如何？",
+    "对于广谱型抗菌肽，您最关注哪些指标（如治愈率、复发率、成本）？"
+  ],
+  "questions_en": [
+    "If our candidate AMP shows efficacy against S. aureus in vitro, would you be willing to participate in a small-scale field trial?",
+    "Besides ampicillin, have you tried other treatments for mastitis? How effective were they?",
+    "For a broad-spectrum AMP, what outcomes matter most to you (e.g., cure rate, recurrence rate, cost)?"
+  ],
+  "feedback_summary": "养殖户反馈：乳房炎慢性多发，需广谱免鉴定方案，信任真实病例验证。",
+  "action_summary": "项目转向广谱抗菌肽路线，明确需回应基层治疗约束与验证标准。"
+}

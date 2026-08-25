@@ -23,5 +23,8 @@ Thumbs.db
 *.log
 *.pid
 
+# API keys（本地测试用，绝不提交）
+deepseek_key.txt
+
 # Output (generated at runtime, keep base data in repo)
 # hp_compass_output/ is tracked for deployment

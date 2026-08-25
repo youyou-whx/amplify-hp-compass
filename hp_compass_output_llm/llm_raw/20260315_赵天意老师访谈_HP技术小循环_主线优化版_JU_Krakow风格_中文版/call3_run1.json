@@ -1,0 +1,26 @@
+{
+  "next_step_cn": "建议在完成一轮合成与活性验证后，带着实测数据回访赵老师，重点展示判别器与生成器的协同效果，并请教如何进一步优化筛选阈值。",
+  "next_step_en": "After completing a round of synthesis and activity validation, revisit Prof. Zhao with experimental data, focusing on the synergy between discriminator and generator, and seek advice on refining screening thresholds.",
+  "materials_cn": [
+    "TAM-Flow 模型架构与训练流程说明",
+    "初步合成肽的 MIC、溶血及细胞毒性数据",
+    "与随机序列对比的理化性质分布图"
+  ],
+  "materials_en": [
+    "TAM-Flow architecture and training pipeline description",
+    "MIC, hemolysis, and cytotoxicity data for initial synthetic peptides",
+    "Physicochemical property distribution plots compared with random sequences"
+  ],
+  "questions_cn": [
+    "您认为当前判别器的评分权重是否合理？哪些指标应优先考虑？",
+    "对于少量合成候选的高失败风险，您建议如何扩大候选多样性或提高命中率？",
+    "在膜相互作用分析中，哪些实验或模拟手段最能有效筛选抗菌肽？"
+  ],
+  "questions_en": [
+    "Do you think the current scoring weights of the discriminator are reasonable? Which metrics should be prioritized?",
+    "Given the high failure risk with few synthetic candidates, how would you suggest increasing candidate diversity or hit rate?",
+    "In membrane interaction analysis, which experimental or simulation methods are most effective for screening antimicrobial peptides?"
+  ],
+  "feedback_summary": "赵老师强调需建立判别器筛选抗菌潜力与毒性，避免无关序列混入，并重视结构膜分析。",
+  "action_summary": "项目开发 TAM-Flow 生成-判别框架，并整合理化、MD、合成及活性验证形成证据链。"
+}

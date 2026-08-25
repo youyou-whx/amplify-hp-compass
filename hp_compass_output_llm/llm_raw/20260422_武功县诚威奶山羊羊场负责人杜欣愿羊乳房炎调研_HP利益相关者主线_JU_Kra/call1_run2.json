@@ -1,0 +1,22 @@
+{
+  "date": "2026-04-22",
+  "stakeholder": "武功县诚威奶山羊羊场负责人杜欣愿",
+  "stakeholder_type": "养殖端 stakeholder",
+  "initial_question": "奶山羊乳房炎的发病情况、防控实践、现有治疗痛点和新型抗菌肽产品需求",
+  "feedback": "乳房炎年发病率约10%，慢性型常见且易复发，造成泌乳下降、硬块、萎缩；急性或败血性少见但危害大，常与金黄色葡萄球菌、厌氧菌相关。现有治疗依赖氨苄西林钠，肌肉注射和乳房灌注联合给药，疗程7天，彻底恢复10-14天，费用200-300元，慢性病例第二年可能复发。基层缺乏病原检测条件，倾向广谱通用型方案，免鉴定、覆盖多病原。养殖户更相信2-4只患病羊的真实验证和口碑扩散。",
+  "project_action": "将项目主线从候选抗菌肽能否抗菌推进到能否回应奶山羊乳房炎的真实治疗约束，强化广谱路线，明确一线评价标准包括广谱性、免病原鉴定、给药适配、疗效可重复验证及泌乳恢复和复发情况。",
+  "evidence": [],
+  "returned": false,
+  "is_extension_of": null,
+  "module_grades": {
+    "Safety": "弱",
+    "Model": "中",
+    "Implementation": "强",
+    "Material": "中",
+    "Problem Definition": "强",
+    "Environment": "弱",
+    "Software": "无",
+    "Education": "弱",
+    "Social Media": "无"
+  }
+}

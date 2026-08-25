@@ -22,6 +22,10 @@ def classify_card(card: HPCard, min_score: float = 0.0) -> HPCard:
       4. Apply trapezoidal membership μ_c(h_c; α_c, β_c)
       5. Store full 9-dim vector in card.module_memberships
 
+    LLM 模式（processing_mode="llm" 且 card.llm_module_values 非空）：
+      四梯度代表性数值直接作为隶属度 —— 大模型即语义隶属函数，
+      规则模式则按特征词命中密度经梯形隶属函数计算。
+
     Affected modules = top-5 by μ_c (≥ 0.01).
     """
     text = "\n".join([
@@ -37,12 +41,18 @@ def classify_card(card: HPCard, min_score: float = 0.0) -> HPCard:
     memberships: dict[str, float] = {}
 
     for category, terms in CATEGORIES.items():
-        matched = [term for term in terms if term.lower() in text.lower()]
-        h_c = len(matched) / max(1, len(terms))  # hit density
+        if card.processing_mode == "llm" and card.llm_module_values:
+            # LLM 信号源：四梯度数值直接作为隶属度
+            h_c = card.llm_module_values.get(category, 0.0)
+            mu_c = h_c
+            matched = [f"LLM:{h_c:.2f}"]
+        else:
+            matched = [term for term in terms if term.lower() in text.lower()]
+            h_c = len(matched) / max(1, len(terms))  # hit density
 
-        # Trapezoidal membership with module-specific (α_c, β_c)
-        alpha_c, beta_c = MODULE_THRESHOLDS.get(category, (0.10, 0.33))
-        mu_c = _trapezoidal_membership(h_c, alpha_c, beta_c)
+            # Trapezoidal membership with module-specific (α_c, β_c)
+            alpha_c, beta_c = MODULE_THRESHOLDS.get(category, (0.10, 0.33))
+            mu_c = _trapezoidal_membership(h_c, alpha_c, beta_c)
 
         memberships[category] = round(mu_c, 3)
 

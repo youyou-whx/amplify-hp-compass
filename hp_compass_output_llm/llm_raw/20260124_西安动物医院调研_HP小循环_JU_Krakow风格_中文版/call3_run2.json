@@ -1,0 +1,26 @@
+{
+  "next_step_cn": "建议回访时携带更新后的候选肽评估框架，重点讨论皮肤/耳道局部用药场景及畜禽减抗需求，并收集临床医生对证据等级和安全边界的反馈。",
+  "next_step_en": "During the follow-up, bring the updated candidate peptide evaluation framework, focusing on topical skin/ear canal scenarios and livestock antibiotic reduction needs, and gather clinicians' feedback on evidence levels and safety boundaries.",
+  "materials_cn": [
+    "更新后的候选肽评估框架（含应用场景、给药路径、证据等级字段）",
+    "皮肤/耳道局部感染常见病原及诊断方式清单",
+    "畜禽减抗政策与残留控制相关背景资料"
+  ],
+  "materials_en": [
+    "Updated candidate peptide evaluation framework (with fields for application scenario, administration route, evidence level)",
+    "List of common pathogens and diagnostic methods for skin/ear canal infections",
+    "Background materials on antibiotic reduction policies and residue control in livestock"
+  ],
+  "questions_cn": [
+    "对于皮肤/耳道局部感染，您认为抗菌肽在哪些具体病例中可能比现有换药或清洗方案更有优势？",
+    "在畜禽养殖端，您了解哪些减抗或无抗的实践案例？抗菌肽在哪些环节可能发挥作用？",
+    "您对候选肽的证据等级（如体外活性、安全性数据）有何建议，以便临床医生更信任这类产品？"
+  ],
+  "questions_en": [
+    "For skin/ear canal infections, in which specific cases do you think antimicrobial peptides might offer advantages over current dressing changes or cleaning protocols?",
+    "What antibiotic reduction or antibiotic-free practices do you know of in livestock production? Where might antimicrobial peptides play a role?",
+    "What suggestions do you have for evidence levels (e.g., in vitro activity, safety data) to increase clinicians' trust in such products?"
+  ],
+  "feedback_summary": "临床反馈：动物感染需分系统，宠物局部场景更现实，畜禽减抗价值更高。",
+  "action_summary": "项目转向候选肽评估框架，纳入局部场景与畜禽减抗，增加证据等级字段。"
+}

@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(& \"D:\\\\Users\\\\whx\\\\Git\\\\bin\\\\git.exe\" -C \"C:\\\\Users\\\\whx\\\\igem1\" push -u origin main)",
+      "PowerShell(& \"D:\\\\Users\\\\whx\\\\Git\\\\bin\\\\git.exe\" -C \"C:\\\\Users\\\\whx\\\\igem1\" push 2>&1)",
+      "PowerShell(& \"D:\\\\Users\\\\whx\\\\Git\\\\bin\\\\git.exe\" -C \"C:\\\\Users\\\\whx\\\\igem1\" log --oneline -3)",
+      "PowerShell(& \"D:\\\\Users\\\\whx\\\\Git\\\\bin\\\\git.exe\" -C \"C:\\\\Users\\\\whx\\\\igem1\" ls-remote origin main 2>&1)",
+      "PowerShell(& \"D:\\\\Users\\\\whx\\\\Git\\\\bin\\\\git.exe\" -C \"C:\\\\Users\\\\whx\\\\igem1\" add hp_compass/app.py; & \"D:\\\\Users\\\\whx\\\\Git\\\\bin\\\\git.exe\" -C \"C:\\\\Users\\\\whx\\\\igem1\" commit -m \"Fix graph: inline local vis-network JS instead of CDN\"; & \"D:\\\\Users\\\\whx\\\\Git\\\\bin\\\\git.exe\" -C \"C:\\\\Users\\\\whx\\\\igem1\" push)",
+      "PowerShell(& \"D:\\\\Users\\\\whx\\\\Git\\\\bin\\\\git.exe\" config --global http.proxy http://127.0.0.1:7890; & \"D:\\\\Users\\\\whx\\\\Git\\\\bin\\\\git.exe\" config --global https.proxy http://127.0.0.1:7890; Write-Host \"Proxy configured\")",
+      "PowerShell(& \"D:\\\\Users\\\\whx\\\\Git\\\\bin\\\\git.exe\" -C \"C:\\\\Users\\\\whx\\\\igem1\" push)",
+      "PowerShell(Test-NetConnection *)",
+      "PowerShell($ports = @\\(7890, 10809, 1080, 8118\\); foreach \\($p in $ports\\) { $result = Test-NetConnection -ComputerName 127.0.0.1 -Port $p -WarningAction SilentlyContinue 2>&1; if \\($result.TcpTestSucceeded\\) { Write-Host \"Port ${p} OPEN\" } else { Write-Host \"Port ${p} closed\" } })",
+      "PowerShell(& \"D:\\\\Users\\\\whx\\\\Git\\\\bin\\\\git.exe\" config --global --unset http.proxy; & \"D:\\\\Users\\\\whx\\\\Git\\\\bin\\\\git.exe\" config --global --unset https.proxy; & \"D:\\\\Users\\\\whx\\\\Git\\\\bin\\\\git.exe\" -C \"C:\\\\Users\\\\whx\\\\igem1\" push 2>&1)",
+      "PowerShell([System.Net.WebRequest]::GetSystemWebProxy\\(\\).GetProxy\\(\"https://github.com\"\\))",
+      "PowerShell(& \"D:\\\\Users\\\\whx\\\\Git\\\\bin\\\\git.exe\" config --global http.proxy http://127.0.0.1:7897; & \"D:\\\\Users\\\\whx\\\\Git\\\\bin\\\\git.exe\" config --global https.proxy http://127.0.0.1:7897; & \"D:\\\\Users\\\\whx\\\\Git\\\\bin\\\\git.exe\" -C \"C:\\\\Users\\\\whx\\\\igem1\" push)",
+      "PowerShell(& \"D:\\\\Users\\\\whx\\\\Git\\\\bin\\\\git.exe\" -C \"C:\\\\Users\\\\whx\\\\igem1\" add hp_compass/app.py; & \"D:\\\\Users\\\\whx\\\\Git\\\\bin\\\\git.exe\" -C \"C:\\\\Users\\\\whx\\\\igem1\" commit -m \"Fix regex replacement: use lambda to avoid backslash escaping in JS\"; & \"D:\\\\Users\\\\whx\\\\Git\\\\bin\\\\git.exe\" -C \"C:\\\\Users\\\\whx\\\\igem1\" push)"
+    ]
+  }
+}

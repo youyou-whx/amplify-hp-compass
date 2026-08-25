@@ -55,37 +55,6 @@ Human Practices 摘要卡片
 
 此轮 HP 将 AMPlify 从 *应用场景探索* 推进到 *真实场景中的疾病靶向设计*。
 
-#### 🔄 闭环状态与证据
-
-- **闭环层级**：L3_Evidenced（L3）
-- **证据强度**：0.600
-- **优先级得分**：0.775
-- **是否已回访**：❌ 否
-- **证据列表**：报告、访谈记录
-- **成熟度剖面**：设计反思=2 / 场景探索=2 / 多元视角=5 / 影响预判=2 / HP响应=3 / 局限性坦诚=4
-
-#### 🎯 下一步
-
-**建议行动：** 将修改后的材料返回给 西北农林科技大学西安动物医院的临床医生与院长，完成二轮反馈。
-
-**建议材料：**
-- revised Field Score / model report
-- candidate ranking change table
-- software panel screenshot
-- exported HP report card
-- risk boundary wording draft
-- environmental / safety panel
-- application scenario card
-- use-boundary checklist
-
-**建议回访问题：**
-- 新的模型指标是否覆盖了 stakeholder 提出的关键判断？
-- 候选排序变化是否容易解释，是否存在误导风险？
-- 软件报告中的标签和证据等级是否足够清楚？
-- 风险措辞是否避免了过度承诺？
-- 哪些未来验证应被标注为优先？
-- 该应用场景下最容易被忽略的使用限制是什么？
-
 ---
 
 ### 2026-03-09 — 西北农林科技大学家畜生物学重点实验室刘军教授（动物健康 / 家畜专家）
@@ -124,37 +93,6 @@ Human Practices 摘要卡片
 
 此轮 HP 将 AMPlify 从 *候选肽设计* 推进到 *证据链闭合的候选评估框架*。
 
-#### 🔄 闭环状态与证据
-
-- **闭环层级**：L3_Evidenced（L3）
-- **证据强度**：0.704
-- **优先级得分**：0.819
-- **是否已回访**：❌ 否
-- **证据列表**：MIC、溶血、CCK-8、TEM、细胞毒性、MD、理化性质、报告、Field Score、TAM-Flow、Risk Boundary Panel、Oracle、访谈记录
-- **成熟度剖面**：设计反思=3 / 场景探索=5 / 多元视角=5 / 影响预判=5 / HP响应=3 / 局限性坦诚=5
-
-#### 🎯 下一步
-
-**建议行动：** 将修改后的材料返回给 西北农林科技大学家畜生物学重点实验室刘军教授，完成二轮反馈。
-
-**建议材料：**
-- revised Field Score / model report
-- candidate ranking change table
-- risk boundary wording draft
-- environmental / safety panel
-- Evidence Matrix
-- wet-lab validation chain summary
-- application scenario card
-- use-boundary checklist
-
-**建议回访问题：**
-- 新的模型指标是否覆盖了 stakeholder 提出的关键判断？
-- 候选排序变化是否容易解释，是否存在误导风险？
-- 风险措辞是否避免了过度承诺？
-- 哪些未来验证应被标注为优先？
-- 当前证据链是否足以支持候选筛选，而不是临床有效性声明？
-- 该应用场景下最容易被忽略的使用限制是什么？
-
 ---
 
 ### 2026-03-15 — 赵天意老师（AI / 生物大数据专家）
@@ -184,37 +122,6 @@ From a generic generator to an evidence-bounded AMP design model
 #### 📖 故事主线位置
 
 此轮 HP 将 AMPlify 从 *候选肽设计* 推进到 *证据链闭合的候选评估框架*。
-
-#### 🔄 闭环状态与证据
-
-- **闭环层级**：L3_Evidenced（L3）
-- **证据强度**：0.760
-- **优先级得分**：0.767
-- **是否已回访**：❌ 否
-- **证据列表**：MIC、溶血、CCK-8、TEM、质谱、细胞毒性、分子动力学、RMSD、RMSF、理化性质、报告、TAM-Flow、Oracle、RAFT、访谈记录
-- **成熟度剖面**：设计反思=3 / 场景探索=3 / 多元视角=2 / 影响预判=5 / HP响应=3 / 局限性坦诚=5
-
-#### 🎯 下一步
-
-**建议行动：** 将修改后的材料返回给 赵天意老师，完成二轮反馈。
-
-**建议材料：**
-- revised Field Score / model report
-- candidate ranking change table
-- risk boundary wording draft
-- environmental / safety panel
-- Evidence Matrix
-- wet-lab validation chain summary
-- HP timeline card
-- Stakeholder-Feedback-Action summary
-
-**建议回访问题：**
-- 新的模型指标是否覆盖了 stakeholder 提出的关键判断？
-- 候选排序变化是否容易解释，是否存在误导风险？
-- 风险措辞是否避免了过度承诺？
-- 哪些未来验证应被标注为优先？
-- 当前证据链是否足以支持候选筛选，而不是临床有效性声明？
-- 这段叙事是否清楚说明了谁改变了项目、改变了哪里？
 
 ---
 
@@ -252,37 +159,6 @@ MIC、溶血、细胞毒性、表达量、纯化结果和产物鉴定需要构�
 
 此轮 HP 将 AMPlify 从 *候选肽设计* 推进到 *证据链闭合的候选评估框架*。
 
-#### 🔄 闭环状态与证据
-
-- **闭环层级**：L3_Evidenced（L3）
-- **证据强度**：0.717
-- **优先级得分**：0.817
-- **是否已回访**：❌ 否
-- **证据列表**：MIC、溶血、CCK-8、TEM、质谱、细胞毒性、MD、理化性质、报告、文献、Field Score、Evidence Matrix、TAM-Flow、Oracle、访谈记录
-- **成熟度剖面**：设计反思=3 / 场景探索=2 / 多元视角=4 / 影响预判=5 / HP响应=3 / 局限性坦诚=5
-
-#### 🎯 下一步
-
-**建议行动：** 将修改后的材料返回给 西北农林科技大学罗自卫老师，完成二轮反馈。
-
-**建议材料：**
-- revised Field Score / model report
-- candidate ranking change table
-- software panel screenshot
-- exported HP report card
-- risk boundary wording draft
-- environmental / safety panel
-- Evidence Matrix
-- wet-lab validation chain summary
-
-**建议回访问题：**
-- 新的模型指标是否覆盖了 stakeholder 提出的关键判断？
-- 候选排序变化是否容易解释，是否存在误导风险？
-- 软件报告中的标签和证据等级是否足够清楚？
-- 风险措辞是否避免了过度承诺？
-- 哪些未来验证应被标注为优先？
-- 当前证据链是否足以支持候选筛选，而不是临床有效性声明？
-
 ---
 
 ### 2026-04-18 — 哈尔滨工业大学生命科学与医学学部聂桓老师（iGEM / Wiki 交流 stakeholder）
@@ -316,33 +192,6 @@ iGEM 是跨学科、跨校际的交流平台。真正有价值的合作应共享
 
 此轮 HP 将 AMPlify 从 *安全边界与生态评估* 推进到 *使用边界与生态降解评估体系*。
 
-#### 🔄 闭环状态与证据
-
-- **闭环层级**：L3_Evidenced（L3）
-- **证据强度**：0.864
-- **优先级得分**：0.733
-- **是否已回访**：❌ 否
-- **证据列表**：MIC、溶血、CCK-8、TEM、MD、报告、访谈记录
-- **成熟度剖面**：设计反思=3 / 场景探索=1 / 多元视角=2 / 影响预判=4 / HP响应=3 / 局限性坦诚=1
-
-#### 🎯 下一步
-
-**建议行动：** 将修改后的材料返回给 哈尔滨工业大学生命科学与医学学部聂桓老师，完成二轮反馈。
-
-**建议材料：**
-- risk boundary wording draft
-- environmental / safety panel
-- Evidence Matrix
-- wet-lab validation chain summary
-- HP timeline card
-- Stakeholder-Feedback-Action summary
-
-**建议回访问题：**
-- 风险措辞是否避免了过度承诺？
-- 哪些未来验证应被标注为优先？
-- 当前证据链是否足以支持候选筛选，而不是临床有效性声明？
-- 这段叙事是否清楚说明了谁改变了项目、改变了哪里？
-
 ---
 
 ### 2026-04-19 — 西安市浮生闲猫咪驿站工作人员（公众教育 stakeholder）
@@ -369,33 +218,6 @@ iGEM 是跨学科、跨校际的交流平台。真正有价值的合作应共享
 
 此轮 HP 将 AMPlify 从 *应用场景探索* 推进到 *真实场景中的疾病靶向设计*。
 
-#### 🔄 闭环状态与证据
-
-- **闭环层级**：L3_Evidenced（L3）
-- **证据强度**：0.550
-- **优先级得分**：0.473
-- **是否已回访**：❌ 否
-- **证据列表**：访谈记录
-- **成熟度剖面**：设计反思=1 / 场景探索=2 / 多元视角=2 / 影响预判=2 / HP响应=2 / 局限性坦诚=1
-
-#### 🎯 下一步
-
-**建议行动：** 将修改后的材料返回给 西安市浮生闲猫咪驿站工作人员，完成二轮反馈。
-
-**建议材料：**
-- risk boundary wording draft
-- environmental / safety panel
-- application scenario card
-- use-boundary checklist
-- education material v2
-- public understanding feedback form
-
-**建议回访问题：**
-- 风险措辞是否避免了过度承诺？
-- 哪些未来验证应被标注为优先？
-- 该应用场景下最容易被忽略的使用限制是什么？
-- 受众是否能区分候选筛选、未来应用和现实治疗？
-
 ---
 
 ### 2026-04-20 — 杨陵揉谷镇除张村羊场人员张伟（养殖端 stakeholder）
@@ -421,33 +243,6 @@ iGEM 是跨学科、跨校际的交流平台。真正有价值的合作应共享
 #### 📖 故事主线位置
 
 此轮 HP 将 AMPlify 从 *应用场景探索* 推进到 *真实场景中的疾病靶向设计*。
-
-#### 🔄 闭环状态与证据
-
-- **闭环层级**：L3_Evidenced（L3）
-- **证据强度**：0.550
-- **优先级得分**：0.619
-- **是否已回访**：❌ 否
-- **证据列表**：访谈记录
-- **成熟度剖面**：设计反思=1 / 场景探索=2 / 多元视角=2 / 影响预判=2 / HP响应=3 / 局限性坦诚=2
-
-#### 🎯 下一步
-
-**建议行动：** 将修改后的材料返回给 杨陵揉谷镇除张村羊场人员张伟，完成二轮反馈。
-
-**建议材料：**
-- risk boundary wording draft
-- environmental / safety panel
-- application scenario card
-- use-boundary checklist
-- education material v2
-- public understanding feedback form
-
-**建议回访问题：**
-- 风险措辞是否避免了过度承诺？
-- 哪些未来验证应被标注为优先？
-- 该应用场景下最容易被忽略的使用限制是什么？
-- 受众是否能区分候选筛选、未来应用和现实治疗？
 
 ---
 
@@ -480,26 +275,6 @@ Human Practices 摘要卡片
 
 此轮 HP 将 AMPlify 从 *应用场景探索* 推进到 *真实场景中的疾病靶向设计*。
 
-#### 🔄 闭环状态与证据
-
-- **闭环层级**：L3_Evidenced（L3）
-- **证据强度**：0.550
-- **优先级得分**：0.565
-- **是否已回访**：❌ 否
-- **证据列表**：访谈记录
-- **成熟度剖面**：设计反思=1 / 场景探索=2 / 多元视角=1 / 影响预判=1 / HP响应=2 / 局限性坦诚=0
-
-#### 🎯 下一步
-
-**建议行动：** 将修改后的材料返回给 武功县诚威奶山羊羊场负责人杜欣愿，完成二轮反馈。
-
-**建议材料：**
-- application scenario card
-- use-boundary checklist
-
-**建议回访问题：**
-- 该应用场景下最容易被忽略的使用限制是什么？
-
 ---
 
 ### 2026-05-01 — 基层执业兽医与散养户（养殖端 stakeholder）
@@ -525,30 +300,6 @@ Human Practices 摘要卡片
 #### 📖 故事主线位置
 
 此轮 HP 将 AMPlify 从 *应用场景探索* 推进到 *真实场景中的疾病靶向设计*。
-
-#### 🔄 闭环状态与证据
-
-- **闭环层级**：L3_Evidenced（L3）
-- **证据强度**：0.550
-- **优先级得分**：0.609
-- **是否已回访**：❌ 否
-- **证据列表**：访谈记录
-- **成熟度剖面**：设计反思=1 / 场景探索=2 / 多元视角=2 / 影响预判=4 / HP响应=2 / 局限性坦诚=4
-
-#### 🎯 下一步
-
-**建议行动：** 将修改后的材料返回给 基层执业兽医与散养户，完成二轮反馈。
-
-**建议材料：**
-- risk boundary wording draft
-- environmental / safety panel
-- application scenario card
-- use-boundary checklist
-
-**建议回访问题：**
-- 风险措辞是否避免了过度承诺？
-- 哪些未来验证应被标注为优先？
-- 该应用场景下最容易被忽略的使用限制是什么？
 
 ---
 
@@ -578,29 +329,6 @@ Human Practices 摘要卡片
 
 此轮 HP 将 AMPlify 从 *公众沟通与教育* 推进到 *受众可区分的分层沟通策略*。
 
-#### 🔄 闭环状态与证据
-
-- **闭环层级**：L3_Evidenced（L3）
-- **证据强度**：0.550
-- **优先级得分**：0.550
-- **是否已回访**：❌ 否
-- **证据列表**：访谈记录
-- **成熟度剖面**：设计反思=2 / 场景探索=1 / 多元视角=2 / 影响预判=1 / HP响应=2 / 局限性坦诚=1
-
-#### 🎯 下一步
-
-**建议行动：** 将修改后的材料返回给 iGEM 东北地区交流会参会队伍与经验分享者，完成二轮反馈。
-
-**建议材料：**
-- education material v2
-- public understanding feedback form
-- HP timeline card
-- Stakeholder-Feedback-Action summary
-
-**建议回访问题：**
-- 受众是否能区分候选筛选、未来应用和现实治疗？
-- 这段叙事是否清楚说明了谁改变了项目、改变了哪里？
-
 ---
 
 ### 2026-05-27 — 西北农林科技大学资环学院钱勋教授（环境微生物 / ARG 专家）
@@ -629,133 +357,4 @@ Human Practices 摘要卡片
 
 此轮 HP 将 AMPlify 从 *候选肽设计* 推进到 *证据链闭合的候选评估框架*。
 
-#### 🔄 闭环状态与证据
-
-- **闭环层级**：L3_Evidenced（L3）
-- **证据强度**：0.746
-- **优先级得分**：0.823
-- **是否已回访**：❌ 否
-- **证据列表**：MIC、溶血、CCK-8、TEM、细胞毒性、分子动力学、软件面板、理化性质、面板、报告、草图、PDES、Environmental Degradation Panel、访谈记录
-- **成熟度剖面**：设计反思=3 / 场景探索=2 / 多元视角=5 / 影响预判=5 / HP响应=3 / 局限性坦诚=5
-
-#### 🎯 下一步
-
-**建议行动：** 将修改后的材料返回给 西北农林科技大学资环学院钱勋教授，完成二轮反馈。
-
-**建议材料：**
-- revised Field Score / model report
-- candidate ranking change table
-- software panel screenshot
-- exported HP report card
-- risk boundary wording draft
-- environmental / safety panel
-- Evidence Matrix
-- wet-lab validation chain summary
-
-**建议回访问题：**
-- 新的模型指标是否覆盖了 stakeholder 提出的关键判断？
-- 候选排序变化是否容易解释，是否存在误导风险？
-- 软件报告中的标签和证据等级是否足够清楚？
-- 风险措辞是否避免了过度承诺？
-- 哪些未来验证应被标注为优先？
-- 当前证据链是否足以支持候选筛选，而不是临床有效性声明？
-
 ---
-
-## 闭环状态面板
-
-| 状态 | 含义 | 当前数量 |
-|---|---|---|
-| L0 已记录 | 只有活动记录或访谈文本 | 0 |
-| L1 已提炼 | 已提炼出关键反馈和项目问题 | 0 |
-| L2 已行动 | 反馈已转化为项目修改 | 0 |
-| L3 有证据 | 修改已有模型/实验/软件/文档支撑 | 11 |
-| L4 已返回 | 修改结果已返回 stakeholder 获得二轮反馈 | 0 |
-
----
-
-## 下一步回访推荐
-
-系统优先推荐以下未闭合循环：
-
-1. **西北农林科技大学资环学院钱勋教授** (优先级: 0.823)
-   - 将修改后的材料返回给 西北农林科技大学资环学院钱勋教授，完成二轮反馈。
-   - 核心问题：新的模型指标是否覆盖了 stakeholder 提出的关键判断？
-
-2. **西北农林科技大学家畜生物学重点实验室刘军教授** (优先级: 0.819)
-   - 将修改后的材料返回给 西北农林科技大学家畜生物学重点实验室刘军教授，完成二轮反馈。
-   - 核心问题：新的模型指标是否覆盖了 stakeholder 提出的关键判断？
-
-3. **西北农林科技大学罗自卫老师** (优先级: 0.817)
-   - 将修改后的材料返回给 西北农林科技大学罗自卫老师，完成二轮反馈。
-   - 核心问题：新的模型指标是否覆盖了 stakeholder 提出的关键判断？
-
-4. **西北农林科技大学西安动物医院的临床医生与院长** (优先级: 0.775)
-   - 将修改后的材料返回给 西北农林科技大学西安动物医院的临床医生与院长，完成二轮反馈。
-   - 核心问题：新的模型指标是否覆盖了 stakeholder 提出的关键判断？
-
-5. **赵天意老师** (优先级: 0.767)
-   - 将修改后的材料返回给 赵天意老师，完成二轮反馈。
-   - 核心问题：新的模型指标是否覆盖了 stakeholder 提出的关键判断？
-
-6. **哈尔滨工业大学生命科学与医学学部聂桓老师** (优先级: 0.733)
-   - 将修改后的材料返回给 哈尔滨工业大学生命科学与医学学部聂桓老师，完成二轮反馈。
-   - 核心问题：风险措辞是否避免了过度承诺？
-
-7. **杨陵揉谷镇除张村羊场人员张伟** (优先级: 0.619)
-   - 将修改后的材料返回给 杨陵揉谷镇除张村羊场人员张伟，完成二轮反馈。
-   - 核心问题：风险措辞是否避免了过度承诺？
-
-8. **基层执业兽医与散养户** (优先级: 0.609)
-   - 将修改后的材料返回给 基层执业兽医与散养户，完成二轮反馈。
-   - 核心问题：风险措辞是否避免了过度承诺？
-
-9. **武功县诚威奶山羊羊场负责人杜欣愿** (优先级: 0.565)
-   - 将修改后的材料返回给 武功县诚威奶山羊羊场负责人杜欣愿，完成二轮反馈。
-   - 核心问题：该应用场景下最容易被忽略的使用限制是什么？
-
-10. **iGEM 东北地区交流会参会队伍与经验分享者** (优先级: 0.550)
-   - 将修改后的材料返回给 iGEM 东北地区交流会参会队伍与经验分享者，完成二轮反馈。
-   - 核心问题：受众是否能区分候选筛选、未来应用和现实治疗？
-
-11. **西安市浮生闲猫咪驿站工作人员** (优先级: 0.473)
-   - 将修改后的材料返回给 西安市浮生闲猫咪驿站工作人员，完成二轮反馈。
-   - 核心问题：风险措辞是否避免了过度承诺？
-
----
-
-## HP Compass 方法论说明
-
-### 反馈分类体系
-
-| 类别 | 说明 |
-|---|---|
-| Problem Definition | 改变项目问题定义 |
-| Model | 改变模型设计 |
-| Material | 改变实验验证 |
-| Software | 改变软件报告 |
-| Safety | 改变安全边界 |
-| Environment | 改变环境风险考虑 |
-| Implementation | 改变应用场景 |
-| Education | 改变公众沟通 |
-| Social Media | 改变项目表达 |
-
-### 闭环状态机
-
-```
-L0 Recorded → L1 Interpreted → L2 Actioned → L3 Evidenced → L4 Returned
-```
-
-### 优先级算法
-
-```
-Priority = AHP-FCE 二级模糊综合评价
-  Level 1: U₁(Internal Urgency) = F₁(loop_gap)×F₂(cross_module)×F₃(criticality)
-           U₂(External Constraints) = F₄(time)×F₅(evidence_gap)×F₆(stakeholder_value)
-  Level 2: B = A∘[B₁; B₂] → centroid defuzzification → P ∈ [0.20, 0.95]
-  Weights by AHP (CR<0.10); M(·,+) synthesis operator
-```
-
----
-
-*此页面由 HP Compass 自动生成。*

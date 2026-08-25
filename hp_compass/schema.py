@@ -30,6 +30,35 @@ class HPCard:
     evidence: list[str]
     returned: bool
 
+    # ── 处理模式：llm=大模型解析层 / rule=关键词规则层 ──
+    processing_mode: str = "rule"
+
+    # ── 多轮访问：卡片本身的 date/source_file 为首次访谈，
+    #    后续回访记录追加到 visits（每条：date、source_file、summary）──
+    visits: list[dict[str, str]] = field(default_factory=list)
+
+    # ── 延伸判断：LLM 判定的已有记录编号/标识（合并后清空）──
+    extension_ref: str = ""
+
+    # ── LLM 覆盖值（仅 processing_mode="llm" 时使用）──
+    llm_module_values: dict[str, float] = field(default_factory=dict)       # Φ₂ 模块隶属度
+    llm_maturity_values: dict[str, float] = field(default_factory=dict)     # Φ₅ 文本信号
+    llm_has_action: bool = False        # Φ₃ 语义判断：已做出实际修改
+    llm_has_evidence: bool = False      # Φ₃ 语义判断：已有实质证据
+    llm_feedback_summary: str = ""       # 图谱 Feedback 节点文本
+    llm_action_summary: str = ""         # 图谱 Action 节点文本
+    llm_wiki_en_section: str = ""        # 英文 Wiki 文案段落
+    llm_stability: float | None = None   # 四梯度一致率
+    llm_raw_dir: str = ""                # 原始 JSON 存档目录
+
+    # ── LLM 生成的回访建议（Φ₆，LLM 模式直通）──
+    llm_next_step_cn: str = ""
+    llm_next_step_en: str = ""
+    llm_materials_cn: list[str] = field(default_factory=list)
+    llm_materials_en: list[str] = field(default_factory=list)
+    llm_questions_cn: list[str] = field(default_factory=list)
+    llm_questions_en: list[str] = field(default_factory=list)
+
     # ── Φ₂: fuzzy membership classification ──
     categories: list[Classification] = field(default_factory=list)
     affected_modules: list[str] = field(default_factory=list)

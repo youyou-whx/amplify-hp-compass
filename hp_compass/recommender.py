@@ -4,12 +4,35 @@ from .schema import HPCard
 
 
 def recommend_next_step(card: HPCard) -> HPCard:
-    """Generate next-step recommendations in Chinese (primary) and English."""
+    """Generate next-step recommendations in Chinese (primary) and English.
+
+    LLM 模式（processing_mode="llm" 且 next_step_cn 已由 LLM 生成）：
+    直接采用 LLM 的自然语言建议，不走查表模板。
+    """
     modules = set(card.affected_modules)
     materials: list[str] = []
     questions: list[str] = []
     materials_en: list[str] = []
     questions_en: list[str] = []
+
+    # ── LLM 建议直通 ──
+    llm_cn = getattr(card, "llm_next_step_cn", "") or ""
+    if card.processing_mode == "llm" and llm_cn:
+        card.next_step = llm_cn
+        card.next_step_en = getattr(card, "llm_next_step_en", "") or llm_cn
+        card.suggested_materials = list(getattr(card, "llm_materials_cn", []) or []) or \
+            ["HP summary card", "project modification evidence"]
+        card.suggested_materials_en = list(getattr(card, "llm_materials_en", []) or []) or \
+            ["HP summary card", "Project modification evidence"]
+        card.suggested_questions = list(getattr(card, "llm_questions_cn", []) or []) or [
+            "该反馈是否已经被准确理解？",
+            "目前的项目修改是否真正回应了 stakeholder 的关切？",
+        ]
+        card.suggested_questions_en = list(getattr(card, "llm_questions_en", []) or []) or [
+            "Has this feedback been accurately understood?",
+            "Do the current project changes genuinely address the stakeholder's concerns?",
+        ]
+        return card
 
     if card.loop_level < 2:
         action = "把该反馈转化为一个明确的项目修改，并补充对应证据。"

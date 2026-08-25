@@ -14,6 +14,19 @@ STATUS_NAMES = {
 
 
 def assign_loop_status(card: HPCard) -> HPCard:
+    card.evidence_strength = calculate_evidence_strength(card.evidence)
+
+    if card.processing_mode == "llm":
+        # LLM 模式：语义判断（已行动/有证据/已回访）+ 数学组合
+        if not card.feedback.strip():
+            level = 0
+        else:
+            level = 1 + int(card.llm_has_action) + int(card.llm_has_evidence) + int(card.returned)
+        level = min(level, 4)
+        card.loop_level = level
+        card.loop_status = STATUS_NAMES[level]
+        return card
+
     level = 0
     if card.feedback.strip():
         level = 1
@@ -21,7 +34,6 @@ def assign_loop_status(card: HPCard) -> HPCard:
         level = max(level, 1)
     if card.project_action.strip():
         level = max(level, 2)
-    card.evidence_strength = calculate_evidence_strength(card.evidence)
     if card.evidence and card.evidence_strength > 0:
         level = max(level, 3)
     if card.returned:

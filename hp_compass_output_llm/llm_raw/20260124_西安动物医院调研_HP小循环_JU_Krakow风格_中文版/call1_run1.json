@@ -1,0 +1,24 @@
+{
+  "date": "2026-01-24",
+  "stakeholder": "西北农林科技大学西安动物医院临床医生、院长及检验中心工作人员",
+  "stakeholder_type": "兽医临床 stakeholder",
+  "initial_question": "宠物细菌感染是否适合作为AI设计抗菌肽的第一个应用场景？常见病原、治疗周期、耐药性、治疗费用，以及抗菌肽可能以何种形式进入真实动物医疗。",
+  "feedback": "动物感染不能笼统写成所有细菌感染，不同系统对应不同病原、诊断方式和给药路径；宠物临床已有换药、联合用药、外用清洗、口服抗生素等成熟策略，抗菌肽在宠物市场中可能更像辅助或保健产品；皮肤、耳道等体表局部场景比广泛体内感染更现实；经济动物的减抗、无抗和残留控制可能具有更高价值。",
+  "project_action": "不再将AMPlify简单定位为宠物抗菌药，转向动物健康、抗生素减量和One Health的候选肽评估框架；保留皮肤/耳道局部使用作为可讨论场景，同时把畜禽、泌乳期、蛋鸡和养殖端减抗纳入后续调研方向；在后续模型和软件叙事中加入应用场景、给药路径、证据等级和安全边界等字段。",
+  "evidence": [
+    "访谈记录"
+  ],
+  "returned": false,
+  "is_extension_of": null,
+  "module_grades": {
+    "Safety": "中",
+    "Model": "中",
+    "Implementation": "中",
+    "Material": "弱",
+    "Problem Definition": "强",
+    "Environment": "弱",
+    "Software": "中",
+    "Education": "弱",
+    "Social Media": "无"
+  }
+}

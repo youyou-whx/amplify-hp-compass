@@ -25,7 +25,8 @@ _HP_COMPASS_ROOT = Path(__file__).resolve().parents[1]
 if str(_HP_COMPASS_ROOT) not in _sys.path:
     _sys.path.insert(0, str(_HP_COMPASS_ROOT))
 
-from hp_compass.pipeline import run_pipeline
+from hp_compass.pipeline import run_pipeline, run_llm_incremental
+from hp_compass.schema import HPCard
 
 st.set_page_config(
     page_title="HP Compass — AMPlify",
@@ -62,7 +63,7 @@ C = {
     "warm_sand":       "#f4d9a8",   # Problem Definition — 暖沙，问题探索
     "light_cream":     "#f5e4c8",   # Wiki Narrative — 浅奶，文档叙事
 
-    # ── 通用功能色（保留旧名兼容） ──
+    # ── 通用功能色 ──
     "warm_orange":     "#f0a659",
     "bean_paste_pink": "#e79c98",
     "haze_blue":       "#79a3d1",
@@ -74,7 +75,7 @@ C = {
     "lake_cyan_blue":  "#72b6cd",
 }
 
-# ── 模块标签色 ──  知识卡片 / 气泡图中按模块区分的颜色（保留原三层）
+# ── 模块标签色 ──  知识卡片 / 气泡图中按模块区分的颜色
 MODULE_COLORS = {
     "Safety":             C["deep_red"],
     "Model":              C["royal_blue"],
@@ -112,7 +113,7 @@ NODE_COLORS = {
     "HP":          "#3d2b1f",
     "Stakeholder": C["haze_blue"],
     "Feedback":    C["lake_cyan_blue"],
-    "Module":      "#8899aa",       # fallback — 实际着色用 MODULE_COLORS
+    "Module":      "#8899aa",       # 实际着色用 MODULE_COLORS
     "Action":      C["warm_orange"],
     "Evidence":    C["bean_paste_pink"],
     "NextStep":    C["retro_brick_red"],
@@ -174,7 +175,7 @@ def _node_importance(kind: str, node: dict,
     if kind == "HP":
         hp_id = node.get("label", "")
         base = hp_priorities.get(nid.replace("hp:", ""), 0.5)
-        # 回退：用 label 匹配
+        # 用 label 匹配
         if base == 0.5:
             for hid, pri in hp_priorities.items():
                 if hid.endswith(node.get("label", "")[:16]):
@@ -704,7 +705,7 @@ def page_hp_map(cards: list[dict], graph: dict, analytics: dict | None) -> None:
     with col2:
         st.subheader("📊 图分析洞察")
 
-        # 基础统计：优先从 analytics，回退到 graph 实时计算
+        # 基础统计：优先从 analytics，否则从 graph 实时计算
         stats = analytics.get("graph_stats") if analytics else None
         if stats:
             n_nodes = stats.get("total_nodes", 0)
@@ -1213,11 +1214,60 @@ def page_timeline(cards: list[dict]) -> None:
         "每条 Human Practices 互动都以 **知识卡片 (Knowledge Card)** 形式呈现，"
         "沿用 iGEM wiki 的经典结构："
         "**Who → Why → What We Learned → How We Changed**。"
+        "同一循环的多次访问（初次访谈与二轮回访）各按日期独立呈现。"
     )
 
-    sorted_cards = sorted(cards, key=lambda c: c.get("date") or "9999-99-99")
+    # ── 把初次访谈与回访访问展开成扁平条目，按日期统一排序 ──
+    entries: list[dict] = []
+    for card in cards:
+        entries.append({"date": card.get("date") or "9999-99-99", "card": card, "visit": None})
+        for visit in card.get("visits", []):
+            entries.append({
+                "date": visit.get("date") or "9999-99-99",
+                "card": card,
+                "visit": visit,
+            })
+    entries.sort(key=lambda e: e["date"])
 
-    for i, card in enumerate(sorted_cards):
+    for i, entry in enumerate(entries):
+        card = entry["card"]
+        visit = entry["visit"]
+
+        # ── 回访访问条目 ──
+        if visit is not None:
+            visit_date = visit.get("date") or "—"
+            visit_summary = visit.get("summary", "")
+            vcols = st.columns([1, 24])
+            with vcols[0]:
+                st.markdown(
+                    f"<div style='text-align:center;padding-top:14px'>"
+                    f"<div style='font-size:10px;font-weight:700;"
+                    f"color:{C['retro_brick_red']};margin-bottom:4px'>{visit_date}</div>"
+                    f"<div style='width:16px;height:16px;border-radius:50%;"
+                    f"background:{C['retro_brick_red']};margin:0 auto;"
+                    f"box-shadow:0 0 10px {C['retro_brick_red']}50'></div>"
+                    f"<div style='width:2px;height:32px;"
+                    f"background:{C['pale_icy_blue']}60;margin:0 auto;margin-top:4px'></div>"
+                    f"</div>",
+                    unsafe_allow_html=True,
+                )
+            with vcols[1]:
+                st.markdown(
+                    f"<div style='background:#fff8e1;border:1px dashed "
+                    f"{C['retro_brick_red']}60;border-radius:10px;padding:12px 16px;"
+                    f"margin-bottom:10px'>"
+                    f"<span style='display:inline-block;background:{C['retro_brick_red']};"
+                    f"color:white;padding:2px 10px;border-radius:9px;font-size:11px;"
+                    f"font-weight:600;margin-right:8px'>↩ 二轮回访</span>"
+                    f"<b style='color:#3d2b1f'>{card.get('stakeholder', 'Unknown')}</b>"
+                    f"<div style='color:#5c4a3a;font-size:13px;margin-top:6px'>"
+                    f"{_escape_html(visit_summary)}</div>"
+                    f"</div>",
+                    unsafe_allow_html=True,
+                )
+            continue
+
+        # ── 初次访谈条目（完整知识卡片）──
         date = card.get("date") or "—"
         stakeholder = card.get("stakeholder", "Unknown")
         modules = card.get("affected_modules", [])
@@ -1687,10 +1737,17 @@ def main() -> None:
     # ── 侧边栏 ──
     with st.sidebar:
         # ── Logo 区域：AMPlify 团队 Logo，居中 ──
-        logo_dir = Path(args.data) if hasattr(args, 'data') else Path("hp_compass_output")
-        amplify_logo = logo_dir / "amplify_logo.png"
+        # 查找顺序：数据目录 → 项目根 → 默认输出目录
+        amplify_logo = next(
+            (p for p in (
+                Path(args.data) / "amplify_logo.png",
+                Path("AMPLIFY.png"),
+                Path("hp_compass_output") / "amplify_logo.png",
+            ) if p.exists()),
+            None,
+        )
 
-        if amplify_logo.exists():
+        if amplify_logo is not None:
             # Logo 区域：白底卡片，居中展示 AMPlify Logo
             st.markdown(
                 "<div style='background:#ffffff;border-radius:15px;padding:20px 20px 14px;"
@@ -1722,6 +1779,33 @@ def main() -> None:
                                  help="运行 pipeline 后的输出目录")
         if not Path(data_dir).exists():
             st.warning(f"目录不存在: {data_dir}")
+
+        st.divider()
+
+        # ── LLM 解析层设置 ──
+        st.markdown("### 🤖 大模型解析")
+        use_llm = st.toggle(
+            "使用大模型增强（DeepSeek）",
+            value=False,
+            key="llm_toggle",
+            help="开启后用大模型做文本解析，数学模型负责决策计算。关闭时走关键词规则模式。",
+        )
+        api_key = ""
+        if use_llm:
+            api_key = st.text_input(
+                "🔑 DeepSeek API Key",
+                type="password",
+                value=st.session_state.get("ds_api_key", ""),
+                key="ds_api_key_input",
+                help="仅保存在当前会话内存中，不写入任何文件。",
+                placeholder="sk-...",
+            )
+            if api_key:
+                st.session_state["ds_api_key"] = api_key
+        if not use_llm:
+            st.caption("🟡 规则模式：关键词匹配（无需 API Key）")
+        elif not api_key:
+            st.caption("🟡 未提供 Key，使用规则模式")
 
         st.divider()
 
@@ -1757,23 +1841,42 @@ def main() -> None:
 
         HP_RECORD_DIR = Path("hp record")
 
+        def _mode_label() -> str:
+            return "LLM 解析模式" if (use_llm and api_key) else "规则模式"
+
+        def _load_existing_cards(data_dir: str) -> list[HPCard]:
+            """从 hp_cards.json 读取现有卡片为 HPCard 对象。"""
+            cards_file = Path(data_dir) / "hp_cards.json"
+            if not cards_file.exists():
+                return []
+            raw = json.loads(cards_file.read_text(encoding="utf-8"))
+            fields = set(HPCard.__dataclass_fields__)
+            return [HPCard(**{k: v for k, v in item.items() if k in fields}) for item in raw]
+
         if upload_clicked and has_pending:
             HP_RECORD_DIR.mkdir(exist_ok=True)
             files_to_process = st.session_state["pending_uploads"]
-            saved = 0
+            saved: list[Path] = []
             for uf in files_to_process:
                 if not uf.name.endswith(".docx"):
                     continue
                 dest = HP_RECORD_DIR / uf.name
                 dest.write_bytes(uf.getvalue())
-                saved += 1
+                saved.append(dest)
 
-            if saved > 0:
-                with st.spinner(f"正在分析 {saved} 个新文件..."):
+            if saved:
+                mode = _mode_label()
+                with st.spinner(f"正在用{mode}分析 {len(saved)} 个新文件..."):
                     try:
-                        run_pipeline(str(HP_RECORD_DIR), data_dir)
+                        if use_llm and api_key:
+                            existing = _load_existing_cards(data_dir)
+                            run_llm_incremental(saved, data_dir, api_key, existing)
+                        else:
+                            run_pipeline(str(HP_RECORD_DIR), data_dir)
                         st.session_state["pipeline_ok"] = True
-                        st.session_state["pipeline_msg"] = f"已处理 {saved} 个文件"
+                        st.session_state["pipeline_msg"] = (
+                            f"已用{mode}处理 {len(saved)} 个文件"
+                        )
                     except Exception as e:
                         st.session_state["pipeline_ok"] = False
                         st.session_state["pipeline_msg"] = str(e)
@@ -1782,11 +1885,18 @@ def main() -> None:
 
         if rerun_clicked:
             if HP_RECORD_DIR.exists() and list(HP_RECORD_DIR.glob("*.docx")):
-                with st.spinner("正在重新分析全部记录..."):
+                mode = _mode_label()
+                with st.spinner(f"正在用{mode}重新分析全部记录..."):
                     try:
-                        run_pipeline(str(HP_RECORD_DIR), data_dir)
+                        if use_llm and api_key:
+                            run_pipeline(
+                                str(HP_RECORD_DIR), data_dir,
+                                mode="llm", api_key=api_key,
+                            )
+                        else:
+                            run_pipeline(str(HP_RECORD_DIR), data_dir)
                         st.session_state["pipeline_ok"] = True
-                        st.session_state["pipeline_msg"] = "重新分析完成"
+                        st.session_state["pipeline_msg"] = f"已用{mode}重新分析完成"
                     except Exception as e:
                         st.session_state["pipeline_ok"] = False
                         st.session_state["pipeline_msg"] = str(e)
@@ -1822,7 +1932,7 @@ def main() -> None:
         data = load_data(data_dir, _cache_version=cache_ver)
         cards = data.get("cards", [])
         returned = sum(1 for c in cards if c.get("loop_level") == 4)
-        high_priority = sum(1 for c in cards if c.get("priority_score", 0) >= 0.6)
+        high_priority = sum(1 for c in cards if c.get("priority_score", 0) >= 0.8)
 
         col_a, col_b, col_c = st.columns(3)
         with col_a:

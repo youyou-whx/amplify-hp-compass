@@ -1,0 +1,22 @@
+{
+  "date": "2026-04-19",
+  "stakeholder": "西安市浮生闲猫咪驿站工作人员",
+  "stakeholder_type": "养殖端 stakeholder",
+  "initial_question": "宠物端真实用药行为是否存在被忽略的风险？",
+  "feedback": "宠物猫并不是频繁使用抗生素的对象，但不当用药、过量用药、反复皮肤病和局部感染仍可能造成治疗困难。实际场景中，问题常常不是'用不用抗生素'这么简单，而是诊断、剂量、联合用药和主人认知共同决定结果。",
+  "project_action": "我们把宠物端写成 AMPlify 主线中的'日常照护与用药认知'层：它帮助我们解释为什么抗菌药物替代方案必须谨慎、可解释，并明确边界；同时也说明项目主要验证场景仍应聚焦更高风险、更可控的动物感染问题。",
+  "evidence": [],
+  "returned": false,
+  "is_extension_of": null,
+  "module_grades": {
+    "Safety": "中",
+    "Model": "无",
+    "Implementation": "中",
+    "Material": "无",
+    "Problem Definition": "强",
+    "Environment": "弱",
+    "Software": "无",
+    "Education": "强",
+    "Social Media": "弱"
+  }
+}

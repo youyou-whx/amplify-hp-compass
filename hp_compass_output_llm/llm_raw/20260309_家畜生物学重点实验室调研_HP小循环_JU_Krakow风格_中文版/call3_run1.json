@@ -1,0 +1,26 @@
+{
+  "next_step_cn": "建议在完成体外筛选和模型评估后，向刘军教授反馈候选肽的MIC、溶血和细胞毒性数据，并讨论在羊群中进行初步现场验证的可行性。",
+  "next_step_en": "After completing in vitro screening and model evaluation, share MIC, hemolysis, and cytotoxicity data with Prof. Liu and discuss the feasibility of preliminary field validation in sheep flocks.",
+  "materials_cn": [
+    "候选抗菌肽的体外活性与毒性数据汇总表",
+    "AMPlify 项目更新版海报或幻灯片",
+    "关于乳腺炎场景适配的模型预测报告"
+  ],
+  "materials_en": [
+    "Summary table of in vitro activity and toxicity data for candidate AMPs",
+    "Updated AMPlify project poster or slides",
+    "Model prediction report on mastitis scenario adaptation"
+  ],
+  "questions_cn": [
+    "您认为我们目前的候选肽在哪些理化性质上还需要优化，以更好地适应乳汁环境？",
+    "对于隐性乳腺炎的检测，您有哪些建议可以帮助我们在现场评估中更准确地判断疗效？",
+    "在羊群中进行初步试验时，您认为最关键的伦理和操作注意事项是什么？"
+  ],
+  "questions_en": [
+    "What physicochemical properties of our current candidate AMPs do you think need optimization for better performance in the milk environment?",
+    "What suggestions do you have for detecting subclinical mastitis to more accurately assess efficacy in field trials?",
+    "What are the most critical ethical and operational considerations for conducting preliminary trials in sheep flocks?"
+  ],
+  "feedback_summary": "乳腺炎是重要场景但非唯一目标，应聚焦耐药菌杀伤与低毒性，并考虑递送、稳定性和监管。",
+  "action_summary": "将乳腺炎调整为代表性场景，主线转向耐药菌筛选与活性-安全窗口，并增加场景适配和风险标签。"
+}

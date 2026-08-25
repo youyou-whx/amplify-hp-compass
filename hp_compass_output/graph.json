@@ -6,7 +6,7 @@
       "kind": "Feedback",
       "level": 2,
       "ref_count": 5,
-      "score": 0.819,
+      "score": 0.857,
       "themes": [
         "临床场景定义",
         "抗生素与耐药性",
@@ -19,7 +19,7 @@
       "kind": "Action",
       "level": 2,
       "ref_count": 8,
-      "score": 0.823,
+      "score": 0.863,
       "themes": [
         "临床场景定义",
         "抗生素与耐药性",
@@ -32,7 +32,7 @@
       "kind": "HP",
       "level": 1,
       "ref_count": 1,
-      "score": 0.775,
+      "score": 0.805,
       "status": "L3_Evidenced"
     },
     {
@@ -105,7 +105,7 @@
       "kind": "HP",
       "level": 1,
       "ref_count": 1,
-      "score": 0.819,
+      "score": 0.857,
       "status": "L3_Evidenced"
     },
     {
@@ -213,7 +213,7 @@
       "kind": "Feedback",
       "level": 2,
       "ref_count": 1,
-      "score": 0.767,
+      "score": 0.803,
       "themes": [
         "AI模型与算法",
         "实验验证体系",
@@ -226,7 +226,7 @@
       "kind": "Action",
       "level": 2,
       "ref_count": 2,
-      "score": 0.817,
+      "score": 0.851,
       "themes": [
         "AI模型与算法",
         "实验验证体系"
@@ -238,7 +238,7 @@
       "kind": "HP",
       "level": 1,
       "ref_count": 1,
-      "score": 0.767,
+      "score": 0.803,
       "status": "L3_Evidenced"
     },
     {
@@ -304,7 +304,7 @@
       "kind": "HP",
       "level": 1,
       "ref_count": 1,
-      "score": 0.817,
+      "score": 0.851,
       "status": "L3_Evidenced"
     },
     {
@@ -342,7 +342,7 @@
       "kind": "Feedback",
       "level": 2,
       "ref_count": 1,
-      "score": 0.733,
+      "score": 0.765,
       "themes": [
         "实验验证体系",
         "Wiki与叙事建设",
@@ -355,7 +355,7 @@
       "kind": "Action",
       "level": 2,
       "ref_count": 1,
-      "score": 0.733,
+      "score": 0.765,
       "themes": [
         "安全与毒性边界",
         "Wiki与叙事建设"
@@ -367,7 +367,7 @@
       "kind": "HP",
       "level": 1,
       "ref_count": 1,
-      "score": 0.733,
+      "score": 0.765,
       "status": "L3_Evidenced"
     },
     {
@@ -391,7 +391,7 @@
       "kind": "HP",
       "level": 1,
       "ref_count": 1,
-      "score": 0.473,
+      "score": 0.506,
       "status": "L3_Evidenced"
     },
     {
@@ -422,7 +422,7 @@
       "kind": "Feedback",
       "level": 2,
       "ref_count": 1,
-      "score": 0.619,
+      "score": 0.649,
       "themes": [
         "安全与毒性边界",
         "养殖场景定义",
@@ -435,7 +435,7 @@
       "kind": "HP",
       "level": 1,
       "ref_count": 1,
-      "score": 0.619,
+      "score": 0.649,
       "status": "L3_Evidenced"
     },
     {
@@ -459,7 +459,7 @@
       "kind": "HP",
       "level": 1,
       "ref_count": 1,
-      "score": 0.565,
+      "score": 0.595,
       "status": "L3_Evidenced"
     },
     {
@@ -483,7 +483,7 @@
       "kind": "Feedback",
       "level": 2,
       "ref_count": 1,
-      "score": 0.609,
+      "score": 0.642,
       "themes": [
         "养殖场景定义"
       ]
@@ -494,7 +494,7 @@
       "kind": "HP",
       "level": 1,
       "ref_count": 1,
-      "score": 0.609,
+      "score": 0.642,
       "status": "L3_Evidenced"
     },
     {
@@ -518,7 +518,7 @@
       "kind": "Feedback",
       "level": 2,
       "ref_count": 1,
-      "score": 0.55,
+      "score": 0.583,
       "themes": [
         "Wiki与叙事建设"
       ]
@@ -529,7 +529,7 @@
       "kind": "HP",
       "level": 1,
       "ref_count": 1,
-      "score": 0.55,
+      "score": 0.583,
       "status": "L3_Evidenced"
     },
     {
@@ -553,7 +553,7 @@
       "kind": "Feedback",
       "level": 2,
       "ref_count": 1,
-      "score": 0.823,
+      "score": 0.863,
       "themes": [
         "抗生素与耐药性",
         "环境与OneHealth"
@@ -565,7 +565,7 @@
       "kind": "HP",
       "level": 1,
       "ref_count": 1,
-      "score": 0.823,
+      "score": 0.863,
       "status": "L3_Evidenced"
     },
     {

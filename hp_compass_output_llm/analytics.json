@@ -1,0 +1,111 @@
+{
+  "graph_stats": {
+    "total_nodes": 67,
+    "total_edges": 114,
+    "density": 0.0258
+  },
+  "top_stakeholders": [
+    {
+      "node_id": "stakeholder:西北农林科技大学家畜生物学重点实验室刘军教授",
+      "label": "西北农林科技大学家畜生物学重点实验室刘军教授",
+      "stakeholder_type": "动物健康、家畜专家",
+      "pagerank": 0.0103,
+      "degree_centrality": 0.0152,
+      "betweenness_centrality": 0.0,
+      "composite_score": 0.8588,
+      "hp_priority": 0.83,
+      "modules_affected": 5
+    },
+    {
+      "node_id": "stakeholder:赵天意老师，生物大数据相关方向教师",
+      "label": "赵天意老师，生物大数据相关方向教师",
+      "stakeholder_type": "AI、生物大数据专家",
+      "pagerank": 0.0103,
+      "degree_centrality": 0.0152,
+      "betweenness_centrality": 0.0,
+      "composite_score": 0.8577,
+      "hp_priority": 0.824,
+      "modules_affected": 5
+    },
+    {
+      "node_id": "stakeholder:西北农林科技大学资环学院钱勋教授",
+      "label": "西北农林科技大学资环学院钱勋教授",
+      "stakeholder_type": "环境微生物、ARG 专家",
+      "pagerank": 0.0103,
+      "degree_centrality": 0.0152,
+      "betweenness_centrality": 0.0,
+      "composite_score": 0.8529,
+      "hp_priority": 0.855,
+      "modules_affected": 5
+    },
+    {
+      "node_id": "stakeholder:西北农林科技大学罗自卫老师",
+      "label": "西北农林科技大学罗自卫老师",
+      "stakeholder_type": "湿实验、合成生物学专家",
+      "pagerank": 0.0103,
+      "degree_centrality": 0.0152,
+      "betweenness_centrality": 0.0,
+      "composite_score": 0.8519,
+      "hp_priority": 0.843,
+      "modules_affected": 5
+    },
+    {
+      "node_id": "stakeholder:哈尔滨工业大学生命科学与医学学部聂桓老师",
+      "label": "哈尔滨工业大学生命科学与医学学部聂桓老师",
+      "stakeholder_type": "iGEM、Wiki 交流 stakeholder",
+      "pagerank": 0.0103,
+      "degree_centrality": 0.0152,
+      "betweenness_centrality": 0.0,
+      "composite_score": 0.8205,
+      "hp_priority": 0.71,
+      "modules_affected": 5
+    }
+  ],
+  "module_impact": [
+    {
+      "module": "Problem Definition",
+      "hp_feedback_count": 5
+    },
+    {
+      "module": "Safety",
+      "hp_feedback_count": 4
+    },
+    {
+      "module": "Model",
+      "hp_feedback_count": 4
+    },
+    {
+      "module": "Implementation",
+      "hp_feedback_count": 4
+    },
+    {
+      "module": "Environment",
+      "hp_feedback_count": 4
+    },
+    {
+      "module": "Software",
+      "hp_feedback_count": 3
+    },
+    {
+      "module": "Education",
+      "hp_feedback_count": 3
+    },
+    {
+      "module": "Material",
+      "hp_feedback_count": 2
+    },
+    {
+      "module": "Social Media",
+      "hp_feedback_count": 1
+    }
+  ],
+  "node_type_counts": {
+    "Feedback": 5,
+    "Action": 5,
+    "HP": 11,
+    "Stakeholder": 11,
+    "Module": 9,
+    "Evidence": 15,
+    "NextStep": 11
+  }
+}

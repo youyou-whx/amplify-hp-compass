@@ -1,0 +1,258 @@
+{
+  "n_cards": 11,
+  "deltas": [
+    "−20%",
+    "+20%"
+  ],
+  "original_ranking": [
+    {
+      "card_index": 9,
+      "stakeholder": "吉林大学举办的iGEM东北地区交流会参会队伍、经验分享者及其他iGEM成员",
+      "priority_score": 0.602,
+      "rank": 1
+    },
+    {
+      "card_index": 5,
+      "stakeholder": "西安市浮生闲猫咪驿站工作人员",
+      "priority_score": 0.637,
+      "rank": 2
+    },
+    {
+      "card_index": 6,
+      "stakeholder": "杨陵揉谷镇除张村羊场人员张伟",
+      "priority_score": 0.689,
+      "rank": 3
+    },
+    {
+      "card_index": 4,
+      "stakeholder": "哈尔滨工业大学生命科学与医学学部聂桓老师",
+      "priority_score": 0.71,
+      "rank": 4
+    },
+    {
+      "card_index": 8,
+      "stakeholder": "基层执业兽医与散养户（乡村散养羊户）",
+      "priority_score": 0.726,
+      "rank": 5
+    },
+    {
+      "card_index": 0,
+      "stakeholder": "西北农林科技大学西安动物医院临床医生、院长及检验中心工作人员",
+      "priority_score": 0.765,
+      "rank": 6
+    },
+    {
+      "card_index": 7,
+      "stakeholder": "武功县诚威奶山羊羊场负责人杜欣愿",
+      "priority_score": 0.787,
+      "rank": 7
+    },
+    {
+      "card_index": 2,
+      "stakeholder": "赵天意老师，生物大数据相关方向教师",
+      "priority_score": 0.824,
+      "rank": 8
+    },
+    {
+      "card_index": 1,
+      "stakeholder": "西北农林科技大学家畜生物学重点实验室刘军教授",
+      "priority_score": 0.83,
+      "rank": 9
+    },
+    {
+      "card_index": 3,
+      "stakeholder": "西北农林科技大学罗自卫老师",
+      "priority_score": 0.843,
+      "rank": 10
+    },
+    {
+      "card_index": 10,
+      "stakeholder": "西北农林科技大学资环学院钱勋教授",
+      "priority_score": 0.855,
+      "rank": 11
+    }
+  ],
+  "scenarios": [
+    {
+      "factor_label": "AHP U₁ F₁ weight",
+      "delta": "−20%",
+      "old_weight": 0.54,
+      "new_weight": 0.432,
+      "spearman_rho": 0.9909,
+      "delta_P_max": 0.0292
+    },
+    {
+      "factor_label": "AHP U₁ F₁ weight",
+      "delta": "+20%",
+      "old_weight": 0.54,
+      "new_weight": 0.648,
+      "spearman_rho": 1.0,
+      "delta_P_max": 0.0301
+    },
+    {
+      "factor_label": "AHP U₁ F₂ weight",
+      "delta": "−20%",
+      "old_weight": 0.25,
+      "new_weight": 0.2,
+      "spearman_rho": 1.0,
+      "delta_P_max": 0.0207
+    },
+    {
+      "factor_label": "AHP U₁ F₂ weight",
+      "delta": "+20%",
+      "old_weight": 0.25,
+      "new_weight": 0.3,
+      "spearman_rho": 1.0,
+      "delta_P_max": 0.0177
+    },
+    {
+      "factor_label": "AHP U₁ F₃ weight",
+      "delta": "−20%",
+      "old_weight": 0.21,
+      "new_weight": 0.168,
+      "spearman_rho": 1.0,
+      "delta_P_max": 0.0193
+    },
+    {
+      "factor_label": "AHP U₁ F₃ weight",
+      "delta": "+20%",
+      "old_weight": 0.21,
+      "new_weight": 0.252,
+      "spearman_rho": 0.9909,
+      "delta_P_max": 0.0171
+    },
+    {
+      "factor_label": "AHP U₂ F₄ weight",
+      "delta": "−20%",
+      "old_weight": 0.493,
+      "new_weight": 0.3944,
+      "spearman_rho": 1.0,
+      "delta_P_max": 0.0066
+    },
+    {
+      "factor_label": "AHP U₂ F₄ weight",
+      "delta": "+20%",
+      "old_weight": 0.493,
+      "new_weight": 0.5916,
+      "spearman_rho": 1.0,
+      "delta_P_max": 0.0066
+    },
+    {
+      "factor_label": "AHP U₂ F₅ weight",
+      "delta": "−20%",
+      "old_weight": 0.253,
+      "new_weight": 0.2024,
+      "spearman_rho": 1.0,
+      "delta_P_max": 0.0073
+    },
+    {
+      "factor_label": "AHP U₂ F₅ weight",
+      "delta": "+20%",
+      "old_weight": 0.253,
+      "new_weight": 0.3036,
+      "spearman_rho": 1.0,
+      "delta_P_max": 0.0075
+    },
+    {
+      "factor_label": "AHP U₂ F₆ weight",
+      "delta": "−20%",
+      "old_weight": 0.254,
+      "new_weight": 0.2032,
+      "spearman_rho": 1.0,
+      "delta_P_max": 0.0074
+    },
+    {
+      "factor_label": "AHP U₂ F₆ weight",
+      "delta": "+20%",
+      "old_weight": 0.254,
+      "new_weight": 0.3048,
+      "spearman_rho": 1.0,
+      "delta_P_max": 0.0071
+    },
+    {
+      "factor_label": "AHP L2 U₁ weight",
+      "delta": "−20%",
+      "old_weight": 0.667,
+      "new_weight": 0.5336,
+      "spearman_rho": 0.9636,
+      "delta_P_max": 0.0381
+    },
+    {
+      "factor_label": "AHP L2 U₁ weight",
+      "delta": "+20%",
+      "old_weight": 0.667,
+      "new_weight": 0.8004,
+      "spearman_rho": 1.0,
+      "delta_P_max": 0.0381
+    },
+    {
+      "factor_label": "MF v1_low ±20%",
+      "delta": "−20%",
+      "old_weight": 0.0,
+      "new_weight": 0.0,
+      "spearman_rho": 1.0,
+      "delta_P_max": 0.0079
+    },
+    {
+      "factor_label": "MF v1_low ±20%",
+      "delta": "+20%",
+      "old_weight": 0.0,
+      "new_weight": 0.0,
+      "spearman_rho": 0.9727,
+      "delta_P_max": 0.0766
+    },
+    {
+      "factor_label": "MF v2_mid ±20%",
+      "delta": "−20%",
+      "old_weight": 0.45,
+      "new_weight": 0.36,
+      "spearman_rho": 1.0,
+      "delta_P_max": 0.0302
+    },
+    {
+      "factor_label": "MF v2_mid ±20%",
+      "delta": "+20%",
+      "old_weight": 0.45,
+      "new_weight": 0.54,
+      "spearman_rho": 0.9909,
+      "delta_P_max": 0.0339
+    },
+    {
+      "factor_label": "MF v3_high ±20%",
+      "delta": "−20%",
+      "old_weight": 0.75,
+      "new_weight": 0.6,
+      "spearman_rho": 1.0,
+      "delta_P_max": 0.0161
+    },
+    {
+      "factor_label": "MF v3_high ±20%",
+      "delta": "+20%",
+      "old_weight": 0.75,
+      "new_weight": 0.9,
+      "spearman_rho": 1.0,
+      "delta_P_max": 0.0625
+    },
+    {
+      "factor_label": "MF v4_urgent ±20%",
+      "delta": "−20%",
+      "old_weight": 0.9,
+      "new_weight": 0.72,
+      "spearman_rho": 0.7636,
+      "delta_P_max": 0.1548
+    },
+    {
+      "factor_label": "MF v4_urgent ±20%",
+      "delta": "+20%",
+      "old_weight": 0.9,
+      "new_weight": 1.08,
+      "spearman_rho": 1.0,
+      "delta_P_max": 0.0296
+    }
+  ],
+  "min_rho": 0.7636,
+  "avg_rho": 0.9851,
+  "max_delta_P": 0.1548,
+  "all_above_09": false,
+  "defense_statement": "±20% 参数扰动下，22 个场景 Spearman ρ 均值 0.9851，最小值 0.7636。最大得分偏差 ΔP_max = 0.1548。个别场景排名有波动。"
+}

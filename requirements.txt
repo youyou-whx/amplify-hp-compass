@@ -3,3 +3,4 @@ networkx>=3.0
 plotly>=5.0
 matplotlib>=3.5
 pyvis>=0.3.0
+requests>=2.28

@@ -1,0 +1,26 @@
+{
+  "next_step_cn": "建议在后续回访中，向聂桓老师展示 AMPlify 在跨校交流与外部视角方面的具体改进，并邀请其参与一次线上项目评审，以获取更深入的反馈。",
+  "next_step_en": "In the follow-up, show Prof. Nie how AMPlify has incorporated cross-institutional communication and external perspectives, and invite him to an online project review for deeper feedback.",
+  "materials_cn": [
+    "更新后的项目 Wiki 页面（突出工程化目标与合作价值）",
+    "候选抗菌肽的体外评估数据摘要（明确证据边界）",
+    "跨校交流活动的记录与成果展示"
+  ],
+  "materials_en": [
+    "Updated project Wiki page highlighting engineering goals and collaboration value",
+    "Summary of in vitro evaluation data for candidate AMPs (with evidence boundaries)",
+    "Records and outcomes of cross-institutional communication activities"
+  ],
+  "questions_cn": [
+    "您认为我们目前的叙事方式是否足够清晰，能让其他团队快速理解项目的工程化目标？",
+    "在跨校合作中，您觉得我们还可以共享哪些不可复制的资源或失败经验？",
+    "对于我们的证据边界表述，您是否有建议使其更严谨？"
+  ],
+  "questions_en": [
+    "Do you think our current narrative is clear enough for other teams to quickly understand our engineering goals?",
+    "In cross-institutional collaboration, what other non-replicable resources or lessons from failures could we share?",
+    "Do you have suggestions to make our evidence boundaries more rigorous?"
+  ],
+  "feedback_summary": "iGEM 是跨学科交流平台，合作应共享不可复制资源与失败经验，叙事需经得起外部提问。",
+  "action_summary": "将跨校交流与外部视角加入 HP 主线，展示工程化目标、合作价值与证据边界。"
+}

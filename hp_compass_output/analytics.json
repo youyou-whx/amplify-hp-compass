@@ -12,19 +12,8 @@
       "pagerank": 0.0092,
       "degree_centrality": 0.0132,
       "betweenness_centrality": 0.0,
-      "composite_score": 0.8377,
-      "hp_priority": 0.823,
-      "modules_affected": 5
-    },
-    {
-      "node_id": "stakeholder:西北农林科技大学罗自卫老师",
-      "label": "西北农林科技大学罗自卫老师",
-      "stakeholder_type": "湿实验 / 合成生物学专家",
-      "pagerank": 0.0092,
-      "degree_centrality": 0.0132,
-      "betweenness_centrality": 0.0,
-      "composite_score": 0.8327,
-      "hp_priority": 0.817,
+      "composite_score": 0.8517,
+      "hp_priority": 0.863,
       "modules_affected": 5
     },
     {
@@ -34,8 +23,19 @@
       "pagerank": 0.0092,
       "degree_centrality": 0.0132,
       "betweenness_centrality": 0.0,
-      "composite_score": 0.832,
-      "hp_priority": 0.819,
+      "composite_score": 0.8454,
+      "hp_priority": 0.857,
+      "modules_affected": 5
+    },
+    {
+      "node_id": "stakeholder:西北农林科技大学罗自卫老师",
+      "label": "西北农林科技大学罗自卫老师",
+      "stakeholder_type": "湿实验 / 合成生物学专家",
+      "pagerank": 0.0092,
+      "degree_centrality": 0.0132,
+      "betweenness_centrality": 0.0,
+      "composite_score": 0.8445,
+      "hp_priority": 0.851,
       "modules_affected": 5
     },
     {
@@ -45,8 +45,8 @@
       "pagerank": 0.0092,
       "degree_centrality": 0.0132,
       "betweenness_centrality": 0.0,
-      "composite_score": 0.8195,
-      "hp_priority": 0.767,
+      "composite_score": 0.832,
+      "hp_priority": 0.803,
       "modules_affected": 5
     },
     {
@@ -56,8 +56,8 @@
       "pagerank": 0.0092,
       "degree_centrality": 0.0132,
       "betweenness_centrality": 0.0,
-      "composite_score": 0.8062,
-      "hp_priority": 0.775,
+      "composite_score": 0.8168,
+      "hp_priority": 0.805,
       "modules_affected": 5
     }
   ],

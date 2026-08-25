@@ -3,8 +3,8 @@
 使用 NetworkX 构建 Stakeholder-Feedback-Action-Evidence 知识图谱，
 并提供图分析：中心性、PageRank、社区发现等。
 
-V2 改进：
-- 文本自动摘要提炼（_summarize），不再直接贴原始长文
+设计要点：
+- 文本自动摘要提炼（_summarize / LLM 精炼摘要）
 - 主题去重（_fingerprint + theme registry），同类反馈/行动合并节点
 - 三层信息层级（L1战略→L2执行→L3验证），节点大小/深浅随层级
 - 跨循环连线：共享模块的 Feedback 节点相互连接
@@ -197,10 +197,9 @@ def _jaccard_words(a: str, b: str) -> float:
 
 
 def build_graph(cards: list[HPCard]) -> GraphData:
-    """从 HP 卡片列表构建知识图谱（V2 增强版）。
+    """从 HP 卡片列表构建知识图谱。
 
-    改进：
-    1. 文本摘要 — Feedback/Action 节点使用 _summarize 提炼关键句
+    1. 文本摘要 — Feedback/Action 节点使用 LLM 精炼摘要或 _summarize 提炼关键句
     2. 主题去重 — 同主题 Feedback/Action 复用节点 + 增大 + 加边
     3. 三层信息层级 — 每节点标记 level∈{1,2,3}
     4. 跨循环连线 — 共享模块的 Feedback 节点互连
@@ -280,10 +279,13 @@ def build_graph(cards: list[HPCard]) -> GraphData:
                       themes=list(fp))
             return node_id
 
-        # 无主题指纹 → 回退到 per-HP 节点
+        # 无主题指纹 → per-HP 节点
+        # LLM 模式优先用大模型精炼的一句话摘要
         node_id = f"feedback:{card.hp_id}"
-        _add_node(node_id, _summarize(text, 90), "Feedback",
-                  score=card.priority_score)
+        label = (
+            getattr(card, "llm_feedback_summary", "") or _summarize(text, 90)
+        )
+        _add_node(node_id, label, "Feedback", score=card.priority_score)
         return node_id
 
     def _resolve_action_node(card: HPCard) -> str:
@@ -320,8 +322,10 @@ def build_graph(cards: list[HPCard]) -> GraphData:
             return node_id
 
         node_id = f"action:{card.hp_id}"
-        _add_node(node_id, _summarize(text, 90), "Action",
-                  score=card.priority_score)
+        label = (
+            getattr(card, "llm_action_summary", "") or _summarize(text, 90)
+        )
+        _add_node(node_id, label, "Action", score=card.priority_score)
         return node_id
 
     # ── 主循环：逐卡片建图 ──
@@ -375,7 +379,7 @@ def build_graph(cards: list[HPCard]) -> GraphData:
 
 
 # ═══════════════════════════════════════════════════════════════
-#   NetworkX 图分析（与 V1 兼容，未变）
+#   NetworkX 图分析
 # ═══════════════════════════════════════════════════════════════
 
 

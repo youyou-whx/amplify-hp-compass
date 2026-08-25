@@ -1,0 +1,28 @@
+{
+  "next_step_cn": "建议回访时与驿站工作人员确认宠物日常用药的具体场景，并共同设计一份面向宠物主人的抗菌药物认知小册子，明确 AMPlify 的适用边界。",
+  "next_step_en": "Suggest a follow-up visit to confirm specific scenarios of antibiotic use in pets and co-design a pet owner education brochure clarifying AMPlify's scope and limitations.",
+  "materials_cn": [
+    "AMPlify 项目简介与当前体外评估数据摘要",
+    "宠物常见感染与抗生素使用场景的案例卡片",
+    "抗菌药物认知小册子初稿（待共同修改）"
+  ],
+  "materials_en": [
+    "AMPlify project overview and summary of current in vitro data",
+    "Case cards on common pet infections and antibiotic use scenarios",
+    "Draft of an antibiotic awareness brochure for pet owners (to be co-edited)"
+  ],
+  "questions_cn": [
+    "您在日常护理中遇到最棘手的抗生素使用问题是什么？",
+    "您认为宠物主人对抗生素的常见误解有哪些？",
+    "如果提供一份通俗易懂的抗菌药物指南，您希望包含哪些内容？",
+    "您对 AMPlify 的抗菌肽在宠物护理中的潜在应用有何顾虑？"
+  ],
+  "questions_en": [
+    "What is the most challenging antibiotic use issue you encounter in daily care?",
+    "What common misconceptions do pet owners have about antibiotics?",
+    "If we provide an easy-to-understand antibiotic guide, what content would you like it to include?",
+    "What concerns do you have about the potential use of AMPlify's antimicrobial peptides in pet care?"
+  ],
+  "feedback_summary": "宠物抗生素问题复杂，涉及诊断、剂量与主人认知，替代方案需谨慎并明确边界。",
+  "action_summary": "将宠物端定位为日常照护与用药认知层，聚焦高风险可控感染场景，并强化科普教育。"
+}

@@ -1,0 +1,30 @@
+{
+  "next_step_cn": "建议在完成一轮合成与体外实验后，带着实测数据回访赵老师，重点展示判别器与生成器协同的证据链，并请教如何将膜相互作用分析更有效地纳入筛选流程。",
+  "next_step_en": "After completing a round of synthesis and in vitro experiments, revisit Prof. Zhao with empirical data, focusing on the evidence chain of discriminator-generator synergy and seeking advice on integrating membrane interaction analysis into the screening pipeline.",
+  "materials_cn": [
+    "TAM-Flow 模型架构与训练流程的简要说明",
+    "合成肽的 MIC、溶血、CCK-8 及 TEM 初步结果",
+    "判别器评分与实验结果的对比分析图",
+    "更新后的项目 wiki 页面或海报草稿"
+  ],
+  "materials_en": [
+    "Brief description of TAM-Flow architecture and training pipeline",
+    "Preliminary results of MIC, hemolysis, CCK-8, and TEM for synthesized peptides",
+    "Comparative analysis plots of discriminator scores vs. experimental outcomes",
+    "Updated project wiki pages or poster draft"
+  ],
+  "questions_cn": [
+    "您认为我们目前的判别器评分与实验数据之间的相关性如何？还有哪些关键指标需要补充？",
+    "在膜相互作用分析方面，您建议我们优先采用哪些实验或模拟方法，以更有效地筛选候选肽？",
+    "对于 RAFT 奖励过滤中的奖励函数设计，您有何改进建议，以避免过拟合或偏差？",
+    "您觉得我们下一步应该扩大合成规模还是优化现有候选肽的修饰？"
+  ],
+  "questions_en": [
+    "How do you think the correlation between our discriminator scores and experimental data looks so far? Are there any key metrics we should add?",
+    "Regarding membrane interaction analysis, which experimental or simulation methods would you recommend prioritizing to improve candidate screening?",
+    "Do you have suggestions for improving the reward function design in RAFT filtering to avoid overfitting or bias?",
+    "Should we scale up synthesis or focus on optimizing modifications of current candidates next?"
+  ],
+  "feedback_summary": "赵老师强调生成器需配套判别器，避免无关序列混入，并重视结构筛选与失败风险。",
+  "action_summary": "项目升级为 TAM-Flow 生成+Oracle 判别+RAFT 过滤，并加入理化、MD、合成及体外验证证据链。"
+}
