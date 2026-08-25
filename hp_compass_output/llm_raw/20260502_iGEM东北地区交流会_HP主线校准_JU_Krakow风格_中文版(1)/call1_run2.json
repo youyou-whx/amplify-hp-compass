@@ -1,0 +1,22 @@
+{
+  "date": "2026-05-02",
+  "stakeholder": "吉林大学举办的iGEM东北地区交流会参会队伍、经验分享者及其他iGEM成员",
+  "stakeholder_type": "iGEM、Wiki 交流 stakeholder",
+  "initial_question": "团队希望判断已有调研材料能否被整理成清楚的项目主线，而不是变成彼此分散的活动记录。",
+  "feedback": "交流会提醒我们，高质量HP不取决于活动数量，而取决于能否说明Stakeholder → Feedback → Action → Impact；Education也不应堆数量，而要让受众真正理解问题；Wiki、海报和答辩需要共享同一条逻辑。",
+  "project_action": "会后，团队开始把HP写作重心放在概述、摘要卡片和故事主线；将Education从数量导向调整为互动质量导向；并要求每一次调研都写清它在主线中的位置，以及它如何改变项目表达或设计。",
+  "evidence": [],
+  "returned": false,
+  "is_extension_of": null,
+  "module_grades": {
+    "Safety": "无",
+    "Model": "无",
+    "Implementation": "中",
+    "Material": "无",
+    "Problem Definition": "中",
+    "Environment": "弱",
+    "Software": "无",
+    "Education": "强",
+    "Social Media": "弱"
+  }
+}

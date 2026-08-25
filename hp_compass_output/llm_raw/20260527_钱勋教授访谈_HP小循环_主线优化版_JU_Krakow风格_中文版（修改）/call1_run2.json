@@ -1,0 +1,31 @@
+{
+  "date": "2026-05-27",
+  "stakeholder": "西北农林科技大学资环学院钱勋教授",
+  "stakeholder_type": "环境微生物、ARG 专家",
+  "initial_question": "如果抗菌肽未来用于动物健康，它是否会像传统抗生素一样通过粪便、废水或其他路径进入环境？如果会，我们该如何负责任地描述它的环境边界？",
+  "feedback": "全球超70%抗生素用于畜禽养殖，约30%-60%以原型或不完全代谢物随粪尿排出。养殖粪污资源化利用、市政或养殖废水尾水、地表径流、土壤和水体迁移、养殖场气溶胶暴露等都可能参与生态循环。现有污水和粪污处理体系通常不把抗生素、耐药菌或 ARGs 作为常规监测指标，因此处理后是否完全去除这些风险并不容易判断。环境中即使只有低浓度抗生素残留，也能长期诱导抗性基因富集，形成持续选择压力。环境中已形成高背景抗性基因库，即使减少抗生素使用，抗性也难以快速回到原始状态。",
+  "project_action": "将候选肽筛选逻辑从 activity-safety balance 扩展为 activity-safety-environment balance，建立 Peptide Degradation Ease Score（PDES）模型来衡量抗菌肽的预测降解难易程度，并在软件报告中加入 Environmental Degradation Panel。PDES 只作为模型推断和决策支持，不被表述为已经完成的环境降解实验证据。同时调整安全表述，将“更环保”改写为“可能具有较低环境持留风险，但仍需要降解实验和微生态验证”。",
+  "evidence": [
+    "MIC",
+    "溶血",
+    "CCK-8",
+    "TEM",
+    "分子动力学",
+    "理化性质",
+    "PDES",
+    "Environmental Degradation Panel"
+  ],
+  "returned": false,
+  "is_extension_of": null,
+  "module_grades": {
+    "Safety": "强",
+    "Model": "强",
+    "Implementation": "中",
+    "Material": "弱",
+    "Problem Definition": "强",
+    "Environment": "强",
+    "Software": "强",
+    "Education": "弱",
+    "Social Media": "无"
+  }
+}

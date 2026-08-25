@@ -1,0 +1,30 @@
+{
+  "next_step_cn": "建议在后续回访中，向钱勋教授展示 PDES 模型的初步验证结果，并探讨如何将环境降解预测与现有粪污处理工艺结合，以增强模型的实际应用价值。",
+  "next_step_en": "In the follow-up, present preliminary validation results of the PDES model to Prof. Qian, and discuss how to integrate environmental degradation prediction with existing manure treatment processes to enhance practical utility.",
+  "materials_cn": [
+    "PDES 模型的技术说明与初步验证数据",
+    "AMPlify 软件中 Environmental Degradation Panel 的界面截图",
+    "项目更新后的安全表述文档",
+    "关于环境抗性基因背景的文献综述"
+  ],
+  "materials_en": [
+    "Technical description and preliminary validation data of the PDES model",
+    "Screenshots of the Environmental Degradation Panel in AMPlify software",
+    "Updated safety language document",
+    "Literature review on environmental resistance gene background"
+  ],
+  "questions_cn": [
+    "您认为 PDES 模型中的哪些参数最需要结合真实环境数据校准？",
+    "在养殖粪污处理流程中，哪个环节最适合引入抗菌肽降解评估？",
+    "您对将 PDES 预测结果与现有监测指标（如 ARG 丰度）关联有何建议？",
+    "我们如何设计实验来验证 PDES 的预测，同时兼顾成本和可行性？"
+  ],
+  "questions_en": [
+    "Which parameters in the PDES model do you think need calibration with real environmental data most?",
+    "In the manure treatment process, which stage is most suitable for integrating antimicrobial peptide degradation assessment?",
+    "What suggestions do you have for linking PDES predictions with existing monitoring indicators (e.g., ARG abundance)?",
+    "How can we design experiments to validate PDES predictions while balancing cost and feasibility?"
+  ],
+  "feedback_summary": "环境低浓度抗生素持续诱导抗性基因富集，现有处理体系缺乏监测，需关注环境持留风险。",
+  "action_summary": "扩展筛选逻辑为 activity-safety-environment balance，新增 PDES 模型与 Environmental Degradation Panel，调整安全表述。"
+}

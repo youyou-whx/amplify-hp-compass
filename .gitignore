@@ -28,3 +28,4 @@ deepseek_key.txt
 
 # Output (generated at runtime, keep base data in repo)
 # hp_compass_output/ is tracked for deployment
+.playwright-mcp/

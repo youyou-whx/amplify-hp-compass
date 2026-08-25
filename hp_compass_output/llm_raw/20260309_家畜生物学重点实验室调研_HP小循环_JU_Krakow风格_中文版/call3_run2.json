@@ -1,0 +1,30 @@
+{
+  "next_step_cn": "建议在完成候选肽体外筛选后，携带 MIC、溶血、CCK-8 等数据回访刘军教授，讨论将乳腺炎作为代表场景的可行性，并收集关于递送路径和监管边界的进一步建议。",
+  "next_step_en": "After completing in vitro screening, revisit Prof. Liu with MIC, hemolysis, and CCK-8 data to discuss the feasibility of using mastitis as a representative scenario and gather further input on delivery routes and regulatory boundaries.",
+  "materials_cn": [
+    "候选抗菌肽的 MIC、溶血、CCK-8 等体外评估数据汇总",
+    "针对耐药菌株（如乳腺炎相关病原）的活性-安全窗口分析报告",
+    "项目更新后的 Model/Software 场景适配与风险边界标签说明",
+    "关于递送路径（如乳房灌注）和生产可行性的初步调研资料"
+  ],
+  "materials_en": [
+    "Summary of in vitro evaluation data (MIC, hemolysis, CCK-8) for candidate AMPs",
+    "Activity-safety window analysis report against resistant strains (e.g., mastitis pathogens)",
+    "Updated Model/Software documentation with scenario adaptation and risk boundary labels",
+    "Preliminary research on delivery routes (e.g., intramammary infusion) and production feasibility"
+  ],
+  "questions_cn": [
+    "在您看来，哪些耐药菌株应优先纳入我们的筛选面板，以更好地反映养殖端减抗需求？",
+    "对于抗菌肽在乳腺炎治疗中的递送，您认为最可行的路径是什么？有哪些实际限制？",
+    "您对我们在体外评估中如何平衡活性与细胞毒性有何建议？是否有推荐的阈值或方法？",
+    "关于抗菌肽在动物健康中的监管边界，您认为我们应重点关注哪些方面？"
+  ],
+  "questions_en": [
+    "Which resistant strains should we prioritize in our screening panel to better reflect the need for antibiotic reduction in livestock?",
+    "What delivery routes do you consider most feasible for AMPs in mastitis treatment, and what are the practical limitations?",
+    "Do you have suggestions on how to balance activity and cytotoxicity in our in vitro evaluation? Any recommended thresholds or methods?",
+    "Regarding regulatory boundaries for AMPs in animal health, what aspects should we focus on?"
+  ],
+  "feedback_summary": "刘军教授指出乳腺炎病原多样，抗菌肽应聚焦耐药菌杀伤与低毒性，并考虑递送、稳定性、成本及监管。",
+  "action_summary": "项目将乳腺炎调整为代表场景，主线转向耐药菌筛选与活性-安全窗口，并在各模块加入场景适配和风险边界标签。"
+}

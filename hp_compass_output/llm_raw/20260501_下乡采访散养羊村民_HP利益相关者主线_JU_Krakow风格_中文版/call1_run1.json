@@ -1,0 +1,24 @@
+{
+  "date": "2026-05-01",
+  "stakeholder": "基层执业兽医与散养户（乡村散养羊户）",
+  "stakeholder_type": "养殖端 stakeholder",
+  "initial_question": "在更分散、更依赖经验判断的散养场景中，项目需求是否仍然成立？",
+  "feedback": "散养户重视疫苗、通风和预防；认可乳腺炎根源是细菌感染，但对抗菌肽这类'高科技'方案保持审慎。受访者质疑抗菌肽是否意味着疫苗都不需要了，并提到炭疽、布病等人畜共患病风险。",
+  "project_action": "主线加入'基层可理解性'和'实验验证边界'：不能把抗菌肽说成万能替代品，需用更朴素、准确的语言解释项目，并明确其适应场景和验证边界。",
+  "evidence": [
+    "访谈记录"
+  ],
+  "returned": false,
+  "is_extension_of": null,
+  "module_grades": {
+    "Safety": "中",
+    "Model": "弱",
+    "Implementation": "中",
+    "Material": "弱",
+    "Problem Definition": "强",
+    "Environment": "中",
+    "Software": "无",
+    "Education": "中",
+    "Social Media": "弱"
+  }
+}

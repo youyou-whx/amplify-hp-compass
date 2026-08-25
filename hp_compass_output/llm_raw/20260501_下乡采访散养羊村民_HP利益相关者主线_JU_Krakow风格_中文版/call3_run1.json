@@ -1,0 +1,26 @@
+{
+  "next_step_cn": "回访时用更朴实的语言解释抗菌肽的定位，强调其是疫苗和管理的补充而非替代，并展示体外实验数据说明验证边界。",
+  "next_step_en": "In the follow-up, explain AMPs as a supplement to vaccines and management, not a replacement, and present in vitro data to clarify validation boundaries.",
+  "materials_cn": [
+    "抗菌肽作用机制的通俗图解",
+    "体外实验数据摘要（非临床）",
+    "疫苗与抗菌肽互补关系的说明单页"
+  ],
+  "materials_en": [
+    "Simple diagram of AMP mechanism",
+    "Summary of in vitro data (non-clinical)",
+    "One-pager on complementarity of vaccines and AMPs"
+  ],
+  "questions_cn": [
+    "您觉得我们这样解释抗菌肽，是否更容易理解？",
+    "在您的养殖实践中，哪些环节最需要抗菌肽这类工具？",
+    "您认为我们还需要提供哪些证据，才能让您更信任这个方案？"
+  ],
+  "questions_en": [
+    "Does our explanation of AMPs make more sense to you now?",
+    "In your farming practice, which aspects could benefit most from AMPs?",
+    "What additional evidence would increase your trust in this approach?"
+  ],
+  "feedback_summary": "散养户认可抗菌肽潜力，但担忧其替代疫苗，需明确其补充定位与验证边界。",
+  "action_summary": "项目调整沟通策略，强调抗菌肽非替代疫苗，并强化实验验证边界的说明。"
+}

@@ -1,0 +1,30 @@
+{
+  "next_step_cn": "建议与钱勋教授团队合作，设计针对PDES模型的验证实验，并探讨将环境降解指标纳入现有粪污处理监测体系的可行性。",
+  "next_step_en": "Collaborate with Prof. Qian's team to design validation experiments for the PDES model and explore the feasibility of incorporating environmental degradation indicators into existing manure treatment monitoring systems.",
+  "materials_cn": [
+    "PDES模型的技术文档及初步验证数据",
+    "AMPlify软件中Environmental Degradation Panel的界面截图或演示",
+    "关于抗菌肽环境降解的文献综述",
+    "合作研究协议草案"
+  ],
+  "materials_en": [
+    "Technical documentation and preliminary validation data for the PDES model",
+    "Screenshots or demo of the Environmental Degradation Panel in AMPlify software",
+    "Literature review on environmental degradation of antimicrobial peptides",
+    "Draft collaboration research agreement"
+  ],
+  "questions_cn": [
+    "您认为PDES模型中的哪些参数最需要实验验证？",
+    "在养殖粪污处理系统中，哪些环节最适合引入抗菌肽的环境降解监测？",
+    "您是否愿意参与我们后续的降解实验设计，以提供环境微生物学方面的指导？",
+    "对于环境中ARGs的长期监测，您有哪些建议可以融入我们的项目？"
+  ],
+  "questions_en": [
+    "Which parameters in the PDES model do you think require the most experimental validation?",
+    "In livestock manure treatment systems, which stages are most suitable for incorporating environmental degradation monitoring of antimicrobial peptides?",
+    "Would you be willing to participate in the design of our subsequent degradation experiments to provide guidance on environmental microbiology?",
+    "What suggestions do you have for long-term monitoring of ARGs in the environment that could be integrated into our project?"
+  ],
+  "feedback_summary": "钱勋教授指出抗生素在养殖环境中广泛残留并驱动ARGs富集，现有处理体系缺乏监测，需关注环境持留风险。",
+  "action_summary": "项目引入PDES模型评估抗菌肽降解难易，并在软件中增加环境降解面板，调整安全表述为潜在较低环境持留风险。"
+}

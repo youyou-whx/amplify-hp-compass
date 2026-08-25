@@ -1,0 +1,26 @@
+{
+  "next_step_cn": "建议在后续交流会上向分享者展示修改后的HP主线与Education互动案例，并收集其对逻辑一致性的反馈。",
+  "next_step_en": "Suggest presenting the revised HP narrative and interactive education cases at the next exchange meeting, and collect feedback on logical consistency.",
+  "materials_cn": [
+    "修改后的HP概述与摘要卡片",
+    "Education互动活动案例记录",
+    "调研与主线关联的说明文档"
+  ],
+  "materials_en": [
+    "Revised HP overview and summary cards",
+    "Records of interactive education activities",
+    "Documentation linking research to the main narrative"
+  ],
+  "questions_cn": [
+    "您认为我们修改后的HP主线是否更清晰地体现了Stakeholder→Feedback→Action→Impact的闭环？",
+    "在Education方面，我们调整后的互动活动是否更有效地让受众理解问题？",
+    "您对Wiki、海报和答辩共享同一逻辑的做法有何进一步建议？"
+  ],
+  "questions_en": [
+    "Do you think our revised HP narrative better reflects the Stakeholder→Feedback→Action→Impact loop?",
+    "Do our adjusted interactive education activities more effectively help the audience understand the problem?",
+    "What further suggestions do you have for sharing the same logic across Wiki, poster, and presentation?"
+  ],
+  "feedback_summary": "交流会提醒HP重逻辑闭环，Education重理解而非数量。",
+  "action_summary": "团队调整HP写作与Education为质量导向，并明确调研与主线关联。"
+}

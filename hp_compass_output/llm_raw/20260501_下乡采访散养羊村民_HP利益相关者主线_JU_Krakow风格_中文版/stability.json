@@ -1,0 +1,10 @@
+{
+  "agreement": 0.8667,
+  "checked_fields": 15,
+  "model": "deepseek-chat",
+  "temperatures": {
+    "call1": 0.0,
+    "call2": 0.0,
+    "call3": 0.3
+  }
+}

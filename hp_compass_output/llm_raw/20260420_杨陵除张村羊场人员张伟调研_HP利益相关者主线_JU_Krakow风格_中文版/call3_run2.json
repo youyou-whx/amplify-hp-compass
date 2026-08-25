@@ -1,0 +1,30 @@
+{
+  "next_step_cn": "建议回访时携带基于羊场常见病原设计的广谱候选肽体外数据，并讨论拌料给药在泌乳羊群的可行性，同时收集羊奶质量影响的初步评估需求。",
+  "next_step_en": "For the follow-up, bring in vitro data on broad-spectrum candidate peptides against common sheep pathogens, discuss the feasibility of feed-based administration for lactating flocks, and gather requirements for assessing effects on milk quality.",
+  "materials_cn": [
+    "候选抗菌肽的广谱性体外数据摘要（针对羊场常见病原）",
+    "拌料给药方式的初步可行性说明或示意图",
+    "羊奶质量影响评估的初步计划或问卷",
+    "成本对比简表（与传统治疗/预防方案）"
+  ],
+  "materials_en": [
+    "Summary of in vitro broad-spectrum activity data of candidate peptides against common sheep pathogens",
+    "Preliminary feasibility explanation or diagram of feed-based administration",
+    "Initial plan or questionnaire for assessing effects on milk quality",
+    "Cost comparison table (vs. conventional treatment/prevention)"
+  ],
+  "questions_cn": [
+    "如果候选肽对常见病原都有效，但需要每天拌料，您觉得在实际羊场管理中可行吗？",
+    "您最担心抗菌肽对羊奶质量产生哪些影响？我们需要评估哪些指标？",
+    "在群体化预防中，您希望抗菌肽以什么频率和方式使用，才能不增加太多人工成本？",
+    "如果成本略高于现有预防措施，但能减少乳房炎损失，您能接受的价格上限大概是多少？"
+  ],
+  "questions_en": [
+    "If the candidate peptides are effective against common pathogens but require daily feed mixing, do you think it is feasible in your farm management?",
+    "What aspects of milk quality are you most concerned about? What indicators should we evaluate?",
+    "For group-level prevention, what frequency and method of administration would be acceptable without adding much labor cost?",
+    "If the cost is slightly higher than current prevention measures but can reduce mastitis losses, what is the maximum price you could accept?"
+  ],
+  "feedback_summary": "养殖户重视广谱、低损伤、给药便利和成本，不因技术新颖而接受，需面对真实养殖约束。",
+  "action_summary": "项目转向泌乳羊场场景，强调广谱候选肽、拌料给药和羊奶安全，谨慎表达AI设计成果。"
+}

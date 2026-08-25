@@ -1,0 +1,24 @@
+{
+  "date": "2026-04-18",
+  "stakeholder": "哈尔滨工业大学生命科学与医学学部聂桓老师",
+  "stakeholder_type": "iGEM、Wiki 交流 stakeholder",
+  "initial_question": "项目如何在跨校交流中被更清楚地讲述，以及如何将AMPlify从本队内部验证推向跨校协作与外部视角。",
+  "feedback": "iGEM是跨学科、跨校际的交流平台，真正有价值的合作应共享不可复制的资源、失败经验和项目建设思路，而不是停留在表面交流。项目需要被其他团队看懂，叙事需要经得起外部提问，工程化目标也需要用更清晰的语言表达。",
+  "project_action": "将跨校交流与外部视角加入HP主线，在介绍AMPlify时不仅展示候选肽和实验结果，也说明项目的工程化目标、合作价值和证据边界。",
+  "evidence": [
+    "访谈记录"
+  ],
+  "returned": false,
+  "is_extension_of": null,
+  "module_grades": {
+    "Safety": "弱",
+    "Model": "弱",
+    "Implementation": "中",
+    "Material": "弱",
+    "Problem Definition": "中",
+    "Environment": "弱",
+    "Software": "中",
+    "Education": "强",
+    "Social Media": "中"
+  }
+}

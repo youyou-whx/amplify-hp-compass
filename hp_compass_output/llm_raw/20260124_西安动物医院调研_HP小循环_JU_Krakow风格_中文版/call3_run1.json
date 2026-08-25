@@ -1,0 +1,26 @@
+{
+  "next_step_cn": "针对兽医临床反馈，建议在后续调研中优先收集畜禽、泌乳期和蛋鸡养殖端的减抗需求与残留控制数据，并完善抗菌肽候选物的局部给药路径与证据等级评估。",
+  "next_step_en": "Based on the veterinary clinical feedback, prioritize collecting data on antimicrobial reduction needs and residue control in livestock, lactating animals, and laying hens, and refine local administration routes and evidence levels for AMP candidates.",
+  "materials_cn": [
+    "AMPlify候选肽的体外活性与安全性数据摘要",
+    "皮肤/耳道局部感染场景的案例或文献资料",
+    "畜禽减抗政策与残留标准的相关文件"
+  ],
+  "materials_en": [
+    "Summary of in vitro activity and safety data for AMPlify candidate peptides",
+    "Case studies or literature on skin/ear local infection scenarios",
+    "Relevant documents on antimicrobial reduction policies and residue standards in livestock"
+  ],
+  "questions_cn": [
+    "在畜禽养殖中，哪些具体感染场景对抗菌肽的局部或口服应用需求最迫切？",
+    "针对泌乳期和蛋鸡，残留控制对抗菌肽开发有哪些特殊要求？",
+    "您认为抗菌肽作为辅助或保健产品，在宠物临床中的定位应如何与现有抗生素策略互补？"
+  ],
+  "questions_en": [
+    "In livestock farming, which specific infection scenarios have the most urgent need for topical or oral AMP applications?",
+    "For lactating animals and laying hens, what special requirements do residue control impose on AMP development?",
+    "How do you think AMPs as adjunct or health-care products should complement existing antibiotic strategies in pet clinical practice?"
+  ],
+  "feedback_summary": "兽医临床反馈：抗菌肽应区分感染类型与给药路径，宠物市场更适合作辅助/保健，经济动物减抗价值更高。",
+  "action_summary": "AMPlify转向动物健康与One Health候选肽评估框架，保留局部场景，纳入畜禽减抗与残留控制调研。"
+}

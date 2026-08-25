@@ -1,0 +1,30 @@
+{
+  "date": null,
+  "stakeholder": "赵天意老师，生物大数据相关方向教师",
+  "stakeholder_type": "AI、生物大数据专家",
+  "initial_question": "确认生成的候选肽是否真的具有抗菌靶向性，模型是否被数据噪声误导，有限经费下如何提高命中率。",
+  "feedback": "赵老师指出，只有生成器是不够的，必须建立能判断抗菌潜力、毒性和关键性质的判别器；不能把大量无关蛋白序列直接混入抗菌肽微调；少量合成候选面临很高失败风险；结构和膜相互作用分析应作为筛选依据。",
+  "project_action": "将早期 ESM-2 微调思路发展为 TAM-Flow：ESM-2 + LoRA 编码、DiT-Rectified Flow 生成、Oracle 专家模型评分和 RAFT 奖励过滤；同时加入理化性质、MD、合成质谱、MIC、溶血、CCK-8 和 TEM，形成从预测到实测的证据链。",
+  "evidence": [
+    "MIC",
+    "溶血",
+    "CCK-8",
+    "TEM",
+    "分子动力学",
+    "理化性质",
+    "质谱"
+  ],
+  "returned": false,
+  "is_extension_of": null,
+  "module_grades": {
+    "Safety": "强",
+    "Model": "强",
+    "Implementation": "中",
+    "Material": "中",
+    "Problem Definition": "中",
+    "Environment": "无",
+    "Software": "中",
+    "Education": "无",
+    "Social Media": "无"
+  }
+}

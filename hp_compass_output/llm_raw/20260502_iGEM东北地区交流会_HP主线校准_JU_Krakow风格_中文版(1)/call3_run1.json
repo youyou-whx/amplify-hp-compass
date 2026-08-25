@@ -1,0 +1,30 @@
+{
+  "next_step_cn": "建议在后续交流会上向分享者展示更新后的Wiki主线与HP叙事，并请其评估逻辑一致性是否提升。",
+  "next_step_en": "Suggest presenting the updated Wiki narrative and HP storyline to the sharing team at a follow-up exchange, asking them to evaluate whether logical consistency has improved.",
+  "materials_cn": [
+    "更新后的Wiki概述页与摘要卡片",
+    "HP故事主线图（Stakeholder→Feedback→Action→Impact）",
+    "Education互动活动记录与反馈",
+    "调研与项目修改对照表"
+  ],
+  "materials_en": [
+    "Updated Wiki overview page and summary cards",
+    "HP storyline diagram (Stakeholder→Feedback→Action→Impact)",
+    "Education interactive activity records and feedback",
+    "Mapping table of research findings to project changes"
+  ],
+  "questions_cn": [
+    "您认为我们现在的HP叙事是否清晰体现了每个反馈如何转化为行动？",
+    "在Education方面，我们调整后的互动活动是否更有效地让受众理解问题？",
+    "Wiki、海报和答辩的逻辑一致性是否还有改进空间？",
+    "您对我们下一步的HP重点有何建议？"
+  ],
+  "questions_en": [
+    "Do you think our current HP narrative clearly shows how each feedback led to an action?",
+    "Regarding Education, do our adjusted interactive activities better help the audience understand the problem?",
+    "Is there still room to improve the logical consistency across Wiki, poster, and presentation?",
+    "What suggestions do you have for our next HP focus?"
+  ],
+  "feedback_summary": "交流会提醒：HP质量重于数量，需明确Stakeholder→Feedback→Action→Impact，Education应重互动理解。",
+  "action_summary": "团队重构HP叙事主线，调整Education为质量导向，并确保每次调研明确其在主线中的位置。"
+}

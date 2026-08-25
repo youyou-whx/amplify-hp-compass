@@ -1,0 +1,30 @@
+{
+  "next_step_cn": "根据罗老师建议，调整湿实验路线并筛选7条候选肽，同时完善证据链和软件标签，建议回访时展示初步MIC和安全性数据，并讨论表达系统选择。",
+  "next_step_en": "Following Dr. Luo's advice, adjust the wet-lab pipeline and select 7 candidate peptides, while strengthening the evidence chain and software tags. On revisit, present preliminary MIC and safety data and discuss expression system choices.",
+  "materials_cn": [
+    "更新后的湿实验路线图（含化学合成、MIC、溶血/CCK-8、TEM、表达纯化）",
+    "7条候选肽的序列及筛选依据说明",
+    "软件报告中Evidence Level和Production Feasibility标签的示例",
+    "初步MIC或安全性数据（如有）"
+  ],
+  "materials_en": [
+    "Updated wet-lab pipeline diagram (chemical synthesis, MIC, hemolysis/CCK-8, TEM, expression/purification)",
+    "List of 7 candidate peptides with selection rationale",
+    "Sample of Evidence Level and Production Feasibility tags in software report",
+    "Preliminary MIC or safety data if available"
+  ],
+  "questions_cn": [
+    "您认为在表达纯化阶段，大肠杆菌、毕赤酵母和枯草芽孢杆菌哪个更适合我们目前的候选肽？",
+    "对于短肽在胶上难以观察的问题，您建议优先采用哪种检测方法（如WB、液相或质谱）？",
+    "在后续实验中，如何更场景化地验证羊乳腺细胞的安全性？是否需要引入原代细胞或3D模型？",
+    "您对7条候选肽的数量和筛选依据有何进一步建议？"
+  ],
+  "questions_en": [
+    "Which expression host (E. coli, Pichia pastoris, or Bacillus subtilis) would you recommend for our current candidate peptides?",
+    "For short peptides that are hard to visualize on gels, which detection method (e.g., Western blot, LC, or MS) should we prioritize?",
+    "How can we more contextually validate safety in goat mammary cells? Should we consider primary cells or 3D models?",
+    "Do you have further suggestions on the number (7) and selection criteria of candidate peptides?"
+  ],
+  "feedback_summary": "抗菌对象需与应用场景对应，覆盖革兰氏阴阳菌，设置强对照，证据链需完善，HaCaT不能完全代表羊乳腺细胞。",
+  "action_summary": "调整湿实验路线为模型筛选-化学合成-MIC-安全性-TEM-表达纯化，筛选7条候选肽，软件加入证据等级和生产可行性标签。"
+}
